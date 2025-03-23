@@ -314,7 +314,77 @@
     "href": "lecture02.html#slide-bootloader---key-responsibilities",
     "title": "3  Module 02",
     "section": "3.4 Slide: Bootloader - Key Responsibilities",
-    "text": "3.4 Slide: Bootloader - Key Responsibilities\n\n\n\nBootloader - Key responsibilities\n\n\n\nNarrative: “At startup, a system’s processor cannot immediately run applications or even the operating system directly. Instead, it relies on a special software called the bootloader to initialize the hardware, prepare memory, and set up basic processor configurations. Specifically, the bootloader locates the kernel software, ensures it’s properly loaded into memory, and creates an environment suitable for the operating system to take control. In essence, the bootloader bridges the gap between hardware startup and operating system execution.”\n\nSupporting Resources for Further Exploration:\n\nU-Boot documentation (practical bootloader reference): U-Boot Project\nBootlin Embedded Linux Training (Bootloader section): Bootloader Training PDF\n\n\n\n##Slide: Understanding the Program Counter (PC)\n\n\n\nProgram Counter\n\n\nNarrative:\n\n“Before diving deeper into system startup, let’s clarify the role of a critical CPU register called the Program Counter, or PC. The PC is essentially the CPU’s internal pointer, always indicating the memory address of the next instruction to execute.\nWith each executed instruction, the CPU automatically updates the PC to point sequentially to the next instruction. At power-up or after a reset, the PC doesn’t point randomly; instead, it’s set to a specific, known address— called the Reset Vector.\nUnderstanding the role of the Program Counter is essential because it directly influences how software execution flows within a CPU.”",
+    "text": "3.4 Slide: Bootloader - Key Responsibilities\n\n\n\nBootloader - Key responsibilities\n\n\n\nNarrative: “At startup, a system’s processor cannot immediately run applications or even the operating system directly. Instead, it relies on a special software called the bootloader to initialize the hardware, prepare memory, and set up basic processor configurations. Specifically, the bootloader locates the kernel software, ensures it’s properly loaded into memory, and creates an environment suitable for the operating system to take control. In essence, the bootloader bridges the gap between hardware startup and operating system execution.”\n\nSupporting Resources for Further Exploration:\n\nU-Boot documentation (practical bootloader reference): U-Boot Project\nBootlin Embedded Linux Training (Bootloader section): Bootloader Training PDF",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-understanding-the-program-counter-pc",
+    "href": "lecture02.html#slide-understanding-the-program-counter-pc",
+    "title": "3  Module 02",
+    "section": "3.5 Slide: Understanding the Program Counter (PC)",
+    "text": "3.5 Slide: Understanding the Program Counter (PC)\n\n\n\nProgram Counter\n\n\nNarrative:\n\n“Before diving deeper into system startup, let’s clarify the role of a critical CPU register called the Program Counter, or PC. The PC is essentially the CPU’s internal pointer, always indicating the memory address of the next instruction to execute.\nWith each executed instruction, the CPU automatically updates the PC to point sequentially to the next instruction. At power-up or after a reset, the PC doesn’t point randomly; instead, it’s set to a specific, known address— called the Reset Vector.\nUnderstanding the role of the Program Counter is essential because it directly influences how software execution flows within a CPU.”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-processor-startup-and-the-reset-vector",
+    "href": "lecture02.html#slide-processor-startup-and-the-reset-vector",
+    "title": "3  Module 02",
+    "section": "3.6 Slide: Processor Startup and the Reset Vector",
+    "text": "3.6 Slide: Processor Startup and the Reset Vector\n\n\n\nReset Vector\n\n\nNarrative:\n\n“Now that we understand the Program Counter, we can clearly see why the Reset Vector is essential.\nAt startup, the CPU automatically sets the PC to this Reset Vector— directing it to execute a small piece of initial software, typically part of the bootloader.\nThis startup code provides critical configuration details, such as where the main software is located, how to access it, and how to configure essential memory structures like the stack.\nAlthough the specifics may diﬀer between systems, this foundational sequence is consistent across virtually all embedded processors.”\nAdditional Resources for Narrative Development:\n\nComputer Organization and Design (RISC-V Edition) by Patterson and Hennessy, provides clear foundational explanations about program counters and CPU instruction execution flow.\nEmbedded System Design by Frank Vahid and Tony Givargis, detailing startup sequences and reset vectors clearly.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-scenario-1-typical-of-microcontrollers",
+    "href": "lecture02.html#slide-scenario-1-typical-of-microcontrollers",
+    "title": "3  Module 02",
+    "section": "3.7 Slide: Scenario 1, typical of microcontrollers",
+    "text": "3.7 Slide: Scenario 1, typical of microcontrollers\n\n\n\nMicrocontroller reset\n\n\nNarrative:\n\n“In embedded Linux systems, the exact startup scenario varies depending on hardware architecture.\nIn a microcontroller (MCU) system, all necessary software—including bootloader, operating system, and applications—typically resides in internal flash memory.\nThe software executes directly from this embedded storage, simplifying hardware design.\nEmbedded RAM serves only as temporary storage for active data, stack, and heap.”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware",
+    "href": "lecture02.html#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware",
+    "title": "3  Module 02",
+    "section": "3.8 Slide: Scenario 2, Typical of a more complex System-on-Chip hardware",
+    "text": "3.8 Slide: Scenario 2, Typical of a more complex System-on-Chip hardware\n\n\n\nSoC reset\n\n\nNarrative:\n\nConversely, System-on-Chip (SoC) systems often separate boot flash memory, which holds only the initial bootloader and reset vector, from a larger, external mass storage containing the full operating system, applications, and filesystem.\nAt startup, the bootloader loads the operating system and applications into external RAM, where they execute.\nThis scenario allows greater flexibility and scalability for complex embedded applications, but involves more intricate hardware design.”\n\nUseful Resources for Further Reference:\n\nBootlin Embedded Linux Training (Architecture): Bootlin Architecture Slides\n“Embedded Linux Primer” by Christopher Hallinan: Excellent details on these boot scenarios and hardware diﬀerences.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-bootloader-operations-initial-conditions-before-power-up",
+    "href": "lecture02.html#slide-bootloader-operations-initial-conditions-before-power-up",
+    "title": "3  Module 02",
+    "section": "3.9 Slide: Bootloader Operations: Initial Conditions (Before Power-up)",
+    "text": "3.9 Slide: Bootloader Operations: Initial Conditions (Before Power-up)\n\n\n\nSoC reset\n\n\nNarrative: - “Before the embedded device powers up, its bootloader and reset vector are stored in boot flash memory, and the operating system and applications reside in mass storage flash. - RAM memory, being volatile, is initially empty and uninitialized.”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-bootloader-operations-cpu-reset-vector-at-power-up",
+    "href": "lecture02.html#slide-bootloader-operations-cpu-reset-vector-at-power-up",
+    "title": "3  Module 02",
+    "section": "3.10 Slide: Bootloader Operations: CPU Reset Vector at Power-up",
+    "text": "3.10 Slide: Bootloader Operations: CPU Reset Vector at Power-up\n\n\n\nSoC reset\n\n\nNarrative:\n\n“At power-up, the CPU loads the reset vector into its Program Counter, directing it to execute the bootloader’s first instruction. This marks the start of the bootstrap process.”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-bootloader-operations-during-bootstrap",
+    "href": "lecture02.html#slide-bootloader-operations-during-bootstrap",
+    "title": "3  Module 02",
+    "section": "3.11 Slide: Bootloader Operations: During Bootstrap",
+    "text": "3.11 Slide: Bootloader Operations: During Bootstrap\n\n\n\nbootstrap\n\n\nNarrative: - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
     ]

@@ -137,6 +137,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slide-hardware-reference-model" id="toc-slide-hardware-reference-model" class="nav-link" data-scroll-target="#slide-hardware-reference-model"><span class="header-section-number">3.2</span> Slide: Hardware Reference Model</a></li>
   <li><a href="#slide-hardware-reference-implementations" id="toc-slide-hardware-reference-implementations" class="nav-link" data-scroll-target="#slide-hardware-reference-implementations"><span class="header-section-number">3.3</span> Slide: Hardware Reference Implementations</a></li>
   <li><a href="#slide-bootloader---key-responsibilities" id="toc-slide-bootloader---key-responsibilities" class="nav-link" data-scroll-target="#slide-bootloader---key-responsibilities"><span class="header-section-number">3.4</span> Slide: Bootloader - Key Responsibilities</a></li>
+  <li><a href="#slide-understanding-the-program-counter-pc" id="toc-slide-understanding-the-program-counter-pc" class="nav-link" data-scroll-target="#slide-understanding-the-program-counter-pc"><span class="header-section-number">3.5</span> Slide: Understanding the Program Counter (PC)</a></li>
+  <li><a href="#slide-processor-startup-and-the-reset-vector" id="toc-slide-processor-startup-and-the-reset-vector" class="nav-link" data-scroll-target="#slide-processor-startup-and-the-reset-vector"><span class="header-section-number">3.6</span> Slide: Processor Startup and the Reset Vector</a></li>
+  <li><a href="#slide-scenario-1-typical-of-microcontrollers" id="toc-slide-scenario-1-typical-of-microcontrollers" class="nav-link" data-scroll-target="#slide-scenario-1-typical-of-microcontrollers"><span class="header-section-number">3.7</span> Slide: Scenario 1, typical of microcontrollers</a></li>
+  <li><a href="#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware" id="toc-slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware" class="nav-link" data-scroll-target="#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware"><span class="header-section-number">3.8</span> Slide: Scenario 2, Typical of a more complex System-on-Chip hardware</a></li>
+  <li><a href="#slide-bootloader-operations-initial-conditions-before-power-up" id="toc-slide-bootloader-operations-initial-conditions-before-power-up" class="nav-link" data-scroll-target="#slide-bootloader-operations-initial-conditions-before-power-up"><span class="header-section-number">3.9</span> Slide: Bootloader Operations: Initial Conditions (Before Power-up)</a></li>
+  <li><a href="#slide-bootloader-operations-cpu-reset-vector-at-power-up" id="toc-slide-bootloader-operations-cpu-reset-vector-at-power-up" class="nav-link" data-scroll-target="#slide-bootloader-operations-cpu-reset-vector-at-power-up"><span class="header-section-number">3.10</span> Slide: Bootloader Operations: CPU Reset Vector at Power-up</a></li>
+  <li><a href="#slide-bootloader-operations-during-bootstrap" id="toc-slide-bootloader-operations-during-bootstrap" class="nav-link" data-scroll-target="#slide-bootloader-operations-during-bootstrap"><span class="header-section-number">3.11</span> Slide: Bootloader Operations: During Bootstrap</a></li>
   </ul>
 </nav>
     </div>
@@ -253,19 +260,111 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 <li></li>
 </ul>
-<p>##Slide: Understanding the Program Counter (PC)</p>
+</section>
+<section id="slide-understanding-the-program-counter-pc" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="slide-understanding-the-program-counter-pc"><span class="header-section-number">3.5</span> Slide: Understanding the Program Counter (PC)</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.012.png" class="img-fluid figure-img"></p>
 <figcaption>Program Counter</figcaption>
 </figure>
 </div>
-<p>Narrative:</p>
+<p><strong>Narrative:</strong></p>
 <ul>
 <li>“Before diving deeper into system startup, let’s clarify the role of a critical CPU register called the Program Counter, or PC. The PC is essentially the CPU’s internal pointer, always indicating the memory address of the next instruction to execute.</li>
 <li>With each executed instruction, the CPU automatically updates the PC to point sequentially to the next instruction. At power-up or after a reset, the PC doesn’t point randomly; instead, it’s set to a specific, known address— called the Reset Vector.</li>
 <li>Understanding the role of the Program Counter is essential because it directly influences how software execution flows within a CPU.”</li>
 </ul>
+</section>
+<section id="slide-processor-startup-and-the-reset-vector" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="slide-processor-startup-and-the-reset-vector"><span class="header-section-number">3.6</span> Slide: Processor Startup and the Reset Vector</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.013.png" class="img-fluid figure-img"></p>
+<figcaption>Reset Vector</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong></p>
+<ul>
+<li><p>“Now that we understand the Program Counter, we can clearly see why the Reset Vector is essential.</p></li>
+<li><p>At startup, the CPU automatically sets the PC to this Reset Vector— directing it to execute a small piece of initial software, typically part of the bootloader.</p></li>
+<li><p>This startup code provides critical configuration details, such as where the main software is located, how to access it, and how to configure essential memory structures like the stack.</p></li>
+<li><p>Although the specifics may diﬀer between systems, this foundational sequence is consistent across virtually all embedded processors.”</p></li>
+<li><p>Additional Resources for Narrative Development:</p>
+<ul>
+<li><p>Computer Organization and Design (RISC-V Edition) by Patterson and Hennessy, provides clear foundational explanations about program counters and CPU instruction execution flow.</p></li>
+<li><p>Embedded System Design by Frank Vahid and Tony Givargis, detailing startup sequences and reset vectors clearly.</p></li>
+</ul></li>
+</ul>
+</section>
+<section id="slide-scenario-1-typical-of-microcontrollers" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="slide-scenario-1-typical-of-microcontrollers"><span class="header-section-number">3.7</span> Slide: Scenario 1, typical of microcontrollers</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.014.png" class="img-fluid figure-img"></p>
+<figcaption>Microcontroller reset</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong>:</p>
+<ul>
+<li><p>“In embedded Linux systems, the exact startup scenario varies depending on hardware architecture.</p></li>
+<li><p>In a microcontroller (MCU) system, all necessary software—including bootloader, operating system, and applications—typically resides in internal flash memory.</p></li>
+<li><p>The software executes directly from this embedded storage, simplifying hardware design.</p></li>
+<li><p>Embedded RAM serves only as temporary storage for active data, stack, and heap.”</p></li>
+</ul>
+</section>
+<section id="slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware"><span class="header-section-number">3.8</span> Slide: Scenario 2, Typical of a more complex System-on-Chip hardware</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.015.png" class="img-fluid figure-img"></p>
+<figcaption>SoC reset</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong></p>
+<ul>
+<li>Conversely, System-on-Chip (SoC) systems often separate boot flash memory, which holds only the initial bootloader and reset vector, from a larger, external mass storage containing the full operating system, applications, and filesystem.</li>
+<li>At startup, the bootloader loads the operating system and applications into external RAM, where they execute.</li>
+<li>This scenario allows greater flexibility and scalability for complex embedded applications, but involves more intricate hardware design.”</li>
+</ul>
+<p><strong>Useful Resources for Further Reference:</strong></p>
+<ul>
+<li><p>Bootlin Embedded Linux Training (Architecture): Bootlin Architecture Slides</p></li>
+<li><p>“Embedded Linux Primer” by Christopher Hallinan: Excellent details on these boot scenarios and hardware diﬀerences.</p></li>
+</ul>
+</section>
+<section id="slide-bootloader-operations-initial-conditions-before-power-up" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="slide-bootloader-operations-initial-conditions-before-power-up"><span class="header-section-number">3.9</span> Slide: Bootloader Operations: Initial Conditions (Before Power-up)</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.016.png" class="img-fluid figure-img"></p>
+<figcaption>SoC reset</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong> - “Before the embedded device powers up, its bootloader and reset vector are stored in boot flash memory, and the operating system and applications reside in mass storage flash. - RAM memory, being volatile, is initially empty and uninitialized.”</p>
+</section>
+<section id="slide-bootloader-operations-cpu-reset-vector-at-power-up" class="level2" data-number="3.10">
+<h2 data-number="3.10" class="anchored" data-anchor-id="slide-bootloader-operations-cpu-reset-vector-at-power-up"><span class="header-section-number">3.10</span> Slide: Bootloader Operations: CPU Reset Vector at Power-up</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.017.png" class="img-fluid figure-img"></p>
+<figcaption>SoC reset</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong></p>
+<ul>
+<li>“At power-up, the CPU loads the reset vector into its Program Counter, directing it to execute the bootloader’s first instruction. This marks the start of the bootstrap process.”</li>
+</ul>
+</section>
+<section id="slide-bootloader-operations-during-bootstrap" class="level2" data-number="3.11">
+<h2 data-number="3.11" class="anchored" data-anchor-id="slide-bootloader-operations-during-bootstrap"><span class="header-section-number">3.11</span> Slide: Bootloader Operations: During Bootstrap</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.018.png" class="img-fluid figure-img"></p>
+<figcaption>bootstrap</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong> - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”</p>
 
 
 </section>

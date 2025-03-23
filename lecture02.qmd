@@ -71,12 +71,82 @@ Narrative: “Embedded systems consist of hardware components carefully selected
     -   Bootlin Embedded Linux Training (Bootloader section): Bootloader Training PDF
 -   
 
-##Slide: Understanding the Program Counter (PC)
+## Slide: Understanding the Program Counter (PC)
 
 ![Program Counter](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.012.png)
 
-Narrative:
+**Narrative:**
 
 -   “Before diving deeper into system startup, let’s clarify the role of a critical CPU register called the Program Counter, or PC. The PC is essentially the CPU’s internal pointer, always indicating the memory address of the next instruction to execute.
 -   With each executed instruction, the CPU automatically updates the PC to point sequentially to the next instruction. At power-up or after a reset, the PC doesn’t point randomly; instead, it’s set to a specific, known address— called the Reset Vector.
 -   Understanding the role of the Program Counter is essential because it directly influences how software execution flows within a CPU.”
+
+## Slide: Processor Startup and the Reset Vector
+
+![Reset Vector](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.013.png)
+
+**Narrative:**
+
+-   “Now that we understand the Program Counter, we can clearly see why the Reset Vector is essential.
+
+-   At startup, the CPU automatically sets the PC to this Reset Vector— directing it to execute a small piece of initial software, typically part of the bootloader.
+
+-   This startup code provides critical configuration details, such as where the main software is located, how to access it, and how to configure essential memory structures like the stack.
+
+-   Although the specifics may diﬀer between systems, this foundational sequence is consistent across virtually all embedded processors.”
+
+-   Additional Resources for Narrative Development:
+
+    -   Computer Organization and Design (RISC-V Edition) by Patterson and Hennessy, provides clear foundational explanations about program counters and CPU instruction execution flow.
+
+    -   Embedded System Design by Frank Vahid and Tony Givargis, detailing startup sequences and reset vectors clearly.
+
+## Slide: Scenario 1, typical of microcontrollers
+
+![Microcontroller reset](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.014.png)
+
+**Narrative**:
+
+-   “In embedded Linux systems, the exact startup scenario varies depending on hardware architecture.
+
+-   In a microcontroller (MCU) system, all necessary software—including bootloader, operating system, and applications—typically resides in internal flash memory.
+
+-   The software executes directly from this embedded storage, simplifying hardware design.
+
+-   Embedded RAM serves only as temporary storage for active data, stack, and heap."
+
+## Slide: Scenario 2, Typical of a more complex System-on-Chip hardware
+
+![SoC reset](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.015.png)
+
+**Narrative:**
+
+-   Conversely, System-on-Chip (SoC) systems often separate boot flash memory, which holds only the initial bootloader and reset vector, from a larger, external mass storage containing the full operating system, applications, and filesystem.
+-   At startup, the bootloader loads the operating system and applications into external RAM, where they execute.
+-   This scenario allows greater flexibility and scalability for complex embedded applications, but involves more intricate hardware design.”
+
+**Useful Resources for Further Reference:**
+
+-   Bootlin Embedded Linux Training (Architecture): Bootlin Architecture Slides
+
+-   “Embedded Linux Primer” by Christopher Hallinan: Excellent details on these boot scenarios and hardware diﬀerences.
+
+## Slide: Bootloader Operations: Initial Conditions (Before Power-up)
+
+![SoC reset](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.016.png)
+
+**Narrative:** - “Before the embedded device powers up, its bootloader and reset vector are stored in boot flash memory, and the operating system and applications reside in mass storage flash. - RAM memory, being volatile, is initially empty and uninitialized.”
+
+## Slide: Bootloader Operations: CPU Reset Vector at Power-up
+
+![SoC reset](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.017.png)
+
+**Narrative:**
+
+-   “At power-up, the CPU loads the reset vector into its Program Counter, directing it to execute the bootloader’s first instruction. This marks the start of the bootstrap process.”
+
+## Slide: Bootloader Operations: During Bootstrap
+
+![bootstrap](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.018.png)
+
+**Narrative:** - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”
