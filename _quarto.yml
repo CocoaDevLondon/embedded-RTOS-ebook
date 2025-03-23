@@ -1,0 +1,17 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Embedded RTOS Ebook"
+  author: "Brad Smith"
+  date: "2025"
+  chapters:
+    - index.qmd
+    - lecture01.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
+    
