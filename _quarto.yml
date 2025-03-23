@@ -9,6 +9,7 @@ book:
   chapters:
     - index.qmd
     - lecture01.qmd
+    - lecture02.qmd
 
 format:
   html:
