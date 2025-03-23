@@ -5,7 +5,11 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Embedded RTOS eBook
+
+Note: The following template text will be replaced when the individual lectures are complete
+
+...
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 

@@ -160,17 +160,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#fill-in-the-blank-answers" id="toc-fill-in-the-blank-answers" class="nav-link" data-scroll-target="#fill-in-the-blank-answers"><span class="header-section-number">3.20.2</span> Fill in the blank answers</a></li>
   <li><a href="#short-answers" id="toc-short-answers" class="nav-link" data-scroll-target="#short-answers"><span class="header-section-number">3.20.3</span> Short Answers</a></li>
   </ul></li>
-  <li><a href="#lecture-goals" id="toc-lecture-goals" class="nav-link" data-scroll-target="#lecture-goals"><span class="header-section-number">3.21</span> Lecture Goals</a></li>
-  <li><a href="#what-is-an-embedded-system" id="toc-what-is-an-embedded-system" class="nav-link" data-scroll-target="#what-is-an-embedded-system"><span class="header-section-number">3.22</span> What Is an Embedded System?</a></li>
-  <li><a href="#origins-of-embedded-system" id="toc-origins-of-embedded-system" class="nav-link" data-scroll-target="#origins-of-embedded-system"><span class="header-section-number">3.23</span> Origins of “Embedded System”</a></li>
-  <li><a href="#components-of-embedded-systems" id="toc-components-of-embedded-systems" class="nav-link" data-scroll-target="#components-of-embedded-systems"><span class="header-section-number">3.24</span> Components of Embedded Systems</a></li>
-  <li><a href="#why-linux" id="toc-why-linux" class="nav-link" data-scroll-target="#why-linux"><span class="header-section-number">3.25</span> Why Linux?</a></li>
-  <li><a href="#key-milestones-in-linux-development" id="toc-key-milestones-in-linux-development" class="nav-link" data-scroll-target="#key-milestones-in-linux-development"><span class="header-section-number">3.26</span> Key Milestones in Linux Development</a></li>
-  <li><a href="#linux-kernel-and-user-space" id="toc-linux-kernel-and-user-space" class="nav-link" data-scroll-target="#linux-kernel-and-user-space"><span class="header-section-number">3.27</span> Linux Kernel and User Space</a></li>
-  <li><a href="#linux-distributions" id="toc-linux-distributions" class="nav-link" data-scroll-target="#linux-distributions"><span class="header-section-number">3.28</span> Linux Distributions</a></li>
-  <li><a href="#choosing-a-linux-distribution" id="toc-choosing-a-linux-distribution" class="nav-link" data-scroll-target="#choosing-a-linux-distribution"><span class="header-section-number">3.29</span> Choosing a Linux Distribution</a></li>
-  <li><a href="#examples-of-linux-based-embedded-systems" id="toc-examples-of-linux-based-embedded-systems" class="nav-link" data-scroll-target="#examples-of-linux-based-embedded-systems"><span class="header-section-number">3.30</span> Examples of Linux-Based Embedded Systems</a></li>
-  <li><a href="#review-questions" id="toc-review-questions" class="nav-link" data-scroll-target="#review-questions"><span class="header-section-number">3.31</span> Review Questions</a></li>
+  <li><a href="#end-of-lecture-1" id="toc-end-of-lecture-1" class="nav-link" data-scroll-target="#end-of-lecture-1"><span class="header-section-number">3.21</span> End of Lecture 1</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -469,114 +459,8 @@ ul.task-list li input[type="checkbox"] {
 <p>An acceptable answer would note that hardware abstraction, provided by libraries and device drivers, hides the complexity of the hardware from application software. For example, using standardized system programs (like “ls”) lets developers write code independent of specific hardware details, improving portability and efficiency.</p>
 </section>
 </section>
-<section id="lecture-goals" class="level2" data-number="3.21">
-<h2 data-number="3.21" class="anchored" data-anchor-id="lecture-goals"><span class="header-section-number">3.21</span> Lecture Goals</h2>
-<ul>
-<li>Understand what constitutes an embedded system.</li>
-<li>Explore why Linux is integral to embedded systems.</li>
-<li>Establish a roadmap for the course ahead.</li>
-</ul>
-</section>
-<section id="what-is-an-embedded-system" class="level2" data-number="3.22">
-<h2 data-number="3.22" class="anchored" data-anchor-id="what-is-an-embedded-system"><span class="header-section-number">3.22</span> What Is an Embedded System?</h2>
-<p>An <strong>embedded system</strong> is a special-purpose computer designed to perform dedicated functions within a larger system, such as:</p>
-<ul>
-<li>Automotive control units</li>
-<li>Medical devices</li>
-<li>Consumer electronics</li>
-<li>Industrial automation controllers</li>
-</ul>
-</section>
-<section id="origins-of-embedded-system" class="level2" data-number="3.23">
-<h2 data-number="3.23" class="anchored" data-anchor-id="origins-of-embedded-system"><span class="header-section-number">3.23</span> Origins of “Embedded System”</h2>
-<p>The term originated in the 1960s–70s to describe computers embedded within larger electromechanical systems, notably:</p>
-<ul>
-<li>Missile guidance systems (e.g., Minuteman I, 1962)</li>
-<li>Industrial controllers</li>
-</ul>
-<p>They emphasize:</p>
-<ul>
-<li>Dedicated functionality</li>
-<li>Real-time constraints</li>
-<li>Limited resources</li>
-</ul>
-</section>
-<section id="components-of-embedded-systems" class="level2" data-number="3.24">
-<h2 data-number="3.24" class="anchored" data-anchor-id="components-of-embedded-systems"><span class="header-section-number">3.24</span> Components of Embedded Systems</h2>
-<p>Every embedded system has two main components:</p>
-<ol type="1">
-<li><strong>Application Software</strong>
-<ul>
-<li>Implements the specific functionalities of the device.</li>
-</ul></li>
-<li><strong>Platform (Hardware + Basic Software)</strong>
-<ul>
-<li>Provides foundational services for applications.</li>
-<li>Includes the operating system, device drivers, and system libraries.</li>
-</ul></li>
-</ol>
-</section>
-<section id="why-linux" class="level2" data-number="3.25">
-<h2 data-number="3.25" class="anchored" data-anchor-id="why-linux"><span class="header-section-number">3.25</span> Why Linux?</h2>
-<p>Linux is a popular choice for embedded systems due to:</p>
-<ul>
-<li>Open-source flexibility</li>
-<li>Robustness and reliability</li>
-<li>Extensive hardware support</li>
-<li>A large supporting community and ecosystem</li>
-</ul>
-</section>
-<section id="key-milestones-in-linux-development" class="level2" data-number="3.26">
-<h2 data-number="3.26" class="anchored" data-anchor-id="key-milestones-in-linux-development"><span class="header-section-number">3.26</span> Key Milestones in Linux Development</h2>
-<ul>
-<li><strong>1991</strong>: Linux announced by Linus Torvalds.</li>
-<li><strong>1994</strong>: Linux 1.0 released.</li>
-<li><strong>2003</strong>: Linux 2.6 scalability improvements.</li>
-<li><strong>2011–present</strong>: Continuous enhancements for embedded and server environments.</li>
-</ul>
-</section>
-<section id="linux-kernel-and-user-space" class="level2" data-number="3.27">
-<h2 data-number="3.27" class="anchored" data-anchor-id="linux-kernel-and-user-space"><span class="header-section-number">3.27</span> Linux Kernel and User Space</h2>
-<ul>
-<li><strong>Kernel</strong>: Core of Linux, managing resources, processes, and hardware.</li>
-<li><strong>User Space</strong>: Runs applications isolated from the kernel, ensuring stability.</li>
-</ul>
-</section>
-<section id="linux-distributions" class="level2" data-number="3.28">
-<h2 data-number="3.28" class="anchored" data-anchor-id="linux-distributions"><span class="header-section-number">3.28</span> Linux Distributions</h2>
-<p>Bundles kernel with system tools, examples include:</p>
-<ul>
-<li><strong>General-purpose</strong>: Ubuntu, Fedora</li>
-<li><strong>Embedded-specific</strong>: Yocto, Buildroot, OpenWrt</li>
-</ul>
-</section>
-<section id="choosing-a-linux-distribution" class="level2" data-number="3.29">
-<h2 data-number="3.29" class="anchored" data-anchor-id="choosing-a-linux-distribution"><span class="header-section-number">3.29</span> Choosing a Linux Distribution</h2>
-<p>Consider:</p>
-<ul>
-<li>Hardware support (e.g., ARM, x86, RISC-V)</li>
-<li>Community vs.&nbsp;commercial support</li>
-<li>Minimal vs.&nbsp;full-featured distributions</li>
-<li>Long-term stability and security updates</li>
-</ul>
-</section>
-<section id="examples-of-linux-based-embedded-systems" class="level2" data-number="3.30">
-<h2 data-number="3.30" class="anchored" data-anchor-id="examples-of-linux-based-embedded-systems"><span class="header-section-number">3.30</span> Examples of Linux-Based Embedded Systems</h2>
-<ul>
-<li>In-flight entertainment systems</li>
-<li>Retail Point-of-Sale systems (e.g., Tim Hortons)</li>
-<li>Gas station pumps (mission-critical reliability)</li>
-</ul>
-</section>
-<section id="review-questions" class="level2" data-number="3.31">
-<h2 data-number="3.31" class="anchored" data-anchor-id="review-questions"><span class="header-section-number">3.31</span> Review Questions</h2>
-<ol type="1">
-<li><p><strong>What is an embedded system?</strong><br>
-<em>A dedicated-purpose computer within a larger device.</em></p></li>
-<li><p><strong>Why use Linux in embedded systems?</strong><br>
-<em>Flexibility, reliability, hardware support, and extensive ecosystem.</em></p></li>
-</ol>
-<hr>
+<section id="end-of-lecture-1" class="level2" data-number="3.21">
+<h2 data-number="3.21" class="anchored" data-anchor-id="end-of-lecture-1"><span class="header-section-number">3.21</span> End of Lecture 1</h2>
 
 
 </section>
