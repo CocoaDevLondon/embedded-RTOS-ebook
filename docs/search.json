@@ -24,7 +24,7 @@
     "href": "lecture01.html",
     "title": "2  Module 1:",
     "section": "",
-    "text": "3 Embedded Linux Introduction",
+    "text": "2.1 Slide 1: Introduction",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -33,8 +33,8 @@
     "objectID": "lecture01.html#slide-1-introduction",
     "href": "lecture01.html#slide-1-introduction",
     "title": "2  Module 1:",
-    "section": "3.1 Slide 1: Introduction",
-    "text": "3.1 Slide 1: Introduction\n\nNarrative: “Welcome to the Embedded Linux course. In this lecture, we’ll introduce you to the basics of embedded systems, the role Linux plays in them, and how these concepts underpin more advanced topics such as real‑time operating systems. Today’s session sets the foundation for everything that follows.”\n\n\n\nSegue: “Let’s begin by taking an overview of the course structure to see where this lecture fits in.”",
+    "section": "",
+    "text": "Narrative: “Welcome to the Embedded Linux course. In this lecture, we’ll introduce you to the basics of embedded systems, the role Linux plays in them, and how these concepts underpin more advanced topics such as real‑time operating systems. Today’s session sets the foundation for everything that follows.”\n\n\n\nSegue: “Let’s begin by taking an overview of the course structure to see where this lecture fits in.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -43,8 +43,8 @@
     "objectID": "lecture01.html#slide-2-course-structure",
     "href": "lecture01.html#slide-2-course-structure",
     "title": "2  Module 1:",
-    "section": "3.2 Slide 2: Course Structure",
-    "text": "3.2 Slide 2: Course Structure\n\nNarrative: “These slides outline the modules we’ll cover over the duration of the course—from an introduction to embedded systems and Linux-based system components to deeper dives into kernel internals, build processes, and eventually, RTOS topics. Today’s lecture is designed to provide you with a strong base in understanding what an embedded system is, and why Linux is such an important part of that ecosystem.”   \nSegue: “Now that you know the roadmap, let’s explore the fundamentals by defining what an embedded system actually is.”",
+    "section": "2.2 Slide 2: Course Structure",
+    "text": "2.2 Slide 2: Course Structure\n\nNarrative: “These slides outline the modules we’ll cover over the duration of the course—from an introduction to embedded systems and Linux-based system components to deeper dives into kernel internals, build processes, and eventually, RTOS topics. Today’s lecture is designed to provide you with a strong base in understanding what an embedded system is, and why Linux is such an important part of that ecosystem.”   \nSegue: “Now that you know the roadmap, let’s explore the fundamentals by defining what an embedded system actually is.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -53,8 +53,8 @@
     "objectID": "lecture01.html#slide-3-what-is-an-embedded-system",
     "href": "lecture01.html#slide-3-what-is-an-embedded-system",
     "title": "2  Module 1:",
-    "section": "3.3 Slide 3: What Is an Embedded System?",
-    "text": "3.3 Slide 3: What Is an Embedded System?\n\nNarrative: “Here, we define an embedded system as a special-purpose computer designed to perform dedicated functions within a larger system—like an electronic control unit in an internal combustion engine. By focusing on a single purpose, these systems are optimized for efficiency, reliability, and cost-effectiveness.” \nSegue: “With that definition in mind, let’s now understand why the term ‘embedded system’ was coined in the first place.”",
+    "section": "2.3 Slide 3: What Is an Embedded System?",
+    "text": "2.3 Slide 3: What Is an Embedded System?\n\nNarrative: “Here, we define an embedded system as a special-purpose computer designed to perform dedicated functions within a larger system—like an electronic control unit in an internal combustion engine. By focusing on a single purpose, these systems are optimized for efficiency, reliability, and cost-effectiveness.” \nSegue: “With that definition in mind, let’s now understand why the term ‘embedded system’ was coined in the first place.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -63,8 +63,8 @@
     "objectID": "lecture01.html#slide-4-why-embedded-system",
     "href": "lecture01.html#slide-4-why-embedded-system",
     "title": "2  Module 1:",
-    "section": "3.4 Slide 4: Why “Embedded System”?",
-    "text": "3.4 Slide 4: Why “Embedded System”?\n\nNarrative: “This slide explains the origins of the term ‘embedded system.’ Coined in the 1960s and 70s, the term originally described computers that were ‘embedded’ within larger electromechanical systems. Early examples include missile guidance systems and industrial controllers, where real-time performance, dedicated functionality, and resource constraints were critical.”\n\n\n\nSegue: “Understanding this history helps us see the broad impact of embedded systems—next, we’ll look at the diverse domains where these systems are used.”",
+    "section": "2.4 Slide 4: Why “Embedded System”?",
+    "text": "2.4 Slide 4: Why “Embedded System”?\n\nNarrative: “This slide explains the origins of the term ‘embedded system.’ Coined in the 1960s and 70s, the term originally described computers that were ‘embedded’ within larger electromechanical systems. Early examples include missile guidance systems and industrial controllers, where real-time performance, dedicated functionality, and resource constraints were critical.”\n\n\n\nSegue: “Understanding this history helps us see the broad impact of embedded systems—next, we’ll look at the diverse domains where these systems are used.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -73,8 +73,8 @@
     "objectID": "lecture01.html#slide-5-embedded-systems-across-domains",
     "href": "lecture01.html#slide-5-embedded-systems-across-domains",
     "title": "2  Module 1:",
-    "section": "3.5 Slide 5: Embedded Systems Across Domains",
-    "text": "3.5 Slide 5: Embedded Systems Across Domains\n\nNarrative: “Embedded systems are everywhere—from automotive control systems and medical devices to consumer electronics and industrial automation. This slide shows a few key examples to highlight the range of applications, emphasizing that while the underlying principles remain the same, the implementation can vary widely based on specific requirements.”\n\n\n\nSegue: “Let’s now break down the two core components that make up every embedded system.”",
+    "section": "2.5 Slide 5: Embedded Systems Across Domains",
+    "text": "2.5 Slide 5: Embedded Systems Across Domains\n\nNarrative: “Embedded systems are everywhere—from automotive control systems and medical devices to consumer electronics and industrial automation. This slide shows a few key examples to highlight the range of applications, emphasizing that while the underlying principles remain the same, the implementation can vary widely based on specific requirements.”\n\n\n\nSegue: “Let’s now break down the two core components that make up every embedded system.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -83,8 +83,8 @@
     "objectID": "lecture01.html#slide-6-embedded-system-components-2-main-components",
     "href": "lecture01.html#slide-6-embedded-system-components-2-main-components",
     "title": "2  Module 1:",
-    "section": "3.6 Slide 6: Embedded System Components – 2 Main Components",
-    "text": "3.6 Slide 6: Embedded System Components – 2 Main Components\n\nNarrative: “Every embedded system comprises two major parts: the Application Software, which implements the specific functionality, and the Platform, which includes both the hardware and the basic software. Together, they ensure the system performs its dedicated task reliably.”\n\n\n\nSegue: “Next, we’ll discuss how the platform abstracts hardware details and manages resources through basic software functions.”",
+    "section": "2.6 Slide 6: Embedded System Components – 2 Main Components",
+    "text": "2.6 Slide 6: Embedded System Components – 2 Main Components\n\nNarrative: “Every embedded system comprises two major parts: the Application Software, which implements the specific functionality, and the Platform, which includes both the hardware and the basic software. Together, they ensure the system performs its dedicated task reliably.”\n\n\n\nSegue: “Next, we’ll discuss how the platform abstracts hardware details and manages resources through basic software functions.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -93,8 +93,8 @@
     "objectID": "lecture01.html#slide-7-hardware-abstraction-and-basic-software-functions",
     "href": "lecture01.html#slide-7-hardware-abstraction-and-basic-software-functions",
     "title": "2  Module 1:",
-    "section": "3.7 Slide 7: Hardware Abstraction and Basic Software Functions",
-    "text": "3.7 Slide 7: Hardware Abstraction and Basic Software Functions\n\nNarrative: “This slide focuses on how basic software provides an abstraction layer for hardware. It simplifies resource management by initializing hardware, managing I/O operations, and providing user-friendly interfaces like common system commands. This abstraction is critical for maintaining efficiency and portability.”\n\n\n\nSegue: “Building on this, we’ll now transition into the operating system’s role within the embedded system.”",
+    "section": "2.7 Slide 7: Hardware Abstraction and Basic Software Functions",
+    "text": "2.7 Slide 7: Hardware Abstraction and Basic Software Functions\n\nNarrative: “This slide focuses on how basic software provides an abstraction layer for hardware. It simplifies resource management by initializing hardware, managing I/O operations, and providing user-friendly interfaces like common system commands. This abstraction is critical for maintaining efficiency and portability.”\n\n\n\nSegue: “Building on this, we’ll now transition into the operating system’s role within the embedded system.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -103,8 +103,8 @@
     "objectID": "lecture01.html#slide-8-operating-system",
     "href": "lecture01.html#slide-8-operating-system",
     "title": "2  Module 1:",
-    "section": "3.8 Slide 8: Operating System",
-    "text": "3.8 Slide 8: Operating System\n\nNarrative: “Here we introduce the operating system as a vital component of the platform. The OS manages hardware resources, facilitates multitasking, and offers a structured environment for running application software. It also creates a clear separation between kernel and user space, ensuring system stability.”\n\n\n\nSegue: “Let’s now review the different operating system solutions available for embedded systems and how they cater to various needs.”",
+    "section": "2.8 Slide 8: Operating System",
+    "text": "2.8 Slide 8: Operating System\n\nNarrative: “Here we introduce the operating system as a vital component of the platform. The OS manages hardware resources, facilitates multitasking, and offers a structured environment for running application software. It also creates a clear separation between kernel and user space, ensuring system stability.”\n\n\n\nSegue: “Let’s now review the different operating system solutions available for embedded systems and how they cater to various needs.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -113,8 +113,8 @@
     "objectID": "lecture01.html#slide-9-operating-systems-for-embedded-systems",
     "href": "lecture01.html#slide-9-operating-systems-for-embedded-systems",
     "title": "2  Module 1:",
-    "section": "3.9 Slide 9: Operating Systems for Embedded Systems",
-    "text": "3.9 Slide 9: Operating Systems for Embedded Systems\n\nNarractive: “This slide compares different operating systems used in embedded systems. On one side, we have deterministic real‑time systems like ARM RTX or FreeRTOS, which are designed for strict timing and low latency. On the other, we have more feature-rich systems used in applications like in-vehicle infotainment, where advanced graphics and multi-core processing are required.”\n\n \n\nSegue: “Since Linux is one of the most popular choices for embedded systems, let’s now focus on its role in this ecosystem.”",
+    "section": "2.9 Slide 9: Operating Systems for Embedded Systems",
+    "text": "2.9 Slide 9: Operating Systems for Embedded Systems\n\nNarractive: “This slide compares different operating systems used in embedded systems. On one side, we have deterministic real‑time systems like ARM RTX or FreeRTOS, which are designed for strict timing and low latency. On the other, we have more feature-rich systems used in applications like in-vehicle infotainment, where advanced graphics and multi-core processing are required.”\n\n \n\nSegue: “Since Linux is one of the most popular choices for embedded systems, let’s now focus on its role in this ecosystem.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -123,8 +123,8 @@
     "objectID": "lecture01.html#slide-10-linux-in-embedded-systems",
     "href": "lecture01.html#slide-10-linux-in-embedded-systems",
     "title": "2  Module 1:",
-    "section": "3.10 Slide 10: Linux in Embedded Systems",
-    "text": "3.10 Slide 10: Linux in Embedded Systems\n\nNarractive: “Linux is widely adopted in the embedded world due to its robustness, flexibility, and open-source nature. It provides a rich environment for application development while supporting a wide array of hardware platforms. This popularity is driven by the community and the extensive ecosystem that supports continuous improvement.”\n\n\n\n\nSegue: “Before we explore the Linux kernel in detail, let’s take a brief look at the history of Linux to see how it evolved to meet the needs of embedded systems.”",
+    "section": "2.10 Slide 10: Linux in Embedded Systems",
+    "text": "2.10 Slide 10: Linux in Embedded Systems\n\nNarractive: “Linux is widely adopted in the embedded world due to its robustness, flexibility, and open-source nature. It provides a rich environment for application development while supporting a wide array of hardware platforms. This popularity is driven by the community and the extensive ecosystem that supports continuous improvement.”\n\n\n\n\nSegue: “Before we explore the Linux kernel in detail, let’s take a brief look at the history of Linux to see how it evolved to meet the needs of embedded systems.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -133,8 +133,8 @@
     "objectID": "lecture01.html#slide-11-a-brief-history-of-linux",
     "href": "lecture01.html#slide-11-a-brief-history-of-linux",
     "title": "2  Module 1:",
-    "section": "3.11 Slide 11: A Brief History of Linux",
-    "text": "3.11 Slide 11: A Brief History of Linux\n\nNarractive: “This slide outlines key milestones in Linux’s development—from Linus Torvalds’ initial announcement in 1991 to the evolution of Linux into a robust platform that supports everything from small embedded devices to large servers. This timeline helps us appreciate its maturity and versatility.”\n\n\n\nSegue: “Now that we understand its evolution, let’s dive into what the Linux kernel actually is and why it’s central to Linux-based systems.”",
+    "section": "2.11 Slide 11: A Brief History of Linux",
+    "text": "2.11 Slide 11: A Brief History of Linux\n\nNarractive: “This slide outlines key milestones in Linux’s development—from Linus Torvalds’ initial announcement in 1991 to the evolution of Linux into a robust platform that supports everything from small embedded devices to large servers. This timeline helps us appreciate its maturity and versatility.”\n\n\n\nSegue: “Now that we understand its evolution, let’s dive into what the Linux kernel actually is and why it’s central to Linux-based systems.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -143,8 +143,8 @@
     "objectID": "lecture01.html#slide-12-what-is-the-linux-kernel",
     "href": "lecture01.html#slide-12-what-is-the-linux-kernel",
     "title": "2  Module 1:",
-    "section": "3.12 Slide 12: What Is the Linux Kernel?",
-    "text": "3.12 Slide 12: What Is the Linux Kernel?\n\nNarractive: “The Linux kernel is the core of the operating system—it manages system resources, handles process scheduling, memory management, and provides essential services through system calls. Though it’s just one part of a complete operating system, its reliability and performance are critical to the overall system.”\n\n\n\nSegue: “This naturally brings us to the concept of Linux distributions, where the kernel is packaged with additional software components.”",
+    "section": "2.12 Slide 12: What Is the Linux Kernel?",
+    "text": "2.12 Slide 12: What Is the Linux Kernel?\n\nNarractive: “The Linux kernel is the core of the operating system—it manages system resources, handles process scheduling, memory management, and provides essential services through system calls. Though it’s just one part of a complete operating system, its reliability and performance are critical to the overall system.”\n\n\n\nSegue: “This naturally brings us to the concept of Linux distributions, where the kernel is packaged with additional software components.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -153,8 +153,8 @@
     "objectID": "lecture01.html#slide-13-what-are-linux-distributions",
     "href": "lecture01.html#slide-13-what-are-linux-distributions",
     "title": "2  Module 1:",
-    "section": "3.13 Slide 13: What Are Linux Distributions?",
-    "text": "3.13 Slide 13: What Are Linux Distributions?\n\nNarractive: “Linux distributions bundle the kernel with user-space applications, libraries, and management tools, forming complete operating systems. There’s a wide variety—from general-purpose distributions like Ubuntu to those tailored for embedded systems, such as Yocto or Buildroot—each designed to meet different needs.”\n\n\n\nSegue: “To select the right distribution for an embedded project, we need to consider several important factors.”",
+    "section": "2.13 Slide 13: What Are Linux Distributions?",
+    "text": "2.13 Slide 13: What Are Linux Distributions?\n\nNarractive: “Linux distributions bundle the kernel with user-space applications, libraries, and management tools, forming complete operating systems. There’s a wide variety—from general-purpose distributions like Ubuntu to those tailored for embedded systems, such as Yocto or Buildroot—each designed to meet different needs.”\n\n\n\nSegue: “To select the right distribution for an embedded project, we need to consider several important factors.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -163,8 +163,8 @@
     "objectID": "lecture01.html#slide-14-factors-to-consider-when-selecting-a-distro",
     "href": "lecture01.html#slide-14-factors-to-consider-when-selecting-a-distro",
     "title": "2  Module 1:",
-    "section": "3.14 Slide 14: Factors to Consider When Selecting a Distro",
-    "text": "3.14 Slide 14: Factors to Consider When Selecting a Distro\n\nNarractive: “When choosing a Linux distribution for an embedded project, factors such as release model, package management, hardware support, community vs. commercial backing, and the ability to customize and minimize the footprint are critical. These factors ensure that the distribution aligns with the system’s requirements and long-term support needs.”\n\n\n\nSegue: “Now, let’s shift our focus to how Linux release cycles work, as this impacts the stability and security of the system over time.”",
+    "section": "2.14 Slide 14: Factors to Consider When Selecting a Distro",
+    "text": "2.14 Slide 14: Factors to Consider When Selecting a Distro\n\nNarractive: “When choosing a Linux distribution for an embedded project, factors such as release model, package management, hardware support, community vs. commercial backing, and the ability to customize and minimize the footprint are critical. These factors ensure that the distribution aligns with the system’s requirements and long-term support needs.”\n\n\n\nSegue: “Now, let’s shift our focus to how Linux release cycles work, as this impacts the stability and security of the system over time.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -173,8 +173,8 @@
     "objectID": "lecture01.html#slide-15-understanding-the-release-cycles",
     "href": "lecture01.html#slide-15-understanding-the-release-cycles",
     "title": "2  Module 1:",
-    "section": "3.15 Slide 15: Understanding the Release Cycles",
-    "text": "3.15 Slide 15: Understanding the Release Cycles\n\nNarractive: “This slide explains the different Linux kernel release categories: Mainline, Release Candidates, Stable, and Long-Term Support (LTS). Each category serves a unique purpose, from introducing new features to ensuring long-term reliability, which is especially important in embedded and real-time applications.”\n\n\n\n\nSegue: “With this background, let’s now look at some concrete examples of Linux-based embedded systems in action.”",
+    "section": "2.15 Slide 15: Understanding the Release Cycles",
+    "text": "2.15 Slide 15: Understanding the Release Cycles\n\nNarractive: “This slide explains the different Linux kernel release categories: Mainline, Release Candidates, Stable, and Long-Term Support (LTS). Each category serves a unique purpose, from introducing new features to ensuring long-term reliability, which is especially important in embedded and real-time applications.”\n\n\n\n\nSegue: “With this background, let’s now look at some concrete examples of Linux-based embedded systems in action.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -183,8 +183,8 @@
     "objectID": "lecture01.html#slide-16-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
     "href": "lecture01.html#slide-16-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
     "title": "2  Module 1:",
-    "section": "3.16 Slide 16: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems",
-    "text": "3.16 Slide 16: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems\n\nNarractive: “In this example, we examine how Linux powers in-flight entertainment systems. These systems require a reliable, scalable operating system that can handle multimedia processing and provide robust network connectivity while operating in a constrained environment.”\n\n - Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”",
+    "section": "2.16 Slide 16: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems",
+    "text": "2.16 Slide 16: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems\n\nNarractive: “In this example, we examine how Linux powers in-flight entertainment systems. These systems require a reliable, scalable operating system that can handle multimedia processing and provide robust network connectivity while operating in a constrained environment.”\n\n - Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -193,8 +193,8 @@
     "objectID": "lecture01.html#slide-17-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
     "href": "lecture01.html#slide-17-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
     "title": "2  Module 1:",
-    "section": "3.17 Slide 17: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop",
-    "text": "3.17 Slide 17: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop\n\nNarractive: “Here, we explore an unconventional use of Linux in an embedded system at a café and bake shop. This example highlights how Linux-based systems can be tailored to manage point-of-sale operations, customer interfaces, and even inventory management—all on a cost-effective platform.”\n\n\n\nSegue: “Let’s now broaden our perspective with yet another real-world example.”",
+    "section": "2.17 Slide 17: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop",
+    "text": "2.17 Slide 17: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop\n\nNarractive: “Here, we explore an unconventional use of Linux in an embedded system at a café and bake shop. This example highlights how Linux-based systems can be tailored to manage point-of-sale operations, customer interfaces, and even inventory management—all on a cost-effective platform.”\n\n\n\nSegue: “Let’s now broaden our perspective with yet another real-world example.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -203,8 +203,8 @@
     "objectID": "lecture01.html#slide-18-linux-based-embedded-system-example-3-a-gas-station-pump",
     "href": "lecture01.html#slide-18-linux-based-embedded-system-example-3-a-gas-station-pump",
     "title": "2  Module 1:",
-    "section": "3.18 Slide 18: Linux-based Embedded System: Example 3 – A Gas Station Pump",
-    "text": "3.18 Slide 18: Linux-based Embedded System: Example 3 – A Gas Station Pump\n\nNarractive: “In our final example, we look at a gas station pump. This system must operate reliably in outdoor conditions, handle payment processing securely, and integrate with various hardware components. Linux’s modular design and robust driver support make it an ideal choice for such mission-critical applications.”\n\n\n\nSegue: “That concludes our introductory lecture. In our next session, we’ll begin to build on these fundamentals, diving deeper into the Linux-based embedded system component stack and, later on, specialized topics like real‑time operating systems.”",
+    "section": "2.18 Slide 18: Linux-based Embedded System: Example 3 – A Gas Station Pump",
+    "text": "2.18 Slide 18: Linux-based Embedded System: Example 3 – A Gas Station Pump\n\nNarractive: “In our final example, we look at a gas station pump. This system must operate reliably in outdoor conditions, handle payment processing securely, and integrate with various hardware components. Linux’s modular design and robust driver support make it an ideal choice for such mission-critical applications.”\n\n\n\nSegue: “That concludes our introductory lecture. In our next session, we’ll begin to build on these fundamentals, diving deeper into the Linux-based embedded system component stack and, later on, specialized topics like real‑time operating systems.”",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -213,8 +213,8 @@
     "objectID": "lecture01.html#mixed-format-test-bank-based-on-the-content-of-lecture01.",
     "href": "lecture01.html#mixed-format-test-bank-based-on-the-content-of-lecture01.",
     "title": "2  Module 1:",
-    "section": "3.19 Mixed-format test bank based on the content of Lecture01.",
-    "text": "3.19 Mixed-format test bank based on the content of Lecture01.\n\nUse these questions for quizzes, review sessions, or self‑assessment.\n\n\n3.19.1 Multiple Choice\n\nWhat is an embedded system?\n\n\nA general-purpose computer designed for a variety of tasks\nA computer integrated into a larger device to perform a dedicated function\nA high‑performance server used in data centers\nA desktop system with expandable hardware\n\n\nWhy was the term “embedded system” originally coined?\n\n\nTo describe computers optimized for multimedia processing\nTo refer to computers that are integrated into larger electromechanical systems with dedicated functions\nTo highlight systems with unlimited memory and processing power\nTo classify systems that run open‑source software exclusively\n\n\nWhich of the following is a primary component of an embedded system?\n\n\nApplication Software\nPlatform (including hardware and basic software)\nBoth A and B\nA general-purpose operating system without any hardware-specific support\n\n\nWhich Linux distribution or build system is particularly tailored for embedded systems requiring a minimal footprint?\n\n\nUbuntu\nFedora\nBuildroot/Yocto\nRed Hat Enterprise Linux\n\n\nWhat is the primary role of a bootloader in an embedded system?\n\n\nTo manage user applications and provide a graphical user interface\nTo initialize the hardware and load the operating system into RAM\nTo perform system updates automatically\nTo handle network communications exclusively\n\n\n\n3.19.2 Fill in the Blank\n\nAn embedded system is a __________‑purpose computer designed to perform dedicated functions within a larger device.\nThe Linux kernel is considered the “core” of an operating system because it manages hardware resources and provides essential services through __________.\nA __________ is a packaged collection that combines the Linux kernel with user‑space applications, libraries, and tools to form a complete operating system.\n\n\n\n3.19.3 Short Answer\n\nExplain why the term “embedded system” was coined and provide one early application example. Your answer should discuss how the term was introduced to describe computers built into larger electromechanical systems (e.g., missile guidance systems or industrial controllers) to perform specific tasks under resource and real‑time constraints. -\nDescribe two key differences between a Real‑Time Operating System (RTOS) and a general‑purpose operating system. Consider aspects like scheduling guarantees, interrupt latency, determinism, and overall resource constraints in your answer. - How does hardware abstraction contribute to the efficiency and portability of embedded systems? Provide one specific example mentioned in the lecture.\nYour answer might include discussion of the role of system libraries and device drivers (e.g., using a common system program interface like “ls” to abstract low‑level hardware details) and how this abstraction simplifies software development across different hardware platforms.",
+    "section": "2.19 Mixed-format test bank based on the content of Lecture01.",
+    "text": "2.19 Mixed-format test bank based on the content of Lecture01.\n\nUse these questions for quizzes, review sessions, or self‑assessment.\n\n\n2.19.1 Multiple Choice\n\nWhat is an embedded system?\n\n\nA general-purpose computer designed for a variety of tasks\nA computer integrated into a larger device to perform a dedicated function\nA high‑performance server used in data centers\nA desktop system with expandable hardware\n\n\nWhy was the term “embedded system” originally coined?\n\n\nTo describe computers optimized for multimedia processing\nTo refer to computers that are integrated into larger electromechanical systems with dedicated functions\nTo highlight systems with unlimited memory and processing power\nTo classify systems that run open‑source software exclusively\n\n\nWhich of the following is a primary component of an embedded system?\n\n\nApplication Software\nPlatform (including hardware and basic software)\nBoth A and B\nA general-purpose operating system without any hardware-specific support\n\n\nWhich Linux distribution or build system is particularly tailored for embedded systems requiring a minimal footprint?\n\n\nUbuntu\nFedora\nBuildroot/Yocto\nRed Hat Enterprise Linux\n\n\nWhat is the primary role of a bootloader in an embedded system?\n\n\nTo manage user applications and provide a graphical user interface\nTo initialize the hardware and load the operating system into RAM\nTo perform system updates automatically\nTo handle network communications exclusively\n\n\n\n2.19.2 Fill in the Blank\n\nAn embedded system is a __________‑purpose computer designed to perform dedicated functions within a larger device.\nThe Linux kernel is considered the “core” of an operating system because it manages hardware resources and provides essential services through __________.\nA __________ is a packaged collection that combines the Linux kernel with user‑space applications, libraries, and tools to form a complete operating system.\n\n\n\n2.19.3 Short Answer\n\nExplain why the term “embedded system” was coined and provide one early application example. Your answer should discuss how the term was introduced to describe computers built into larger electromechanical systems (e.g., missile guidance systems or industrial controllers) to perform specific tasks under resource and real‑time constraints. -\nDescribe two key differences between a Real‑Time Operating System (RTOS) and a general‑purpose operating system. Consider aspects like scheduling guarantees, interrupt latency, determinism, and overall resource constraints in your answer. - How does hardware abstraction contribute to the efficiency and portability of embedded systems? Provide one specific example mentioned in the lecture.\nYour answer might include discussion of the role of system libraries and device drivers (e.g., using a common system program interface like “ls” to abstract low‑level hardware details) and how this abstraction simplifies software development across different hardware platforms.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -223,8 +223,8 @@
     "objectID": "lecture01.html#answer-key-for-instructor-use",
     "href": "lecture01.html#answer-key-for-instructor-use",
     "title": "2  Module 1:",
-    "section": "3.20 Answer Key (For Instructor Use)",
-    "text": "3.20 Answer Key (For Instructor Use)\n\n3.20.1 Multiple choice answers:\n\nB B C C B\n\n\n\n3.20.2 Fill in the blank answers\nspecial\nsystem calls\nLinux distribution or distro\n\n\n3.20.3 Short Answers\nAnswer should mention that “embedded system” was coined to denote computers integrated into larger systems with dedicated tasks (e.g., missile guidance systems, industrial control), emphasizing real‑time and resource-constrained applications.\nAnswers may include: RTOS typically offers deterministic scheduling guarantees and minimal interrupt latency, while general‑purpose operating systems prioritize throughput and may not guarantee real‑time performance.\nAn acceptable answer would note that hardware abstraction, provided by libraries and device drivers, hides the complexity of the hardware from application software. For example, using standardized system programs (like “ls”) lets developers write code independent of specific hardware details, improving portability and efficiency.",
+    "section": "2.20 Answer Key (For Instructor Use)",
+    "text": "2.20 Answer Key (For Instructor Use)\n\n2.20.1 Multiple choice answers:\n\nB B C C B\n\n\n\n2.20.2 Fill in the blank answers\nspecial\nsystem calls\nLinux distribution or distro\n\n\n2.20.3 Short Answers\nAnswer should mention that “embedded system” was coined to denote computers integrated into larger systems with dedicated tasks (e.g., missile guidance systems, industrial control), emphasizing real‑time and resource-constrained applications.\nAnswers may include: RTOS typically offers deterministic scheduling guarantees and minimal interrupt latency, while general‑purpose operating systems prioritize throughput and may not guarantee real‑time performance.\nAn acceptable answer would note that hardware abstraction, provided by libraries and device drivers, hides the complexity of the hardware from application software. For example, using standardized system programs (like “ls”) lets developers write code independent of specific hardware details, improving portability and efficiency.",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -243,8 +243,8 @@
     "objectID": "lecture01.html#end-of-module-1",
     "href": "lecture01.html#end-of-module-1",
     "title": "2  Module 1:",
-    "section": "3.21 End of Module 1",
-    "text": "3.21 End of Module 1",
+    "section": "2.21 End of Module 1",
+    "text": "2.21 End of Module 1",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]

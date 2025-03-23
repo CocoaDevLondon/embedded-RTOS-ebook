@@ -5,8 +5,6 @@ format: html
 editor: visual
 ---
 
-# Embedded Linux Introduction
-
 ## Slide 1: Introduction
 
 -   Narrative: “Welcome to the Embedded Linux course. In this lecture, we’ll introduce you to the basics of embedded systems, the role Linux plays in them, and how these concepts underpin more advanced topics such as real‑time operating systems. Today’s session sets the foundation for everything that follows.”
