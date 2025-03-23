@@ -1,5 +1,5 @@
 ---
-title: "Lecture 1:"
+title: "Module1 1:"
 author: "Brad Smith"
 format: html
 editor: visual
@@ -40,7 +40,6 @@ editor: visual
 
 ![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.011.png)
 
-
 -   Segue: “Let’s now break down the two core components that make up every embedded system.”
 
 ## Slide 6: Embedded System Components – 2 Main Components
@@ -71,8 +70,7 @@ editor: visual
 
 -   Narractive: “This slide compares different operating systems used in embedded systems. On one side, we have deterministic real‑time systems like ARM RTX or FreeRTOS, which are designed for strict timing and low latency. On the other, we have more feature-rich systems used in applications like in-vehicle infotainment, where advanced graphics and multi-core processing are required.”
 
-![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.015.png)
-![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.016.png)
+![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.015.png) ![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.016.png)
 
 -   Segue: “Since Linux is one of the most popular choices for embedded systems, let’s now focus on its role in this ecosystem.”
 
@@ -100,8 +98,6 @@ editor: visual
 
 ![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.020.png)
 
-
-
 -   Segue: “This naturally brings us to the concept of Linux distributions, where the kernel is packaged with additional software components.”
 
 ## Slide 13: What Are Linux Distributions?
@@ -126,19 +122,15 @@ editor: visual
 
 ![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.023.png)
 
-
 ![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.024.png)
 
 -   Segue: “With this background, let’s now look at some concrete examples of Linux-based embedded systems in action.”
-
-
 
 ## Slide 16: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems
 
 -   Narractive: “In this example, we examine how Linux powers in-flight entertainment systems. These systems require a reliable, scalable operating system that can handle multimedia processing and provide robust network connectivity while operating in a constrained environment.”
 
-![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.025.png)
--   Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”
+![](images/lecture01/Lecture01_IntroToLinuxAndEmbeddedSystems.025.png) - Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”
 
 ## Slide 17: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop
 
@@ -207,23 +199,26 @@ Consider aspects like scheduling guarantees, interrupt latency, determinism, and
 
 -   Your answer might include discussion of the role of system libraries and device drivers (e.g., using a common system program interface like “ls” to abstract low‑level hardware details) and how this abstraction simplifies software development across different hardware platforms.
 
-## Answer Key (For Instructor Use) 
+## Answer Key (For Instructor Use)
+
 ### Multiple choice answers:
-- B B C C B 
+
+-   B B C C B
 
 ### Fill in the blank answers
-special 
 
-system calls 
+special
 
-Linux distribution or distro 
+system calls
+
+Linux distribution or distro
 
 ### Short Answers
-Answer should mention that “embedded system” was coined to denote computers integrated into larger systems with dedicated tasks (e.g., missile guidance systems, industrial control), emphasizing real‑time and resource-constrained applications. 
 
-Answers may include: RTOS typically offers deterministic scheduling guarantees and minimal interrupt latency, while general‑purpose operating systems prioritize throughput and may not guarantee real‑time performance. 
+Answer should mention that “embedded system” was coined to denote computers integrated into larger systems with dedicated tasks (e.g., missile guidance systems, industrial control), emphasizing real‑time and resource-constrained applications.
+
+Answers may include: RTOS typically offers deterministic scheduling guarantees and minimal interrupt latency, while general‑purpose operating systems prioritize throughput and may not guarantee real‑time performance.
 
 An acceptable answer would note that hardware abstraction, provided by libraries and device drivers, hides the complexity of the hardware from application software. For example, using standardized system programs (like “ls”) lets developers write code independent of specific hardware details, improving portability and efficiency.
 
-
-## End of Lecture 1
+## End of Module 1
