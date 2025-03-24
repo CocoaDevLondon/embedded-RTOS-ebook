@@ -288,7 +288,7 @@ Depending on the system, the root filesystem can reside entirely in RAM, especia
 
 ## Slide: Root File System Illustrated
 
-![Root File System Illustrated](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png)
+![Root File System Illustrated](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.033.png)
 
 **Narrative**
 
