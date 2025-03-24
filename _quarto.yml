@@ -1,18 +1,45 @@
 project:
-  type: book
-  output-dir: docs
+  type: website
 
-book:
-  title: "Embedded RTOS Ebook"
-  author: "Brad Smith"
-  date: "2025"
-  chapters:
-    - index.qmd
-    - lecture01.qmd
-    - lecture02.qmd
+website:
+  title: "Embedded RTOS Course eBook"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Modules"
+        menu:
+          - text: "Module 1: Processes Intro"
+            href: lecture01.qmd
+          - text: "Module 1 Slides"
+            href: module01/slides.qmd
+          - text: "Module 2: Anatomy of Linux Systems"
+            href: lecture02.qmd
+          - text: "Module 2 Slides"
+            href: module02/slides.qmd
+  sidebar:
+    style: floating
+    search: true
+    collapse-level: 2
+    contents:
+      - index.qmd
+      - section: "Module 1: Processes Intro"
+        contents:
+          - lecture01.qmd
+          - module01/slides.qmd
+      - section: "Module 2: Anatomy of Linux Systems"
+        contents:
+          - lecture02.qmd
+          - module02/slides.qmd
 
 format:
   html:
     theme: cosmo
-    code-fold: true
-    
+    toc: true
+    number-sections: true
+  revealjs:
+    theme: simple
+    slide-number: true
+    chalkboard: true
+    transition: fade
+    center: true

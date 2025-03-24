@@ -1,31 +1,40 @@
 ---
-title: "Embedded RTOS Ebook Introduction"
+title: "Embedded RTOS Course eBook"
 author: "Brad Smith"
 format: html
 editor: visual
 ---
 
-## Embedded RTOS eBook
+# Welcome to the Embedded RTOS eBook
 
-Note: The following template text will be replaced when the individual lectures are complete
+This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.
 
-...
+## 📚 About This eBook
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+You will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.
 
-## Running Code
+## 📖 Course Modules
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+-   [**Module 1: Introduction to Embedded Systems and Processes**](lecture01.qmd)
+-   [**Module 2: Anatomy of Linux-Based Embedded Systems**](lecture02.qmd)
+-   *(More modules coming soon)*
 
-```{r}
-1 + 1
-```
+## 🎥 Slides
 
-You can add options to executable code like this
+-   [**Module 1 Slides**](module01/slides.qmd)\
+-   [**Module 2 Slides**](module02/slides.qmd)
 
-```{r}
-#| echo: false
-2 * 2
-```
+## 🛠 Resources
 
-The `echo: false` option disables the printing of code (only output is displayed).
+-   [GitHub Repository](https://github.com/CocoaDevLondon/embedded-RTOS-ebook)
+-   Example device trees, scheduler demonstrations, and downloadable code samples.
+
+## 🤝 Feedback & Contributions
+
+This project is a living resource!\
+- Found a typo? Have a suggestion? Please feel free to [open an issue](https://github.com/CocoaDevLondon/embedded-RTOS-ebook/issues) or contribute via pull request.
+
+------------------------------------------------------------------------
+
+> **Maintained by Brad Smith**\
+> Fanshawe College — Electrical and Embedded Systems
