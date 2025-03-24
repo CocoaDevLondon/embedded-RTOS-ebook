@@ -144,6 +144,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slide-bootloader-operations-initial-conditions-before-power-up" id="toc-slide-bootloader-operations-initial-conditions-before-power-up" class="nav-link" data-scroll-target="#slide-bootloader-operations-initial-conditions-before-power-up"><span class="header-section-number">3.9</span> Slide: Bootloader Operations: Initial Conditions (Before Power-up)</a></li>
   <li><a href="#slide-bootloader-operations-cpu-reset-vector-at-power-up" id="toc-slide-bootloader-operations-cpu-reset-vector-at-power-up" class="nav-link" data-scroll-target="#slide-bootloader-operations-cpu-reset-vector-at-power-up"><span class="header-section-number">3.10</span> Slide: Bootloader Operations: CPU Reset Vector at Power-up</a></li>
   <li><a href="#slide-bootloader-operations-during-bootstrap" id="toc-slide-bootloader-operations-during-bootstrap" class="nav-link" data-scroll-target="#slide-bootloader-operations-during-bootstrap"><span class="header-section-number">3.11</span> Slide: Bootloader Operations: During Bootstrap</a></li>
+  <li><a href="#slide-bootloader-operations-transition-to-operating-system" id="toc-slide-bootloader-operations-transition-to-operating-system" class="nav-link" data-scroll-target="#slide-bootloader-operations-transition-to-operating-system"><span class="header-section-number">3.12</span> Slide: Bootloader Operations: Transition to Operating System</a></li>
+  <li><a href="#slide-role-of-the-linux-kernel-in-embedded-systems" id="toc-slide-role-of-the-linux-kernel-in-embedded-systems" class="nav-link" data-scroll-target="#slide-role-of-the-linux-kernel-in-embedded-systems"><span class="header-section-number">3.13</span> Slide: Role of the Linux Kernel in Embedded Systems</a></li>
+  <li><a href="#slide-linux-kernel-layered-operating-system-structure" id="toc-slide-linux-kernel-layered-operating-system-structure" class="nav-link" data-scroll-target="#slide-linux-kernel-layered-operating-system-structure"><span class="header-section-number">3.14</span> Slide: Linux Kernel: Layered Operating System Structure</a></li>
+  <li><a href="#slide-monolithic-kernel-advantages-and-disadvantages" id="toc-slide-monolithic-kernel-advantages-and-disadvantages" class="nav-link" data-scroll-target="#slide-monolithic-kernel-advantages-and-disadvantages"><span class="header-section-number">3.15</span> Slide: Monolithic Kernel: Advantages and Disadvantages</a></li>
+  <li><a href="#slide-device-tree-flexible-hardware-descriptions-for-the-kernel" id="toc-slide-device-tree-flexible-hardware-descriptions-for-the-kernel" class="nav-link" data-scroll-target="#slide-device-tree-flexible-hardware-descriptions-for-the-kernel"><span class="header-section-number">3.16</span> Slide: Device Tree: Flexible Hardware Descriptions for the Kernel</a></li>
+  <li><a href="#slide-system-programs-tools-built-on-kernel-services" id="toc-slide-system-programs-tools-built-on-kernel-services" class="nav-link" data-scroll-target="#slide-system-programs-tools-built-on-kernel-services"><span class="header-section-number">3.17</span> Slide: System Programs: Tools Built on Kernel Services</a></li>
+  <li><a href="#slide" id="toc-slide" class="nav-link" data-scroll-target="#slide"><span class="header-section-number">3.18</span> Slide:</a></li>
+  <li><a href="#slide-root-filesystem-the-foundation-of-user-space" id="toc-slide-root-filesystem-the-foundation-of-user-space" class="nav-link" data-scroll-target="#slide-root-filesystem-the-foundation-of-user-space"><span class="header-section-number">3.19</span> Slide: Root Filesystem: The Foundation of User Space</a></li>
+  <li><a href="#slide-root-file-system-illustrated" id="toc-slide-root-file-system-illustrated" class="nav-link" data-scroll-target="#slide-root-file-system-illustrated"><span class="header-section-number">3.20</span> Slide: Root File System Illustrated</a></li>
   </ul>
 </nav>
     </div>
@@ -365,6 +374,157 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <p><strong>Narrative:</strong> - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”</p>
+</section>
+<section id="slide-bootloader-operations-transition-to-operating-system" class="level2" data-number="3.12">
+<h2 data-number="3.12" class="anchored" data-anchor-id="slide-bootloader-operations-transition-to-operating-system"><span class="header-section-number">3.12</span> Slide: Bootloader Operations: Transition to Operating System</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.019.png" class="img-fluid figure-img"></p>
+<figcaption>Transition to OS execution</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong></p>
+<p>“At the end of the bootstrap process, the bootloader transfers control to the operating system, eﬀectively stepping aside as the OS takes responsibility for managing the system’s resources and starting user applications.”</p>
+<p><strong>Supporting Resources for Further Narrative Development:</strong></p>
+<p>- Bootlin Training: Embedded Linux Boot Sequence (Bootlin Slides <a href="https://bootlin.com/doc/training/sessions/online.embedded-linux.apr2024/embedded-linux-slides.pdf" title="Bootlin Slides">Bootlin Slides</a>)</p>
+<p>- Embedded Linux Primer by Christopher Hallinan: Detailed yet clear explanations of each step in the bootloader sequence.</p>
+</section>
+<section id="slide-role-of-the-linux-kernel-in-embedded-systems" class="level2" data-number="3.13">
+<h2 data-number="3.13" class="anchored" data-anchor-id="slide-role-of-the-linux-kernel-in-embedded-systems"><span class="header-section-number">3.13</span> Slide: Role of the Linux Kernel in Embedded Systems</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.021.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative:</strong></p>
+<ul>
+<li><p>“The Linux kernel is the core software component within embedded Linux systems, responsible for managing hardware resources efficiently and reliably.</p></li>
+<li><p>It ensures that multiple applications or processes can run smoothly by handling process creation, scheduling, and management. It also manages memory allocation and protection, ensuring programs don’t interfere with each other or the system itself.</p></li>
+<li><p>Device drivers within the kernel handle input and output with external devices—such as sensors or actuators.</p></li>
+<li><p>Moreover, the kernel provides critical support for organizing data through file systems, facilitates communication across networks, and allows processes to share information through inter-process communication.</p></li>
+<li><p>In essence, the kernel acts as the critical link between software applications and hardware.”</p></li>
+</ul>
+<p><strong>Supporting Resources for Further Narrative Development:</strong></p>
+<ul>
+<li>“Linux Kernel Development” by Robert Love: Clear explanations and diagrams about kernel responsibilities.</li>
+<li>Kernel documentation (<a href="https://www.kernel.org/doc/html/latest/" title="Kernel Documentation">kernel.org</a>): Kernel Documentation (Official resource with detailed explanations).</li>
+</ul>
+</section>
+<section id="slide-linux-kernel-layered-operating-system-structure" class="level2" data-number="3.14">
+<h2 data-number="3.14" class="anchored" data-anchor-id="slide-linux-kernel-layered-operating-system-structure"><span class="header-section-number">3.14</span> Slide: Linux Kernel: Layered Operating System Structure</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.022.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<ul>
+<li><p>“In Linux, the operating system is designed using a two-layer approach: kernel space and user space. Think of kernel space as the area of the operating system that directly manages your hardware—controlling memory, running processes, and handling all hardware interactions. User space, on the other hand, is where your applications and programs run. To maintain system stability, these applications don’t directly access hardware; instead, they ask the kernel to perform tasks on their behalf.</p></li>
+<li><p>The Linux kernel is described as a monolithic kernel, meaning it bundles all core functions into a single, large executable. This design makes the kernel very efficient but also means that a serious error in one kernel function can potentially impact the entire system.</p></li>
+<li><p>To improve flexibility and reduce this risk, Linux supports loadable kernel modules, small pieces of software you can add or remove while the system is running. These modules commonly provide new features such as additional device drivers, network support, or file system enhancements.”</p></li>
+<li><p>Resource: <a href="https://www.eeweb.com/embedded-linux-design-kernel-analysis/">embedded-linux-design-kernel-analysis</a></p></li>
+</ul>
+</section>
+<section id="slide-monolithic-kernel-advantages-and-disadvantages" class="level2" data-number="3.15">
+<h2 data-number="3.15" class="anchored" data-anchor-id="slide-monolithic-kernel-advantages-and-disadvantages"><span class="header-section-number">3.15</span> Slide: Monolithic Kernel: Advantages and Disadvantages</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.023.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<ul>
+<li><p>“The monolithic design of the Linux kernel offers significant advantages, primarily through its strong separation between the user applications and kernel-level processes. Because of this separation, errors in user applications typically do not affect the stability or security of the kernel itself—ensuring system reliability.</p></li>
+<li><p>However, the same tightly integrated nature also introduces a notable disadvantage: a bug or error within any part of the kernel, such as a newly installed device driver or network component, can potentially destabilize or crash the entire operating system. This risk necessitates meticulous design, rigorous testing, and careful management of kernel-level software changes.”</p></li>
+</ul>
+<p><strong>Additional Resources for Further Reading:</strong></p>
+<ul>
+<li><p>“Understanding the Linux Kernel” by Daniel P. Bovet and Marco Cesati for in-depth exploration of monolithic kernels.</p></li>
+<li><p>“Linux Kernel Development” by Robert Love (excellent for clear explanations of kernel architecture implications).</p></li>
+</ul>
+</section>
+<section id="slide-device-tree-flexible-hardware-descriptions-for-the-kernel" class="level2" data-number="3.16">
+<h2 data-number="3.16" class="anchored" data-anchor-id="slide-device-tree-flexible-hardware-descriptions-for-the-kernel"><span class="header-section-number">3.16</span> Slide: Device Tree: Flexible Hardware Descriptions for the Kernel</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.025.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<p>“The Linux kernel needs to understand the system’s hardware to load the correct drivers and manage resources. While one approach would be to hardcode this hardware information directly into the kernel source code, that method becomes cumbersome and time-consuming if the hardware changes, as it requires kernel recompilation.</p>
+<p>The more flexible and modern approach is to use a device tree. This involves describing the hardware in a Device Tree Source (DTS) file, which is then compiled into a binary Device Tree Blob (DTB). The bootloader passes this DTB to the kernel at startup, allowing the kernel to dynamically understand the hardware setup. This method makes it easy to update or support new hardware without rebuilding the kernel — simply modify the DTS and recompile.” <img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.026.png" class="img-fluid" alt="kernel"></p>
+<p><strong>Helpful Resource:</strong></p>
+<p>• Linux Kernel Device Tree documentation: <a href="https://www.kernel.org/doc/html/latest/devicetree/usage-model.html" class="uri">https://www.kernel.org/doc/html/latest/devicetree/usage-model.html</a></p>
+<p><a href="https://medium.com/@boutnaru/the-linux-concept-journey-devicetree-58b36eee5387">The Linux Concept Journey — DeviceTree</a></p>
+</section>
+<section id="slide-system-programs-tools-built-on-kernel-services" class="level2" data-number="3.17">
+<h2 data-number="3.17" class="anchored" data-anchor-id="slide-system-programs-tools-built-on-kernel-services"><span class="header-section-number">3.17</span> Slide: System Programs: Tools Built on Kernel Services</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.028.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<p>“System programs are the essential tools that sit between user applications and the kernel, providing convenient interfaces for both development and system management. These programs rely on kernel services but make interacting with them much more user-friendly.</p>
+<p>For instance, system programs include utilities that show status information about the system, such as top or uptime. They also offer file modification tools, like text editors and file manipulation commands. Developers benefit from programming support tools like compilers and language interpreters.</p>
+<p>Furthermore, system programs help with program loading and execution, using tools like shells (bash) or service managers (systemd). For networking and communication, utilities like ping and ssh allow interaction with remote systems. Finally, many lightweight applications, like curl or tools included in BusyBox, help perform everyday tasks in embedded systems.”</p>
+<p><strong>Resources</strong></p>
+<p>Resource for Reference:</p>
+<p>•<a href="https://www.busybox.net/about.html">BusyBox website</a> (a great real-world example of system programs in embedded Linux):</p>
+<p>• “Linux Command Line and Shell Scripting Bible” by Richard Blum — can help build student familiarity with system programs.</p>
+</section>
+<section id="slide" class="level2" data-number="3.18">
+<h2 data-number="3.18" class="anchored" data-anchor-id="slide"><span class="header-section-number">3.18</span> Slide:</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<p>“At the top of the software stack sits the application layer, which is where the embedded system’s purpose comes to life. Whether the device is a home router, a smart thermostat, or a piece of lab equipment, the application software is what users interact with. It relies on system programs and kernel services to access hardware and perform tasks.</p>
+<p>For example, in a Network Attached Storage (NAS) device, the application manages file sharing and disk operations. In an automotive system, the infotainment application handles touch input, navigation, and media playback. Applications can be custom-built for unique products or adapted from open-source solutions, and they define what the system actually does for the end user.”</p>
+<p><strong>Resources</strong></p>
+<pre><code>•   Case studies on open-source automotive Linux (Automotive Grade Linux):</code></pre>
+<p>https://www.automotivelinux.org/</p>
+<pre><code>•   Yocto Project and embedded applications examples:</code></pre>
+<p>https://www.yoctoproject.org/</p>
+</section>
+<section id="slide-root-filesystem-the-foundation-of-user-space" class="level2" data-number="3.19">
+<h2 data-number="3.19" class="anchored" data-anchor-id="slide-root-filesystem-the-foundation-of-user-space"><span class="header-section-number">3.19</span> Slide: Root Filesystem: The Foundation of User Space</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png" class="img-fluid figure-img"></p>
+<figcaption>kernel</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong> “Once the kernel has completed its initial setup, it needs a structured environment where system programs and applications can run. This is the role of the root filesystem — it contains configuration files, system utilities, libraries, and applications that define the system’s user-space environment.</p>
+<p>At startup, the kernel looks for a file called init, which becomes the first user-space process, kicking off system initialization and launching essential services.</p>
+<p>Depending on the system, the root filesystem can reside entirely in RAM, especially in development setups where no persistent storage is needed. For production devices, it typically resides in persistent storage like flash memory. In some development workflows or specialized systems, the root filesystem may be loaded over the network, allowing rapid iteration and debugging without flashing the device repeatedly.”</p>
+</section>
+<section id="slide-root-file-system-illustrated" class="level2" data-number="3.20">
+<h2 data-number="3.20" class="anchored" data-anchor-id="slide-root-file-system-illustrated"><span class="header-section-number">3.20</span> Slide: Root File System Illustrated</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png" class="img-fluid figure-img"></p>
+<figcaption>Root File System Illustrated</figcaption>
+</figure>
+</div>
+<p><strong>Narrative</strong></p>
+<p>*“Now that we’ve discussed what the root filesystem is and why it’s critical, let’s take a visual tour of its structure.</p>
+<p>At the top level, we have the root directory, represented by a single slash /. Underneath it, the filesystem is organized into directories, each serving a specific role.</p>
+<p>First, /bin contains essential user command binaries — these are the core utilities, like cp, ls, and bash, that are needed even if no other software is available.</p>
+<p>Next, /etc holds configuration files for the system — think of network settings, hostnames, and startup scripts.</p>
+<p>/sbin is where we find essential system binaries that administrators use for critical tasks like partitioning disks or configuring the network.</p>
+<p>The /usr directory holds application support data, libraries, and binaries for user applications, while /var stores variable data files such as logs, cache files, and print spools that change as the system runs.</p>
+<p>We also have special directories: • /dev contains device files that represent hardware. • /home is where user files reside. • /lib holds shared libraries and kernel modules. • /proc is a virtual filesystem that represents kernel and process information in real time. • /root is the root user’s home directory.</p>
+<p>Finally, directories like /mnt and /opt are for mounting temporary filesystems and installing optional applications.</p>
+<p>This structure is universal across Linux systems — including embedded Linux — and understanding it is essential for managing, troubleshooting, and customizing your devices. In future labs, we’ll navigate these directories to explore and modify real embedded Linux systems.”*</p>
 
 
 </section>

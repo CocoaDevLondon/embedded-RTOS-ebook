@@ -24,7 +24,7 @@
     "href": "lecture01.html",
     "title": "2  Module 1:",
     "section": "",
-    "text": "2.1 Slide 1: Introduction",
+    "text": "2.1 Slide: Introduction",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
@@ -387,6 +387,276 @@
     "text": "3.11 Slide: Bootloader Operations: During Bootstrap\n\n\n\nbootstrap\n\n\nNarrative: - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-bootloader-operations-transition-to-operating-system",
+    "href": "lecture02.html#slide-bootloader-operations-transition-to-operating-system",
+    "title": "3  Module 02",
+    "section": "3.12 Slide: Bootloader Operations: Transition to Operating System",
+    "text": "3.12 Slide: Bootloader Operations: Transition to Operating System\n\n\n\nTransition to OS execution\n\n\nNarrative:\n“At the end of the bootstrap process, the bootloader transfers control to the operating system, eﬀectively stepping aside as the OS takes responsibility for managing the system’s resources and starting user applications.”\nSupporting Resources for Further Narrative Development:\n- Bootlin Training: Embedded Linux Boot Sequence (Bootlin Slides Bootlin Slides)\n- Embedded Linux Primer by Christopher Hallinan: Detailed yet clear explanations of each step in the bootloader sequence.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-role-of-the-linux-kernel-in-embedded-systems",
+    "href": "lecture02.html#slide-role-of-the-linux-kernel-in-embedded-systems",
+    "title": "3  Module 02",
+    "section": "3.13 Slide: Role of the Linux Kernel in Embedded Systems",
+    "text": "3.13 Slide: Role of the Linux Kernel in Embedded Systems\n\n\n\nkernel\n\n\nNarrative:\n\n“The Linux kernel is the core software component within embedded Linux systems, responsible for managing hardware resources efficiently and reliably.\nIt ensures that multiple applications or processes can run smoothly by handling process creation, scheduling, and management. It also manages memory allocation and protection, ensuring programs don’t interfere with each other or the system itself.\nDevice drivers within the kernel handle input and output with external devices—such as sensors or actuators.\nMoreover, the kernel provides critical support for organizing data through file systems, facilitates communication across networks, and allows processes to share information through inter-process communication.\nIn essence, the kernel acts as the critical link between software applications and hardware.”\n\nSupporting Resources for Further Narrative Development:\n\n“Linux Kernel Development” by Robert Love: Clear explanations and diagrams about kernel responsibilities.\nKernel documentation (kernel.org): Kernel Documentation (Official resource with detailed explanations).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-linux-kernel-layered-operating-system-structure",
+    "href": "lecture02.html#slide-linux-kernel-layered-operating-system-structure",
+    "title": "3  Module 02",
+    "section": "3.14 Slide: Linux Kernel: Layered Operating System Structure",
+    "text": "3.14 Slide: Linux Kernel: Layered Operating System Structure\n\n\n\nkernel\n\n\nNarrative\n\n“In Linux, the operating system is designed using a two-layer approach: kernel space and user space. Think of kernel space as the area of the operating system that directly manages your hardware—controlling memory, running processes, and handling all hardware interactions. User space, on the other hand, is where your applications and programs run. To maintain system stability, these applications don’t directly access hardware; instead, they ask the kernel to perform tasks on their behalf.\nThe Linux kernel is described as a monolithic kernel, meaning it bundles all core functions into a single, large executable. This design makes the kernel very efficient but also means that a serious error in one kernel function can potentially impact the entire system.\nTo improve flexibility and reduce this risk, Linux supports loadable kernel modules, small pieces of software you can add or remove while the system is running. These modules commonly provide new features such as additional device drivers, network support, or file system enhancements.”\nResource: embedded-linux-design-kernel-analysis",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-monolithic-kernel-advantages-and-disadvantages",
+    "href": "lecture02.html#slide-monolithic-kernel-advantages-and-disadvantages",
+    "title": "3  Module 02",
+    "section": "3.15 Slide: Monolithic Kernel: Advantages and Disadvantages",
+    "text": "3.15 Slide: Monolithic Kernel: Advantages and Disadvantages\n\n\n\nkernel\n\n\nNarrative\n\n“The monolithic design of the Linux kernel offers significant advantages, primarily through its strong separation between the user applications and kernel-level processes. Because of this separation, errors in user applications typically do not affect the stability or security of the kernel itself—ensuring system reliability.\nHowever, the same tightly integrated nature also introduces a notable disadvantage: a bug or error within any part of the kernel, such as a newly installed device driver or network component, can potentially destabilize or crash the entire operating system. This risk necessitates meticulous design, rigorous testing, and careful management of kernel-level software changes.”\n\nAdditional Resources for Further Reading:\n\n“Understanding the Linux Kernel” by Daniel P. Bovet and Marco Cesati for in-depth exploration of monolithic kernels.\n“Linux Kernel Development” by Robert Love (excellent for clear explanations of kernel architecture implications).",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-device-tree-flexible-hardware-descriptions-for-the-kernel",
+    "href": "lecture02.html#slide-device-tree-flexible-hardware-descriptions-for-the-kernel",
+    "title": "3  Module 02",
+    "section": "3.16 Slide: Device Tree: Flexible Hardware Descriptions for the Kernel",
+    "text": "3.16 Slide: Device Tree: Flexible Hardware Descriptions for the Kernel\n\n\n\nkernel\n\n\nNarrative\n“The Linux kernel needs to understand the system’s hardware to load the correct drivers and manage resources. While one approach would be to hardcode this hardware information directly into the kernel source code, that method becomes cumbersome and time-consuming if the hardware changes, as it requires kernel recompilation.\nThe more flexible and modern approach is to use a device tree. This involves describing the hardware in a Device Tree Source (DTS) file, which is then compiled into a binary Device Tree Blob (DTB). The bootloader passes this DTB to the kernel at startup, allowing the kernel to dynamically understand the hardware setup. This method makes it easy to update or support new hardware without rebuilding the kernel — simply modify the DTS and recompile.” \nHelpful Resource:\n• Linux Kernel Device Tree documentation: https://www.kernel.org/doc/html/latest/devicetree/usage-model.html\nThe Linux Concept Journey — DeviceTree",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-system-programs-tools-built-on-kernel-services",
+    "href": "lecture02.html#slide-system-programs-tools-built-on-kernel-services",
+    "title": "3  Module 02",
+    "section": "3.17 Slide: System Programs: Tools Built on Kernel Services",
+    "text": "3.17 Slide: System Programs: Tools Built on Kernel Services\n\n\n\nkernel\n\n\nNarrative\n“System programs are the essential tools that sit between user applications and the kernel, providing convenient interfaces for both development and system management. These programs rely on kernel services but make interacting with them much more user-friendly.\nFor instance, system programs include utilities that show status information about the system, such as top or uptime. They also offer file modification tools, like text editors and file manipulation commands. Developers benefit from programming support tools like compilers and language interpreters.\nFurthermore, system programs help with program loading and execution, using tools like shells (bash) or service managers (systemd). For networking and communication, utilities like ping and ssh allow interaction with remote systems. Finally, many lightweight applications, like curl or tools included in BusyBox, help perform everyday tasks in embedded systems.”\nResources\nResource for Reference:\n•BusyBox website (a great real-world example of system programs in embedded Linux):\n• “Linux Command Line and Shell Scripting Bible” by Richard Blum — can help build student familiarity with system programs.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide",
+    "href": "lecture02.html#slide",
+    "title": "3  Module 02",
+    "section": "3.18 Slide:",
+    "text": "3.18 Slide:\n\n\n\nkernel\n\n\nNarrative\n“At the top of the software stack sits the application layer, which is where the embedded system’s purpose comes to life. Whether the device is a home router, a smart thermostat, or a piece of lab equipment, the application software is what users interact with. It relies on system programs and kernel services to access hardware and perform tasks.\nFor example, in a Network Attached Storage (NAS) device, the application manages file sharing and disk operations. In an automotive system, the infotainment application handles touch input, navigation, and media playback. Applications can be custom-built for unique products or adapted from open-source solutions, and they define what the system actually does for the end user.”\nResources\n•   Case studies on open-source automotive Linux (Automotive Grade Linux):\nhttps://www.automotivelinux.org/\n•   Yocto Project and embedded applications examples:\nhttps://www.yoctoproject.org/",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-root-filesystem-the-foundation-of-user-space",
+    "href": "lecture02.html#slide-root-filesystem-the-foundation-of-user-space",
+    "title": "3  Module 02",
+    "section": "3.19 Slide: Root Filesystem: The Foundation of User Space",
+    "text": "3.19 Slide: Root Filesystem: The Foundation of User Space\n\n\n\nkernel\n\n\nNarrative “Once the kernel has completed its initial setup, it needs a structured environment where system programs and applications can run. This is the role of the root filesystem — it contains configuration files, system utilities, libraries, and applications that define the system’s user-space environment.\nAt startup, the kernel looks for a file called init, which becomes the first user-space process, kicking off system initialization and launching essential services.\nDepending on the system, the root filesystem can reside entirely in RAM, especially in development setups where no persistent storage is needed. For production devices, it typically resides in persistent storage like flash memory. In some development workflows or specialized systems, the root filesystem may be loaded over the network, allowing rapid iteration and debugging without flashing the device repeatedly.”",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#slide-root-file-system-illustrated",
+    "href": "lecture02.html#slide-root-file-system-illustrated",
+    "title": "3  Module 02",
+    "section": "3.20 Slide: Root File System Illustrated",
+    "text": "3.20 Slide: Root File System Illustrated\n\n\n\nRoot File System Illustrated\n\n\nNarrative\n*“Now that we’ve discussed what the root filesystem is and why it’s critical, let’s take a visual tour of its structure.\nAt the top level, we have the root directory, represented by a single slash /. Underneath it, the filesystem is organized into directories, each serving a specific role.\nFirst, /bin contains essential user command binaries — these are the core utilities, like cp, ls, and bash, that are needed even if no other software is available.\nNext, /etc holds configuration files for the system — think of network settings, hostnames, and startup scripts.\n/sbin is where we find essential system binaries that administrators use for critical tasks like partitioning disks or configuring the network.\nThe /usr directory holds application support data, libraries, and binaries for user applications, while /var stores variable data files such as logs, cache files, and print spools that change as the system runs.\nWe also have special directories: • /dev contains device files that represent hardware. • /home is where user files reside. • /lib holds shared libraries and kernel modules. • /proc is a virtual filesystem that represents kernel and process information in real time. • /root is the root user’s home directory.\nFinally, directories like /mnt and /opt are for mounting temporary filesystems and installing optional applications.\nThis structure is universal across Linux systems — including embedded Linux — and understanding it is essential for managing, troubleshooting, and customizing your devices. In future labs, we’ll navigate these directories to explore and modify real embedded Linux systems.”*",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-introduction",
+    "href": "lecture01.html#slide-introduction",
+    "title": "2  Module 1:",
+    "section": "",
+    "text": "Narrative: “Welcome to the Embedded Linux course. In this lecture, we’ll introduce you to the basics of embedded systems, the role Linux plays in them, and how these concepts underpin more advanced topics such as real‑time operating systems. Today’s session sets the foundation for everything that follows.”\n\n\n\nSegue: “Let’s begin by taking an overview of the course structure to see where this lecture fits in.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-course-structure",
+    "href": "lecture01.html#slide-course-structure",
+    "title": "2  Module 1:",
+    "section": "2.2 Slide: Course Structure",
+    "text": "2.2 Slide: Course Structure\n\nNarrative: “These slides outline the modules we’ll cover over the duration of the course—from an introduction to embedded systems and Linux-based system components to deeper dives into kernel internals, build processes, and eventually, RTOS topics. Today’s lecture is designed to provide you with a strong base in understanding what an embedded system is, and why Linux is such an important part of that ecosystem.”   \nSegue: “Now that you know the roadmap, let’s explore the fundamentals by defining what an embedded system actually is.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-what-is-an-embedded-system",
+    "href": "lecture01.html#slide-what-is-an-embedded-system",
+    "title": "2  Module 1:",
+    "section": "2.3 Slide: What Is an Embedded System?",
+    "text": "2.3 Slide: What Is an Embedded System?\n\nNarrative: “Here, we define an embedded system as a special-purpose computer designed to perform dedicated functions within a larger system—like an electronic control unit in an internal combustion engine. By focusing on a single purpose, these systems are optimized for efficiency, reliability, and cost-effectiveness.” \nSegue: “With that definition in mind, let’s now understand why the term ‘embedded system’ was coined in the first place.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-why-embedded-system",
+    "href": "lecture01.html#slide-why-embedded-system",
+    "title": "2  Module 1:",
+    "section": "2.4 Slide: Why “Embedded System”?",
+    "text": "2.4 Slide: Why “Embedded System”?\n\nNarrative: “This slide explains the origins of the term ‘embedded system.’ Coined in the 1960s and 70s, the term originally described computers that were ‘embedded’ within larger electromechanical systems. Early examples include missile guidance systems and industrial controllers, where real-time performance, dedicated functionality, and resource constraints were critical.”\n\n\n\nSegue: “Understanding this history helps us see the broad impact of embedded systems—next, we’ll look at the diverse domains where these systems are used.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-embedded-systems-across-domains",
+    "href": "lecture01.html#slide-embedded-systems-across-domains",
+    "title": "2  Module 1:",
+    "section": "2.5 Slide: Embedded Systems Across Domains",
+    "text": "2.5 Slide: Embedded Systems Across Domains\n\nNarrative: “Embedded systems are everywhere—from automotive control systems and medical devices to consumer electronics and industrial automation. This slide shows a few key examples to highlight the range of applications, emphasizing that while the underlying principles remain the same, the implementation can vary widely based on specific requirements.”\n\n\n\nSegue: “Let’s now break down the two core components that make up every embedded system.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-embedded-system-components-2-main-components",
+    "href": "lecture01.html#slide-embedded-system-components-2-main-components",
+    "title": "2  Module 1:",
+    "section": "2.6 Slide: Embedded System Components – 2 Main Components",
+    "text": "2.6 Slide: Embedded System Components – 2 Main Components\n\nNarrative: “Every embedded system comprises two major parts: the Application Software, which implements the specific functionality, and the Platform, which includes both the hardware and the basic software. Together, they ensure the system performs its dedicated task reliably.”\n\n\n\nSegue: “Next, we’ll discuss how the platform abstracts hardware details and manages resources through basic software functions.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-hardware-abstraction-and-basic-software-functions",
+    "href": "lecture01.html#slide-hardware-abstraction-and-basic-software-functions",
+    "title": "2  Module 1:",
+    "section": "2.7 Slide: Hardware Abstraction and Basic Software Functions",
+    "text": "2.7 Slide: Hardware Abstraction and Basic Software Functions\n\nNarrative: “This slide focuses on how basic software provides an abstraction layer for hardware. It simplifies resource management by initializing hardware, managing I/O operations, and providing user-friendly interfaces like common system commands. This abstraction is critical for maintaining efficiency and portability.”\n\n\n\nSegue: “Building on this, we’ll now transition into the operating system’s role within the embedded system.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-operating-system",
+    "href": "lecture01.html#slide-operating-system",
+    "title": "2  Module 1:",
+    "section": "2.8 Slide: Operating System",
+    "text": "2.8 Slide: Operating System\n\nNarrative: “Here we introduce the operating system as a vital component of the platform. The OS manages hardware resources, facilitates multitasking, and offers a structured environment for running application software. It also creates a clear separation between kernel and user space, ensuring system stability.”\n\n\n\nSegue: “Let’s now review the different operating system solutions available for embedded systems and how they cater to various needs.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-operating-systems-for-embedded-systems",
+    "href": "lecture01.html#slide-operating-systems-for-embedded-systems",
+    "title": "2  Module 1:",
+    "section": "2.9 Slide: Operating Systems for Embedded Systems",
+    "text": "2.9 Slide: Operating Systems for Embedded Systems\n\nNarractive: “This slide compares different operating systems used in embedded systems. On one side, we have deterministic real‑time systems like ARM RTX or FreeRTOS, which are designed for strict timing and low latency. On the other, we have more feature-rich systems used in applications like in-vehicle infotainment, where advanced graphics and multi-core processing are required.”\n\n \n\nSegue: “Since Linux is one of the most popular choices for embedded systems, let’s now focus on its role in this ecosystem.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-linux-in-embedded-systems",
+    "href": "lecture01.html#slide-linux-in-embedded-systems",
+    "title": "2  Module 1:",
+    "section": "2.10 Slide: Linux in Embedded Systems",
+    "text": "2.10 Slide: Linux in Embedded Systems\n\nNarractive: “Linux is widely adopted in the embedded world due to its robustness, flexibility, and open-source nature. It provides a rich environment for application development while supporting a wide array of hardware platforms. This popularity is driven by the community and the extensive ecosystem that supports continuous improvement.”\n\n\n\n\nSegue: “Before we explore the Linux kernel in detail, let’s take a brief look at the history of Linux to see how it evolved to meet the needs of embedded systems.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-a-brief-history-of-linux",
+    "href": "lecture01.html#slide-a-brief-history-of-linux",
+    "title": "2  Module 1:",
+    "section": "2.11 Slide: A Brief History of Linux",
+    "text": "2.11 Slide: A Brief History of Linux\n\nNarractive: “This slide outlines key milestones in Linux’s development—from Linus Torvalds’ initial announcement in 1991 to the evolution of Linux into a robust platform that supports everything from small embedded devices to large servers. This timeline helps us appreciate its maturity and versatility.”\n\n\n\nSegue: “Now that we understand its evolution, let’s dive into what the Linux kernel actually is and why it’s central to Linux-based systems.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-what-is-the-linux-kernel",
+    "href": "lecture01.html#slide-what-is-the-linux-kernel",
+    "title": "2  Module 1:",
+    "section": "2.12 Slide: What Is the Linux Kernel?",
+    "text": "2.12 Slide: What Is the Linux Kernel?\n\nNarractive: “The Linux kernel is the core of the operating system—it manages system resources, handles process scheduling, memory management, and provides essential services through system calls. Though it’s just one part of a complete operating system, its reliability and performance are critical to the overall system.”\n\n\n\nSegue: “This naturally brings us to the concept of Linux distributions, where the kernel is packaged with additional software components.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-what-are-linux-distributions",
+    "href": "lecture01.html#slide-what-are-linux-distributions",
+    "title": "2  Module 1:",
+    "section": "2.13 Slide: What Are Linux Distributions?",
+    "text": "2.13 Slide: What Are Linux Distributions?\n\nNarractive: “Linux distributions bundle the kernel with user-space applications, libraries, and management tools, forming complete operating systems. There’s a wide variety—from general-purpose distributions like Ubuntu to those tailored for embedded systems, such as Yocto or Buildroot—each designed to meet different needs.”\n\n\n\nSegue: “To select the right distribution for an embedded project, we need to consider several important factors.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-factors-to-consider-when-selecting-a-distro",
+    "href": "lecture01.html#slide-factors-to-consider-when-selecting-a-distro",
+    "title": "2  Module 1:",
+    "section": "2.14 Slide: Factors to Consider When Selecting a Distro",
+    "text": "2.14 Slide: Factors to Consider When Selecting a Distro\n\nNarractive: “When choosing a Linux distribution for an embedded project, factors such as release model, package management, hardware support, community vs. commercial backing, and the ability to customize and minimize the footprint are critical. These factors ensure that the distribution aligns with the system’s requirements and long-term support needs.”\n\n\n\nSegue: “Now, let’s shift our focus to how Linux release cycles work, as this impacts the stability and security of the system over time.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-understanding-the-release-cycles",
+    "href": "lecture01.html#slide-understanding-the-release-cycles",
+    "title": "2  Module 1:",
+    "section": "2.15 Slide: Understanding the Release Cycles",
+    "text": "2.15 Slide: Understanding the Release Cycles\n\nNarractive: “This slide explains the different Linux kernel release categories: Mainline, Release Candidates, Stable, and Long-Term Support (LTS). Each category serves a unique purpose, from introducing new features to ensuring long-term reliability, which is especially important in embedded and real-time applications.”\n\n\n\n\nSegue: “With this background, let’s now look at some concrete examples of Linux-based embedded systems in action.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
+    "href": "lecture01.html#slide-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
+    "title": "2  Module 1:",
+    "section": "2.16 Slide: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems",
+    "text": "2.16 Slide: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems\n\nNarractive: “In this example, we examine how Linux powers in-flight entertainment systems. These systems require a reliable, scalable operating system that can handle multimedia processing and provide robust network connectivity while operating in a constrained environment.”\n\n - Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
+    "href": "lecture01.html#slide-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
+    "title": "2  Module 1:",
+    "section": "2.17 Slide: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop",
+    "text": "2.17 Slide: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop\n\nNarractive: “Here, we explore an unconventional use of Linux in an embedded system at a café and bake shop. This example highlights how Linux-based systems can be tailored to manage point-of-sale operations, customer interfaces, and even inventory management—all on a cost-effective platform.”\n\n\n\nSegue: “Let’s now broaden our perspective with yet another real-world example.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+    ]
+  },
+  {
+    "objectID": "lecture01.html#slide-linux-based-embedded-system-example-3-a-gas-station-pump",
+    "href": "lecture01.html#slide-linux-based-embedded-system-example-3-a-gas-station-pump",
+    "title": "2  Module 1:",
+    "section": "2.18 Slide: Linux-based Embedded System: Example 3 – A Gas Station Pump",
+    "text": "2.18 Slide: Linux-based Embedded System: Example 3 – A Gas Station Pump\n\nNarractive: “In our final example, we look at a gas station pump. This system must operate reliably in outdoor conditions, handle payment processing securely, and integrate with various hardware components. Linux’s modular design and robust driver support make it an ideal choice for such mission-critical applications.”\n\n\n\nSegue: “That concludes our introductory lecture. In our next session, we’ll begin to build on these fundamentals, diving deeper into the Linux-based embedded system component stack and, later on, specialized topics like real‑time operating systems.”",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
   }
 ]
