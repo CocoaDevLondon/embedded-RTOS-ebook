@@ -252,7 +252,7 @@ Resource for Reference:
 
 • “Linux Command Line and Shell Scripting Bible” by Richard Blum — can help build student familiarity with system programs.
 
-## Slide:
+## Slide: Application Layer
 
 ![kernel](images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png)
 
@@ -309,3 +309,135 @@ We also have special directories: • /dev contains device files that represent 
 Finally, directories like /mnt and /opt are for mounting temporary filesystems and installing optional applications.
 
 This structure is universal across Linux systems — including embedded Linux — and understanding it is essential for managing, troubleshooting, and customizing your devices. In future labs, we’ll navigate these directories to explore and modify real embedded Linux systems.”\*
+
+## Review for Module 02
+
+**Multiple Choice**
+
+1.  What is the primary role of a bootloader in an embedded Linux system?
+
+A\) To run user applications
+
+B\) To initialize hardware and load the operating system
+
+C\) To manage file systems
+
+D\) To schedule kernel processes
+
+------------------------------------------------------------------------
+
+2.  In an embedded SoC system, where is the operating system typically stored before being loaded into RAM?
+
+A\) CPU registers
+
+B\) Boot flash memory
+
+C\) Mass storage flash
+
+D\) RAM
+
+------------------------------------------------------------------------
+
+3.  Which component describes hardware to the Linux kernel in a flexible and updatable way?
+
+A\) Kernel module
+
+B\) Device tree blob (DTB)
+
+C\) System call interface
+
+D\) Init process
+
+------------------------------------------------------------------------
+
+4.  Which one of the following is NOT typically found in the root filesystem?
+
+A\) Kernel binary
+
+B\) Configuration files in /etc
+
+C\) System utilities in /bin
+
+D\) The init process
+
+------------------------------------------------------------------------
+
+5.  What advantage does a monolithic kernel provide?
+
+A\) Complete separation of hardware and software
+
+B\) The ability to dynamically load user applications
+
+C\) Efficient execution by integrating all core functionalities
+
+D\) Guaranteed system stability in case of kernel bugs
+
+------------------------------------------------------------------------
+
+**Fill in the Blank**
+
+6.  The first user-space process launched by the Linux kernel during boot is called \_\_\_\_\_\_\_\_.
+
+------------------------------------------------------------------------
+
+7.  A \_\_\_\_\_\_\_\_ file is compiled from a Device Tree Source (DTS) file and passed to the kernel at boot.
+
+------------------------------------------------------------------------
+
+8.  The \_\_\_\_\_\_\_\_ filesystem stores essential binaries, configuration files, and user-space applications the kernel relies on after boot.
+
+------------------------------------------------------------------------
+
+**Short Answer**
+
+9.  Briefly explain the role of the Program Counter (PC) at system power-up and how it relates to the reset vector.
+
+------------------------------------------------------------------------
+
+10. List two key differences between a microcontroller-based embedded implementation and a system-on-chip (SoC)-based implementation.
+
+------------------------------------------------------------------------
+
+11. Describe one advantage and one disadvantage of using a monolithic kernel in an embedded system.
+
+------------------------------------------------------------------------
+
+## Answer Key for Module 02 Review Questions
+
+**Multiple Choice:**
+
+1\. B) To initialize hardware and load the operating system
+
+2\. C) Mass storage flash
+
+3\. B) Device tree blob (DTB)
+
+4\. A) Kernel binary
+
+5\. C) Efficient execution by integrating all core functionalities
+
+**Fill in the Blank:**
+
+6\. init
+
+7\. Device tree blob (DTB)
+
+8\. root
+
+**Short Answer:**
+
+9\. The Program Counter (PC) is set to the reset vector address at power-up. It tells the CPU where
+
+to begin executing instructions, starting the bootloader process.
+
+10\. - MCU has integrated CPU, RAM, and flash memory on a single chip; SoC integrates CPU and
+
+peripherals but often uses external RAM and storage.
+
+\- MCUs are used for simpler systems; SoCs support more complex, higher-performance
+
+applications.
+
+11\. Advantage: High efficiency due to integrated functionality. Disadvantage: A bug in a kernel
+
+component can crash the whole system.

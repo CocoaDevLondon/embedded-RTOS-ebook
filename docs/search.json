@@ -658,5 +658,35 @@
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
     ]
+  },
+  {
+    "objectID": "lecture02.html#slide-application-layer",
+    "href": "lecture02.html#slide-application-layer",
+    "title": "3  Module 02",
+    "section": "3.18 Slide: Application Layer",
+    "text": "3.18 Slide: Application Layer\n\n\n\nkernel\n\n\nNarrative\n“At the top of the software stack sits the application layer, which is where the embedded system’s purpose comes to life. Whether the device is a home router, a smart thermostat, or a piece of lab equipment, the application software is what users interact with. It relies on system programs and kernel services to access hardware and perform tasks.\nFor example, in a Network Attached Storage (NAS) device, the application manages file sharing and disk operations. In an automotive system, the infotainment application handles touch input, navigation, and media playback. Applications can be custom-built for unique products or adapted from open-source solutions, and they define what the system actually does for the end user.”\nResources\n•   Case studies on open-source automotive Linux (Automotive Grade Linux):\nhttps://www.automotivelinux.org/\n•   Yocto Project and embedded applications examples:\nhttps://www.yoctoproject.org/",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#review-for-module-02",
+    "href": "lecture02.html#review-for-module-02",
+    "title": "3  Module 02",
+    "section": "3.21 Review for Module 02",
+    "text": "3.21 Review for Module 02\nMultiple Choice\n\nWhat is the primary role of a bootloader in an embedded Linux system?\n\nA) To run user applications\nB) To initialize hardware and load the operating system\nC) To manage file systems\nD) To schedule kernel processes\n\n\nIn an embedded SoC system, where is the operating system typically stored before being loaded into RAM?\n\nA) CPU registers\nB) Boot flash memory\nC) Mass storage flash\nD) RAM\n\n\nWhich component describes hardware to the Linux kernel in a flexible and updatable way?\n\nA) Kernel module\nB) Device tree blob (DTB)\nC) System call interface\nD) Init process\n\n\nWhich one of the following is NOT typically found in the root filesystem?\n\nA) Kernel binary\nB) Configuration files in /etc\nC) System utilities in /bin\nD) The init process\n\n\nWhat advantage does a monolithic kernel provide?\n\nA) Complete separation of hardware and software\nB) The ability to dynamically load user applications\nC) Efficient execution by integrating all core functionalities\nD) Guaranteed system stability in case of kernel bugs\n\nFill in the Blank\n\nThe first user-space process launched by the Linux kernel during boot is called ________.\n\n\n\nA ________ file is compiled from a Device Tree Source (DTS) file and passed to the kernel at boot.\n\n\n\nThe ________ filesystem stores essential binaries, configuration files, and user-space applications the kernel relies on after boot.\n\n\nShort Answer\n\nBriefly explain the role of the Program Counter (PC) at system power-up and how it relates to the reset vector.\n\n\n\nList two key differences between a microcontroller-based embedded implementation and a system-on-chip (SoC)-based implementation.\n\n\n\nDescribe one advantage and one disadvantage of using a monolithic kernel in an embedded system.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
+  },
+  {
+    "objectID": "lecture02.html#answer-key-for-module-02-review-questions",
+    "href": "lecture02.html#answer-key-for-module-02-review-questions",
+    "title": "3  Module 02",
+    "section": "3.22 Answer Key for Module 02 Review Questions",
+    "text": "3.22 Answer Key for Module 02 Review Questions\nMultiple Choice:\n1. B) To initialize hardware and load the operating system\n2. C) Mass storage flash\n3. B) Device tree blob (DTB)\n4. A) Kernel binary\n5. C) Efficient execution by integrating all core functionalities\nFill in the Blank:\n6. init\n7. Device tree blob (DTB)\n8. root\nShort Answer:\n9. The Program Counter (PC) is set to the reset vector address at power-up. It tells the CPU where\nto begin executing instructions, starting the bootloader process.\n10. - MCU has integrated CPU, RAM, and flash memory on a single chip; SoC integrates CPU and\nperipherals but often uses external RAM and storage.\n- MCUs are used for simpler systems; SoCs support more complex, higher-performance\napplications.\n11. Advantage: High efficiency due to integrated functionality. Disadvantage: A bug in a kernel\ncomponent can crash the whole system.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+    ]
   }
 ]

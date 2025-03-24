@@ -150,9 +150,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#slide-monolithic-kernel-advantages-and-disadvantages" id="toc-slide-monolithic-kernel-advantages-and-disadvantages" class="nav-link" data-scroll-target="#slide-monolithic-kernel-advantages-and-disadvantages"><span class="header-section-number">3.15</span> Slide: Monolithic Kernel: Advantages and Disadvantages</a></li>
   <li><a href="#slide-device-tree-flexible-hardware-descriptions-for-the-kernel" id="toc-slide-device-tree-flexible-hardware-descriptions-for-the-kernel" class="nav-link" data-scroll-target="#slide-device-tree-flexible-hardware-descriptions-for-the-kernel"><span class="header-section-number">3.16</span> Slide: Device Tree: Flexible Hardware Descriptions for the Kernel</a></li>
   <li><a href="#slide-system-programs-tools-built-on-kernel-services" id="toc-slide-system-programs-tools-built-on-kernel-services" class="nav-link" data-scroll-target="#slide-system-programs-tools-built-on-kernel-services"><span class="header-section-number">3.17</span> Slide: System Programs: Tools Built on Kernel Services</a></li>
-  <li><a href="#slide" id="toc-slide" class="nav-link" data-scroll-target="#slide"><span class="header-section-number">3.18</span> Slide:</a></li>
+  <li><a href="#slide-application-layer" id="toc-slide-application-layer" class="nav-link" data-scroll-target="#slide-application-layer"><span class="header-section-number">3.18</span> Slide: Application Layer</a></li>
   <li><a href="#slide-root-filesystem-the-foundation-of-user-space" id="toc-slide-root-filesystem-the-foundation-of-user-space" class="nav-link" data-scroll-target="#slide-root-filesystem-the-foundation-of-user-space"><span class="header-section-number">3.19</span> Slide: Root Filesystem: The Foundation of User Space</a></li>
   <li><a href="#slide-root-file-system-illustrated" id="toc-slide-root-file-system-illustrated" class="nav-link" data-scroll-target="#slide-root-file-system-illustrated"><span class="header-section-number">3.20</span> Slide: Root File System Illustrated</a></li>
+  <li><a href="#review-for-module-02" id="toc-review-for-module-02" class="nav-link" data-scroll-target="#review-for-module-02"><span class="header-section-number">3.21</span> Review for Module 02</a></li>
+  <li><a href="#answer-key-for-module-02-review-questions" id="toc-answer-key-for-module-02-review-questions" class="nav-link" data-scroll-target="#answer-key-for-module-02-review-questions"><span class="header-section-number">3.22</span> Answer Key for Module 02 Review Questions</a></li>
   </ul>
 </nav>
     </div>
@@ -478,8 +480,8 @@ ul.task-list li input[type="checkbox"] {
 <p>•<a href="https://www.busybox.net/about.html">BusyBox website</a> (a great real-world example of system programs in embedded Linux):</p>
 <p>• “Linux Command Line and Shell Scripting Bible” by Richard Blum — can help build student familiarity with system programs.</p>
 </section>
-<section id="slide" class="level2" data-number="3.18">
-<h2 data-number="3.18" class="anchored" data-anchor-id="slide"><span class="header-section-number">3.18</span> Slide:</h2>
+<section id="slide-application-layer" class="level2" data-number="3.18">
+<h2 data-number="3.18" class="anchored" data-anchor-id="slide-application-layer"><span class="header-section-number">3.18</span> Slide: Application Layer</h2>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="images/lecture02/Lecture02_LinuxBasedEmbeddedSystemComponentStack/Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png" class="img-fluid figure-img"></p>
@@ -525,6 +527,98 @@ ul.task-list li input[type="checkbox"] {
 <p>We also have special directories: • /dev contains device files that represent hardware. • /home is where user files reside. • /lib holds shared libraries and kernel modules. • /proc is a virtual filesystem that represents kernel and process information in real time. • /root is the root user’s home directory.</p>
 <p>Finally, directories like /mnt and /opt are for mounting temporary filesystems and installing optional applications.</p>
 <p>This structure is universal across Linux systems — including embedded Linux — and understanding it is essential for managing, troubleshooting, and customizing your devices. In future labs, we’ll navigate these directories to explore and modify real embedded Linux systems.”*</p>
+</section>
+<section id="review-for-module-02" class="level2" data-number="3.21">
+<h2 data-number="3.21" class="anchored" data-anchor-id="review-for-module-02"><span class="header-section-number">3.21</span> Review for Module 02</h2>
+<p><strong>Multiple Choice</strong></p>
+<ol type="1">
+<li>What is the primary role of a bootloader in an embedded Linux system?</li>
+</ol>
+<p>A) To run user applications</p>
+<p>B) To initialize hardware and load the operating system</p>
+<p>C) To manage file systems</p>
+<p>D) To schedule kernel processes</p>
+<hr>
+<ol start="2" type="1">
+<li>In an embedded SoC system, where is the operating system typically stored before being loaded into RAM?</li>
+</ol>
+<p>A) CPU registers</p>
+<p>B) Boot flash memory</p>
+<p>C) Mass storage flash</p>
+<p>D) RAM</p>
+<hr>
+<ol start="3" type="1">
+<li>Which component describes hardware to the Linux kernel in a flexible and updatable way?</li>
+</ol>
+<p>A) Kernel module</p>
+<p>B) Device tree blob (DTB)</p>
+<p>C) System call interface</p>
+<p>D) Init process</p>
+<hr>
+<ol start="4" type="1">
+<li>Which one of the following is NOT typically found in the root filesystem?</li>
+</ol>
+<p>A) Kernel binary</p>
+<p>B) Configuration files in /etc</p>
+<p>C) System utilities in /bin</p>
+<p>D) The init process</p>
+<hr>
+<ol start="5" type="1">
+<li>What advantage does a monolithic kernel provide?</li>
+</ol>
+<p>A) Complete separation of hardware and software</p>
+<p>B) The ability to dynamically load user applications</p>
+<p>C) Efficient execution by integrating all core functionalities</p>
+<p>D) Guaranteed system stability in case of kernel bugs</p>
+<hr>
+<p><strong>Fill in the Blank</strong></p>
+<ol start="6" type="1">
+<li>The first user-space process launched by the Linux kernel during boot is called ________.</li>
+</ol>
+<hr>
+<ol start="7" type="1">
+<li>A ________ file is compiled from a Device Tree Source (DTS) file and passed to the kernel at boot.</li>
+</ol>
+<hr>
+<ol start="8" type="1">
+<li>The ________ filesystem stores essential binaries, configuration files, and user-space applications the kernel relies on after boot.</li>
+</ol>
+<hr>
+<p><strong>Short Answer</strong></p>
+<ol start="9" type="1">
+<li>Briefly explain the role of the Program Counter (PC) at system power-up and how it relates to the reset vector.</li>
+</ol>
+<hr>
+<ol start="10" type="1">
+<li>List two key differences between a microcontroller-based embedded implementation and a system-on-chip (SoC)-based implementation.</li>
+</ol>
+<hr>
+<ol start="11" type="1">
+<li>Describe one advantage and one disadvantage of using a monolithic kernel in an embedded system.</li>
+</ol>
+<hr>
+</section>
+<section id="answer-key-for-module-02-review-questions" class="level2" data-number="3.22">
+<h2 data-number="3.22" class="anchored" data-anchor-id="answer-key-for-module-02-review-questions"><span class="header-section-number">3.22</span> Answer Key for Module 02 Review Questions</h2>
+<p><strong>Multiple Choice:</strong></p>
+<p>1. B) To initialize hardware and load the operating system</p>
+<p>2. C) Mass storage flash</p>
+<p>3. B) Device tree blob (DTB)</p>
+<p>4. A) Kernel binary</p>
+<p>5. C) Efficient execution by integrating all core functionalities</p>
+<p><strong>Fill in the Blank:</strong></p>
+<p>6. init</p>
+<p>7. Device tree blob (DTB)</p>
+<p>8. root</p>
+<p><strong>Short Answer:</strong></p>
+<p>9. The Program Counter (PC) is set to the reset vector address at power-up. It tells the CPU where</p>
+<p>to begin executing instructions, starting the bootloader process.</p>
+<p>10. - MCU has integrated CPU, RAM, and flash memory on a single chip; SoC integrates CPU and</p>
+<p>peripherals but often uses external RAM and storage.</p>
+<p>- MCUs are used for simpler systems; SoCs support more complex, higher-performance</p>
+<p>applications.</p>
+<p>11. Advantage: High efficiency due to integrated functionality. Disadvantage: A bug in a kernel</p>
+<p>component can crash the whole system.</p>
 
 
 </section>
