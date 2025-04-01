@@ -1,0 +1,162 @@
+---
+title: "Module 3: Understanding Processes and OS Management"
+author: "Brad Smith"
+format: revealjs
+editor: visual
+transition: fade
+slide-number: true
+incremental: true
+chalkboard: true
+---
+
+## Module 3 Overview
+
+-   What is a process?
+-   The OS role in process creation and management
+-   Process memory space and protection
+-   Process state and the Program Counter
+-   Multiple instances of a process
+-   Embedded relevance
+
+------------------------------------------------------------------------
+
+## What is a Process?
+
+-   A running instance of a program
+-   Includes:
+    -   Program code (instructions)
+    -   Private memory space
+    -   Current execution state
+
+``` bash
+$ ps aux | grep sleep
+```
+
+------------------------------------------------------------------------
+
+## OS Role in Process Management
+
+-   Loads executable code into memory
+-   Allocates memory space for each process
+-   Sets up Program Counter (PC) and stack
+-   Adds process to scheduler queue
+-   Cleans up after execution completes
+
+------------------------------------------------------------------------
+
+## Process Creation Example
+
+``` c
+#include <stdio.h>
+#include <unistd.h>
+int main() {
+   printf("Parent PID: %d\n", getpid());
+   fork();
+   printf("Hello from PID: %d\n", getpid());
+   return 0;
+}
+```
+
+Run this and observe multiple outputs.
+
+------------------------------------------------------------------------
+
+## Process Memory Space Layout
+
+-   Text segment: program instructions
+-   Data segment: global/static variables
+-   Heap: dynamic allocations (`malloc()`)
+-   Stack: function calls and local variables
+
+Show diagram visualizing memory layout.
+
+------------------------------------------------------------------------
+
+## Memory Protection
+
+-   Each process has its own address space
+-   Hardware MMU enforces separation
+-   Violations cause segmentation faults
+
+``` c
+int *p = (int *)0x0;
+*p = 42; // Crash
+```
+
+------------------------------------------------------------------------
+
+## Process State Model
+
+-   New: process is created
+-   Ready: waiting to be scheduled
+-   Running: currently executing
+-   Blocked: waiting for I/O or event
+-   Exit: completed or terminated
+
+------------------------------------------------------------------------
+
+## Program Counter (PC)
+
+-   Tracks the current instruction
+-   OS saves and restores PC on context switch
+-   Allows processes to resume where they left off
+
+Use bookmark analogy visual.
+
+------------------------------------------------------------------------
+
+## Multiple Instances of a Process
+
+-   Multiple executions of the same program
+-   Each with:
+    -   Unique PID
+    -   Separate memory space
+    -   Independent PC
+
+``` bash
+$ sleep 60 &
+$ sleep 60 &
+$ ps aux | grep sleep
+```
+
+------------------------------------------------------------------------
+
+## Embedded Relevance
+
+-   Process isolation critical for stability
+-   Resource allocation predictable and safe
+-   Real-time considerations: control over scheduling and execution state
+
+------------------------------------------------------------------------
+
+## Summary
+
+-   Processes are running programs with private resources
+-   The OS manages creation, memory allocation, execution, and termination
+-   The PC and memory layout are key to understanding multitasking
+-   Multiple process instances are independent units
+
+------------------------------------------------------------------------
+
+## Checkpoint Exercise
+
+-   Write a C program that forks two child processes
+-   Print each process’s PID and memory address of a variable
+-   Observe separation in memory spaces
+
+------------------------------------------------------------------------
+
+## Coming Up Next
+
+-   Context switching and scheduling algorithms
+-   Kernel subsystems in greater detail
+-   Embedded OS practical demonstrations
+
+------------------------------------------------------------------------
+
+## Questions & Discussion
+
+-   What part of process management seems most complex?
+-   Would you like a demonstration of memory space separation live?
+
+------------------------------------------------------------------------

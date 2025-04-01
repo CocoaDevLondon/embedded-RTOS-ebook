@@ -17,12 +17,14 @@ You will find: - Structured lecture notes for each module. - Interactive example
 
 -   [**Module 1: Introduction to Embedded Systems and Processes**](lecture01.qmd)
 -   [**Module 2: Anatomy of Linux-Based Embedded Systems**](lecture02.qmd)
+-   [**Module 3: Processes and OS Management**](lecture03.qmd)
 -   *(More modules coming soon)*
 
 ## 🎥 Slides
 
--   [**Module 1 Slides**](module01/slides.qmd)\
+-   [**Module 1 Slides**](module01/slides.qmd)
 -   [**Module 2 Slides**](module02/slides.qmd)
+-   [**Module 3 Slides**](Module03_slidedeck.qmd)
 
 ## 🛠 Resources
 

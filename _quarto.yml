@@ -17,6 +17,10 @@ website:
             href: lecture02.qmd
           - text: "Module 2 Slides"
             href: module02/slides.qmd
+          - text: "Module 3: Processes and OS Management"
+            href: lecture03.qmd
+          - text: "Module 3 Slides"
+            href: Module03_slidedeck.qmd
   sidebar:
     style: floating
     search: true
@@ -31,6 +35,10 @@ website:
         contents:
           - lecture02.qmd
           - module02/slides.qmd
+      - section: "Module 3: Processes and OS Management"
+        contents:
+          - lecture03.qmd
+          - Module03_slidedeck.qmd
 
 format:
   html:

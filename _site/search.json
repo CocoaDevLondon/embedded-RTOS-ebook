@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Embedded RTOS Course eBook",
     "section": "",
-    "text": "This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.\n\n\nYou will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.\n\n\n\n\nModule 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\n(More modules coming soon)\n\n\n\n\n\nModule 1 Slides\n\nModule 2 Slides\n\n\n\n\n\nGitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.\n\n\n\n\nThis project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
+    "text": "This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.\n\n\nYou will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.\n\n\n\n\nModule 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)\n\n\n\n\n\nModule 1 Slides\nModule 2 Slides\nModule 3 Slides\n\n\n\n\n\nGitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.\n\n\n\n\nThis project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
     "crumbs": [
       "Home",
       "Embedded RTOS Course eBook"
@@ -26,7 +26,7 @@
     "href": "index.html#course-modules",
     "title": "Embedded RTOS Course eBook",
     "section": "",
-    "text": "Module 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\n(More modules coming soon)",
+    "text": "Module 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)",
     "crumbs": [
       "Home",
       "Embedded RTOS Course eBook"
@@ -37,7 +37,7 @@
     "href": "index.html#slides",
     "title": "Embedded RTOS Course eBook",
     "section": "",
-    "text": "Module 1 Slides\n\nModule 2 Slides",
+    "text": "Module 1 Slides\nModule 2 Slides\nModule 3 Slides",
     "crumbs": [
       "Home",
       "Embedded RTOS Course eBook"
@@ -603,6 +603,186 @@
       "Home",
       "Module 2: Anatomy of Linux Systems",
       "Module 02"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#module-3-overview",
+    "href": "Module03_slidedeck.html#module-3-overview",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Module 3 Overview",
+    "text": "Module 3 Overview\n\nWhat is a process?\nThe OS role in process creation and management\nProcess memory space and protection\nProcess state and the Program Counter\nMultiple instances of a process\nEmbedded relevance",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#what-is-a-process",
+    "href": "Module03_slidedeck.html#what-is-a-process",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "What is a Process?",
+    "text": "What is a Process?\n\nA running instance of a program\nIncludes:\n\nProgram code (instructions)\nPrivate memory space\nCurrent execution state\n\n\n$ ps aux | grep sleep",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#os-role-in-process-management",
+    "href": "Module03_slidedeck.html#os-role-in-process-management",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "OS Role in Process Management",
+    "text": "OS Role in Process Management\n\nLoads executable code into memory\nAllocates memory space for each process\nSets up Program Counter (PC) and stack\nAdds process to scheduler queue\nCleans up after execution completes",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#process-creation-example",
+    "href": "Module03_slidedeck.html#process-creation-example",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Process Creation Example",
+    "text": "Process Creation Example\n#include &lt;stdio.h&gt;\n#include &lt;unistd.h&gt;\nint main() {\n   printf(\"Parent PID: %d\\n\", getpid());\n   fork();\n   printf(\"Hello from PID: %d\\n\", getpid());\n   return 0;\n}\nRun this and observe multiple outputs.",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#process-memory-space-layout",
+    "href": "Module03_slidedeck.html#process-memory-space-layout",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Process Memory Space Layout",
+    "text": "Process Memory Space Layout\n\nText segment: program instructions\nData segment: global/static variables\nHeap: dynamic allocations (malloc())\nStack: function calls and local variables\n\nShow diagram visualizing memory layout.",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#memory-protection",
+    "href": "Module03_slidedeck.html#memory-protection",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Memory Protection",
+    "text": "Memory Protection\n\nEach process has its own address space\nHardware MMU enforces separation\nViolations cause segmentation faults\n\nint *p = (int *)0x0;\n*p = 42; // Crash",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#process-state-model",
+    "href": "Module03_slidedeck.html#process-state-model",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Process State Model",
+    "text": "Process State Model\n\nNew: process is created\nReady: waiting to be scheduled\nRunning: currently executing\nBlocked: waiting for I/O or event\nExit: completed or terminated",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#program-counter-pc",
+    "href": "Module03_slidedeck.html#program-counter-pc",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Program Counter (PC)",
+    "text": "Program Counter (PC)\n\nTracks the current instruction\nOS saves and restores PC on context switch\nAllows processes to resume where they left off\n\nUse bookmark analogy visual.",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#multiple-instances-of-a-process",
+    "href": "Module03_slidedeck.html#multiple-instances-of-a-process",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Multiple Instances of a Process",
+    "text": "Multiple Instances of a Process\n\nMultiple executions of the same program\nEach with:\n\nUnique PID\nSeparate memory space\nIndependent PC\n\n\n$ sleep 60 &\n$ sleep 60 &\n$ ps aux | grep sleep",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#embedded-relevance",
+    "href": "Module03_slidedeck.html#embedded-relevance",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Embedded Relevance",
+    "text": "Embedded Relevance\n\nProcess isolation critical for stability\nResource allocation predictable and safe\nReal-time considerations: control over scheduling and execution state",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#summary",
+    "href": "Module03_slidedeck.html#summary",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Summary",
+    "text": "Summary\n\nProcesses are running programs with private resources\nThe OS manages creation, memory allocation, execution, and termination\nThe PC and memory layout are key to understanding multitasking\nMultiple process instances are independent units",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#checkpoint-exercise",
+    "href": "Module03_slidedeck.html#checkpoint-exercise",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Checkpoint Exercise",
+    "text": "Checkpoint Exercise\n\nWrite a C program that forks two child processes\nPrint each process’s PID and memory address of a variable\nObserve separation in memory spaces",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#coming-up-next",
+    "href": "Module03_slidedeck.html#coming-up-next",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Coming Up Next",
+    "text": "Coming Up Next\n\nContext switching and scheduling algorithms\nKernel subsystems in greater detail\nEmbedded OS practical demonstrations",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html#questions-discussion",
+    "href": "Module03_slidedeck.html#questions-discussion",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "Questions & Discussion",
+    "text": "Questions & Discussion\n\nWhat part of process management seems most complex?\nWould you like a demonstration of memory space separation live?",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
+    ]
+  },
+  {
+    "objectID": "Module03_slidedeck.html",
+    "href": "Module03_slidedeck.html",
+    "title": "Module 3: Understanding Processes and OS Management",
+    "section": "",
+    "text": "What is a process?\nThe OS role in process creation and management\nProcess memory space and protection\nProcess state and the Program Counter\nMultiple instances of a process\nEmbedded relevance",
+    "crumbs": [
+      "Home",
+      "Module 3: Processes and OS Management",
+      "Module 3: Understanding Processes and OS Management"
     ]
   }
 ]

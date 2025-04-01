@@ -1,0 +1,270 @@
+.
+├── .Rhistory
+├── .gitignore
+├── .quarto
+│   ├── _freeze
+│   │   ├── index
+│   │   │   └── execute-results
+│   │   │       └── html.json
+│   │   └── site_libs
+│   │       └── clipboard
+│   │           └── clipboard.min.js
+│   ├── cites
+│   │   └── index.json
+│   ├── idx
+│   │   ├── index.qmd.json
+│   │   ├── lecture01.qmd.json
+│   │   └── lecture02.qmd.json
+│   ├── preview
+│   │   └── lock
+│   └── xref
+│       ├── 12ce50dc
+│       ├── 2e064507
+│       ├── 5a9ca0de
+│       └── INDEX
+├── LICENSE
+├── README.md
+├── _quarto.yml
+├── _site
+│   ├── images
+│   │   ├── lecture01
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.004.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.005.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.006.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.007.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.009.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.010.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.011.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.012.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.013.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.014.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.015.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.016.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.017.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.018.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.019.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.020.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.021.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.022.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.023.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.024.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.025.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.026.png
+│   │   │   └── Lecture01_IntroToLinuxAndEmbeddedSystems.027.png
+│   │   └── lecture02
+│   │       └── Lecture02_LinuxBasedEmbeddedSystemComponentStack
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.005.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.006.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.007.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.008.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.009.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.011.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.012.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.013.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.014.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.015.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.016.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.017.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.018.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.019.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.021.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.022.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.023.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.025.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.026.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.028.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png
+│   │           └── Lecture02_LinuxBasedEmbeddedSystemComponentStack.033.png
+│   ├── index.html
+│   ├── lecture01.html
+│   ├── lecture02.html
+│   ├── search.json
+│   └── site_libs
+│       ├── bootstrap
+│       │   ├── bootstrap-6bd9cfa162949bde0a231f530c97869d.min.css
+│       │   ├── bootstrap-icons.css
+│       │   ├── bootstrap-icons.woff
+│       │   └── bootstrap.min.js
+│       ├── clipboard
+│       │   └── clipboard.min.js
+│       ├── quarto-html
+│       │   ├── anchor.min.js
+│       │   ├── popper.min.js
+│       │   ├── quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css
+│       │   ├── quarto.js
+│       │   ├── tippy.css
+│       │   └── tippy.umd.min.js
+│       ├── quarto-nav
+│       │   ├── headroom.min.js
+│       │   └── quarto-nav.js
+│       └── quarto-search
+│           ├── autocomplete.umd.js
+│           ├── fuse.min.js
+│           └── quarto-search.js
+├── docs
+│   ├── images
+│   │   ├── lecture01
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.004.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.005.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.006.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.007.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.009.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.010.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.011.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.012.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.013.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.014.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.015.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.016.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.017.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.018.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.019.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.020.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.021.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.022.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.023.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.024.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.025.png
+│   │   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.026.png
+│   │   │   └── Lecture01_IntroToLinuxAndEmbeddedSystems.027.png
+│   │   └── lecture02
+│   │       └── Lecture02_LinuxBasedEmbeddedSystemComponentStack
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.005.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.006.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.007.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.008.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.009.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.011.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.012.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.013.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.014.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.015.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.016.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.017.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.018.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.019.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.021.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.022.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.023.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.025.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.026.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.028.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png
+│   │           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png
+│   │           └── Lecture02_LinuxBasedEmbeddedSystemComponentStack.033.png
+│   ├── index.html
+│   ├── lecture01.html
+│   ├── lecture02.html
+│   ├── search.json
+│   └── site_libs
+│       ├── bootstrap
+│       │   ├── bootstrap-626149efe8f5d16e1d391ba177679bf0.min.css
+│       │   ├── bootstrap-icons.css
+│       │   ├── bootstrap-icons.woff
+│       │   └── bootstrap.min.js
+│       ├── clipboard
+│       │   └── clipboard.min.js
+│       ├── quarto-html
+│       │   ├── anchor.min.js
+│       │   ├── popper.min.js
+│       │   ├── quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css
+│       │   ├── quarto.js
+│       │   ├── tippy.css
+│       │   └── tippy.umd.min.js
+│       ├── quarto-nav
+│       │   ├── headroom.min.js
+│       │   └── quarto-nav.js
+│       └── quarto-search
+│           ├── autocomplete.umd.js
+│           ├── fuse.min.js
+│           └── quarto-search.js
+├── embedded-RTOS-ebook.Rproj
+├── images
+│   ├── lecture01
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.001.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.002.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.003.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.004.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.005.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.006.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.007.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.008.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.009.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.010.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.011.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.012.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.013.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.014.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.015.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.016.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.017.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.018.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.019.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.020.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.021.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.022.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.023.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.024.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.025.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.026.png
+│   │   ├── Lecture01_IntroToLinuxAndEmbeddedSystems.027.png
+│   │   └── Lecture01_IntroToLinuxAndEmbeddedSystems.028.png
+│   └── lecture02
+│       └── Lecture02_LinuxBasedEmbeddedSystemComponentStack
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.001.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.002.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.003.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.004.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.005.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.006.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.007.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.008.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.009.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.010.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.011.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.012.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.013.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.014.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.015.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.016.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.017.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.018.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.019.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.020.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.021.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.022.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.023.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.024.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.025.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.026.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.027.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.028.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.029.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.030.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.031.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.032.png
+│           ├── Lecture02_LinuxBasedEmbeddedSystemComponentStack.033.png
+│           └── Lecture02_LinuxBasedEmbeddedSystemComponentStack.034.png
+├── index.qmd
+├── lecture01.qmd
+├── lecture02.qmd
+├── lecture02_files
+│   └── libs
+│       ├── bootstrap
+│       │   ├── bootstrap-c0367b04c37547644fece4185067e4a7.min.css
+│       │   ├── bootstrap-icons.css
+│       │   ├── bootstrap-icons.woff
+│       │   └── bootstrap.min.js
+│       ├── clipboard
+│       │   └── clipboard.min.js
+│       └── quarto-html
+│           ├── anchor.min.js
+│           ├── popper.min.js
+│           ├── quarto-syntax-highlighting-2f5df379a58b258e96c21c0638c20c03.css
+│           ├── quarto.js
+│           ├── tippy.css
+│           └── tippy.umd.min.js
+└── project-structure.txt
+
+42 directories, 226 files
