@@ -1,5 +1,12 @@
 project:
-  type: website
+  type: book
+  
+book:
+  chapters:
+    - index.qmd
+    - lecture01.qmd
+    - lecture02.qmd
+    - module03.qmd
 
 website:
   title: "Embedded RTOS Course eBook"
