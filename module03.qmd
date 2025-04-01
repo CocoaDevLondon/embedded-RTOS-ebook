@@ -1,5 +1,5 @@
 ---
-title: "Module 3: Processes and OS Management"
+title: "Processes and OS Management"
 author: "Brad Smith"
 format: html
 editor: visual

@@ -1,5 +1,5 @@
 ---
-title: "Module 02"
+title: "Linux-based Embedded System"
 format: html
 editor: visual
 ---

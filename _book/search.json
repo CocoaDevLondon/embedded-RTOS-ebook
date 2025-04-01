@@ -62,561 +62,561 @@
   {
     "objectID": "lecture01.html",
     "href": "lecture01.html",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "",
     "text": "2.1 Slide: Introduction",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-introduction",
     "href": "lecture01.html#slide-introduction",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "",
     "text": "Narrative: “Welcome to the Embedded Linux course. In this lecture, we’ll introduce you to the basics of embedded systems, the role Linux plays in them, and how these concepts underpin more advanced topics such as real‑time operating systems. Today’s session sets the foundation for everything that follows.”\n\n\n\nSegue: “Let’s begin by taking an overview of the course structure to see where this lecture fits in.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-course-structure",
     "href": "lecture01.html#slide-course-structure",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.2 Slide: Course Structure",
     "text": "2.2 Slide: Course Structure\n\nNarrative: “These slides outline the modules we’ll cover over the duration of the course—from an introduction to embedded systems and Linux-based system components to deeper dives into kernel internals, build processes, and eventually, RTOS topics. Today’s lecture is designed to provide you with a strong base in understanding what an embedded system is, and why Linux is such an important part of that ecosystem.”   \nSegue: “Now that you know the roadmap, let’s explore the fundamentals by defining what an embedded system actually is.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-what-is-an-embedded-system",
     "href": "lecture01.html#slide-what-is-an-embedded-system",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.3 Slide: What Is an Embedded System?",
     "text": "2.3 Slide: What Is an Embedded System?\n\nNarrative: “Here, we define an embedded system as a special-purpose computer designed to perform dedicated functions within a larger system—like an electronic control unit in an internal combustion engine. By focusing on a single purpose, these systems are optimized for efficiency, reliability, and cost-effectiveness.” \nSegue: “With that definition in mind, let’s now understand why the term ‘embedded system’ was coined in the first place.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-why-embedded-system",
     "href": "lecture01.html#slide-why-embedded-system",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.4 Slide: Why “Embedded System”?",
     "text": "2.4 Slide: Why “Embedded System”?\n\nNarrative: “This slide explains the origins of the term ‘embedded system.’ Coined in the 1960s and 70s, the term originally described computers that were ‘embedded’ within larger electromechanical systems. Early examples include missile guidance systems and industrial controllers, where real-time performance, dedicated functionality, and resource constraints were critical.”\n\n\n\nSegue: “Understanding this history helps us see the broad impact of embedded systems—next, we’ll look at the diverse domains where these systems are used.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-embedded-systems-across-domains",
     "href": "lecture01.html#slide-embedded-systems-across-domains",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.5 Slide: Embedded Systems Across Domains",
     "text": "2.5 Slide: Embedded Systems Across Domains\n\nNarrative: “Embedded systems are everywhere—from automotive control systems and medical devices to consumer electronics and industrial automation. This slide shows a few key examples to highlight the range of applications, emphasizing that while the underlying principles remain the same, the implementation can vary widely based on specific requirements.”\n\n\n\nSegue: “Let’s now break down the two core components that make up every embedded system.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-embedded-system-components-2-main-components",
     "href": "lecture01.html#slide-embedded-system-components-2-main-components",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.6 Slide: Embedded System Components – 2 Main Components",
     "text": "2.6 Slide: Embedded System Components – 2 Main Components\n\nNarrative: “Every embedded system comprises two major parts: the Application Software, which implements the specific functionality, and the Platform, which includes both the hardware and the basic software. Together, they ensure the system performs its dedicated task reliably.”\n\n\n\nSegue: “Next, we’ll discuss how the platform abstracts hardware details and manages resources through basic software functions.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-hardware-abstraction-and-basic-software-functions",
     "href": "lecture01.html#slide-hardware-abstraction-and-basic-software-functions",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.7 Slide: Hardware Abstraction and Basic Software Functions",
     "text": "2.7 Slide: Hardware Abstraction and Basic Software Functions\n\nNarrative: “This slide focuses on how basic software provides an abstraction layer for hardware. It simplifies resource management by initializing hardware, managing I/O operations, and providing user-friendly interfaces like common system commands. This abstraction is critical for maintaining efficiency and portability.”\n\n\n\nSegue: “Building on this, we’ll now transition into the operating system’s role within the embedded system.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-operating-system",
     "href": "lecture01.html#slide-operating-system",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.8 Slide: Operating System",
     "text": "2.8 Slide: Operating System\n\nNarrative: “Here we introduce the operating system as a vital component of the platform. The OS manages hardware resources, facilitates multitasking, and offers a structured environment for running application software. It also creates a clear separation between kernel and user space, ensuring system stability.”\n\n\n\nSegue: “Let’s now review the different operating system solutions available for embedded systems and how they cater to various needs.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-operating-systems-for-embedded-systems",
     "href": "lecture01.html#slide-operating-systems-for-embedded-systems",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.9 Slide: Operating Systems for Embedded Systems",
     "text": "2.9 Slide: Operating Systems for Embedded Systems\n\nNarractive: “This slide compares different operating systems used in embedded systems. On one side, we have deterministic real‑time systems like ARM RTX or FreeRTOS, which are designed for strict timing and low latency. On the other, we have more feature-rich systems used in applications like in-vehicle infotainment, where advanced graphics and multi-core processing are required.”\n\n \n\nSegue: “Since Linux is one of the most popular choices for embedded systems, let’s now focus on its role in this ecosystem.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-linux-in-embedded-systems",
     "href": "lecture01.html#slide-linux-in-embedded-systems",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.10 Slide: Linux in Embedded Systems",
     "text": "2.10 Slide: Linux in Embedded Systems\n\nNarractive: “Linux is widely adopted in the embedded world due to its robustness, flexibility, and open-source nature. It provides a rich environment for application development while supporting a wide array of hardware platforms. This popularity is driven by the community and the extensive ecosystem that supports continuous improvement.”\n\n\n\n\nSegue: “Before we explore the Linux kernel in detail, let’s take a brief look at the history of Linux to see how it evolved to meet the needs of embedded systems.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-a-brief-history-of-linux",
     "href": "lecture01.html#slide-a-brief-history-of-linux",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.11 Slide: A Brief History of Linux",
     "text": "2.11 Slide: A Brief History of Linux\n\nNarractive: “This slide outlines key milestones in Linux’s development—from Linus Torvalds’ initial announcement in 1991 to the evolution of Linux into a robust platform that supports everything from small embedded devices to large servers. This timeline helps us appreciate its maturity and versatility.”\n\n\n\nSegue: “Now that we understand its evolution, let’s dive into what the Linux kernel actually is and why it’s central to Linux-based systems.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-what-is-the-linux-kernel",
     "href": "lecture01.html#slide-what-is-the-linux-kernel",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.12 Slide: What Is the Linux Kernel?",
     "text": "2.12 Slide: What Is the Linux Kernel?\n\nNarractive: “The Linux kernel is the core of the operating system—it manages system resources, handles process scheduling, memory management, and provides essential services through system calls. Though it’s just one part of a complete operating system, its reliability and performance are critical to the overall system.”\n\n\n\nSegue: “This naturally brings us to the concept of Linux distributions, where the kernel is packaged with additional software components.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-what-are-linux-distributions",
     "href": "lecture01.html#slide-what-are-linux-distributions",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.13 Slide: What Are Linux Distributions?",
     "text": "2.13 Slide: What Are Linux Distributions?\n\nNarractive: “Linux distributions bundle the kernel with user-space applications, libraries, and management tools, forming complete operating systems. There’s a wide variety—from general-purpose distributions like Ubuntu to those tailored for embedded systems, such as Yocto or Buildroot—each designed to meet different needs.”\n\n\n\nSegue: “To select the right distribution for an embedded project, we need to consider several important factors.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-factors-to-consider-when-selecting-a-distro",
     "href": "lecture01.html#slide-factors-to-consider-when-selecting-a-distro",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.14 Slide: Factors to Consider When Selecting a Distro",
     "text": "2.14 Slide: Factors to Consider When Selecting a Distro\n\nNarractive: “When choosing a Linux distribution for an embedded project, factors such as release model, package management, hardware support, community vs. commercial backing, and the ability to customize and minimize the footprint are critical. These factors ensure that the distribution aligns with the system’s requirements and long-term support needs.”\n\n\n\nSegue: “Now, let’s shift our focus to how Linux release cycles work, as this impacts the stability and security of the system over time.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-understanding-the-release-cycles",
     "href": "lecture01.html#slide-understanding-the-release-cycles",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.15 Slide: Understanding the Release Cycles",
     "text": "2.15 Slide: Understanding the Release Cycles\n\nNarractive: “This slide explains the different Linux kernel release categories: Mainline, Release Candidates, Stable, and Long-Term Support (LTS). Each category serves a unique purpose, from introducing new features to ensuring long-term reliability, which is especially important in embedded and real-time applications.”\n\n\n\n\nSegue: “With this background, let’s now look at some concrete examples of Linux-based embedded systems in action.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
     "href": "lecture01.html#slide-linux-based-embedded-system-example-1-in-flight-entertainment-systems",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.16 Slide: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems",
     "text": "2.16 Slide: Linux-based Embedded System: Example 1 – In-Flight Entertainment Systems\n\nNarractive: “In this example, we examine how Linux powers in-flight entertainment systems. These systems require a reliable, scalable operating system that can handle multimedia processing and provide robust network connectivity while operating in a constrained environment.”\n\n - Segue: “Next, we’ll see another example that shows the diversity of Linux applications in embedded systems.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
     "href": "lecture01.html#slide-linux-based-embedded-system-example-2-tim-hortons-café-and-bake-shop",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.17 Slide: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop",
     "text": "2.17 Slide: Linux-based Embedded System: Example 2 – Tim Horton’s Café and Bake Shop\n\nNarractive: “Here, we explore an unconventional use of Linux in an embedded system at a café and bake shop. This example highlights how Linux-based systems can be tailored to manage point-of-sale operations, customer interfaces, and even inventory management—all on a cost-effective platform.”\n\n\n\nSegue: “Let’s now broaden our perspective with yet another real-world example.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#slide-linux-based-embedded-system-example-3-a-gas-station-pump",
     "href": "lecture01.html#slide-linux-based-embedded-system-example-3-a-gas-station-pump",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.18 Slide: Linux-based Embedded System: Example 3 – A Gas Station Pump",
     "text": "2.18 Slide: Linux-based Embedded System: Example 3 – A Gas Station Pump\n\nNarractive: “In our final example, we look at a gas station pump. This system must operate reliably in outdoor conditions, handle payment processing securely, and integrate with various hardware components. Linux’s modular design and robust driver support make it an ideal choice for such mission-critical applications.”\n\n\n\nSegue: “That concludes our introductory lecture. In our next session, we’ll begin to build on these fundamentals, diving deeper into the Linux-based embedded system component stack and, later on, specialized topics like real‑time operating systems.”",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#mixed-format-test-bank-based-on-the-content-of-lecture01.",
     "href": "lecture01.html#mixed-format-test-bank-based-on-the-content-of-lecture01.",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.19 Mixed-format test bank based on the content of Lecture01.",
     "text": "2.19 Mixed-format test bank based on the content of Lecture01.\n\nUse these questions for quizzes, review sessions, or self‑assessment.\n\n\n2.19.1 Multiple Choice\n\nWhat is an embedded system?\n\n\nA general-purpose computer designed for a variety of tasks\nA computer integrated into a larger device to perform a dedicated function\nA high‑performance server used in data centers\nA desktop system with expandable hardware\n\n\nWhy was the term “embedded system” originally coined?\n\n\nTo describe computers optimized for multimedia processing\nTo refer to computers that are integrated into larger electromechanical systems with dedicated functions\nTo highlight systems with unlimited memory and processing power\nTo classify systems that run open‑source software exclusively\n\n\nWhich of the following is a primary component of an embedded system?\n\n\nApplication Software\nPlatform (including hardware and basic software)\nBoth A and B\nA general-purpose operating system without any hardware-specific support\n\n\nWhich Linux distribution or build system is particularly tailored for embedded systems requiring a minimal footprint?\n\n\nUbuntu\nFedora\nBuildroot/Yocto\nRed Hat Enterprise Linux\n\n\nWhat is the primary role of a bootloader in an embedded system?\n\n\nTo manage user applications and provide a graphical user interface\nTo initialize the hardware and load the operating system into RAM\nTo perform system updates automatically\nTo handle network communications exclusively\n\n\n\n2.19.2 Fill in the Blank\n\nAn embedded system is a __________‑purpose computer designed to perform dedicated functions within a larger device.\nThe Linux kernel is considered the “core” of an operating system because it manages hardware resources and provides essential services through __________.\nA __________ is a packaged collection that combines the Linux kernel with user‑space applications, libraries, and tools to form a complete operating system.\n\n\n\n2.19.3 Short Answer\n\nExplain why the term “embedded system” was coined and provide one early application example. Your answer should discuss how the term was introduced to describe computers built into larger electromechanical systems (e.g., missile guidance systems or industrial controllers) to perform specific tasks under resource and real‑time constraints. -\nDescribe two key differences between a Real‑Time Operating System (RTOS) and a general‑purpose operating system. Consider aspects like scheduling guarantees, interrupt latency, determinism, and overall resource constraints in your answer. - How does hardware abstraction contribute to the efficiency and portability of embedded systems? Provide one specific example mentioned in the lecture.\nYour answer might include discussion of the role of system libraries and device drivers (e.g., using a common system program interface like “ls” to abstract low‑level hardware details) and how this abstraction simplifies software development across different hardware platforms.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#answer-key-for-instructor-use",
     "href": "lecture01.html#answer-key-for-instructor-use",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.20 Answer Key (For Instructor Use)",
     "text": "2.20 Answer Key (For Instructor Use)\n\n2.20.1 Multiple choice answers:\n\nB B C C B\n\n\n\n2.20.2 Fill in the blank answers\nspecial\nsystem calls\nLinux distribution or distro\n\n\n2.20.3 Short Answers\nAnswer should mention that “embedded system” was coined to denote computers integrated into larger systems with dedicated tasks (e.g., missile guidance systems, industrial control), emphasizing real‑time and resource-constrained applications.\nAnswers may include: RTOS typically offers deterministic scheduling guarantees and minimal interrupt latency, while general‑purpose operating systems prioritize throughput and may not guarantee real‑time performance.\nAn acceptable answer would note that hardware abstraction, provided by libraries and device drivers, hides the complexity of the hardware from application software. For example, using standardized system programs (like “ls”) lets developers write code independent of specific hardware details, improving portability and efficiency.",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture01.html#end-of-module-1",
     "href": "lecture01.html#end-of-module-1",
-    "title": "2  Module 1:",
+    "title": "2  Intro. to Embedded Systems",
     "section": "2.21 End of Module 1",
     "text": "2.21 End of Module 1",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Module 1:</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Intro. to Embedded Systems</span>"
     ]
   },
   {
     "objectID": "lecture02.html",
     "href": "lecture02.html",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "",
     "text": "3.1 Slides: Linux-based Embedded System Components",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slides-linux-based-embedded-system-components",
     "href": "lecture02.html#slides-linux-based-embedded-system-components",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "",
     "text": "Narrative: “As we saw previously, embedded Linux systems rely on a structured set of core components. The Bootloader ensures hardware readiness at startup, preparing the system for the Linux Kernel, which manages critical resources. The kernel leverages a Device Tree for flexible hardware configuration without constant recompilation. System programs make interactions user-friendly, providing an accessible interface to system capabilities. Your actual application software defines the ultimate purpose of your embedded device, such as controlling industrial machinery or managing multimedia content. Finally, all this software and configuration data reside within a carefully structured Root Filesystem, ensuring that the system remains organized and operational.”\n\n\n\nComponents 1 of 2\n\n\n\nBootloader: At power-up, the bootloader prepares the hardware and facilitates the transition to the operating system. It initializes system resources and provides essential startup information to the Linux kernel.\nDevice Tree: This is a data structure that describes hardware components, allowing the kernel to configure and manage device drivers without needing hardware definitions to be hard-coded. The device tree is crucial for flexibility, enabling easier updates to hardware configurations.\nLinux Kernel: The kernel is the heart of the embedded system, managing resources such as CPU, memory, processes, and I/O interactions. It provides a robust and versatile foundation, supporting various hardware architectures and extensive functionalities.\n\n\n\n\nComponents 2 of 2\n\n\n\nSystem Programs: These include user-friendly utilities and services that facilitate interaction with the system hardware and kernel, simplifying development and maintenance.\nApplication: This refers to the user-specific software that delivers the embedded system’s core functionality, tailored to the product’s end-use.\nRoot Filesystem: The root filesystem stores the Linux kernel configuration, essential system programs, application software, and user-space utilities. It defines the operational environment and can be configured for persistent storage or temporary, RAM-based storage depending on system requirements.” Transition Statement:“Understanding these foundational components is vital for comprehending how Linux is structured within an embedded context. As we move forward, we’ll examine each component individually to appreciate their roles and interactions in greater detail.”\n\nSuggested Resources:\n\n“Embedded Linux Primer” by Christopher Hallinan: ◦ Chapters detailing bootloader roles, device trees, and kernel fundamentals.\nLinux Kernel Documentation: ◦ Comprehensive explanations of the kernel architecture and subsystems (https:// www.kernel.org/doc/html/latest/).\nDevice Tree Documentation: ◦ In-depth usage guidelines for DTS and DTB formats (https://devicetree.org/).\nBootloader examples: ◦ Practical examples using U-Boot for embedded Linux devices (https:// www.denx.de/wiki/U-Boot).\nEmbedded Linux Introduction\n\nhttps://community.intel.com/t5/Blogs/Products-and-Solutions/Software/Loading-and-Starting-a- Linux-Kernel-in-Five-Different-Ways/post/1571900",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-hardware-reference-model",
     "href": "lecture02.html#slide-hardware-reference-model",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.2 Slide: Hardware Reference Model",
     "text": "3.2 Slide: Hardware Reference Model\n\n\n\nEmbedded System Hardware Reference\n\n\nNarrative: “Embedded systems consist of hardware components carefully selected to meet specific performance and functionality goals. The CPU is the central component that executes instructions, controlling system operations. RAM memory provides fast, volatile storage for running software, crucial during system operation but cleared once power is lost. I/O peripherals allow the embedded system to interact with users and external environments through inputs (like sensors or buttons) and outputs (such as actuators or screens). The Boot Flash memory stores initial boot software that prepares hardware upon startup. Finally, the Mass Storage Flash holds the main operating system, applications, and any data requiring persistent storage.”\n\nHelpful Resources for Further Development:\n\n“Embedded Systems with ARM Cortex-M Microcontrollers in Assembly Language and C” by Yifeng Zhu (clear diagrams and foundational explanations of hardware components).\n“Designing Embedded Hardware” by John Catsoulis (useful diagrams and practical descriptions of hardware components).",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-hardware-reference-implementations",
     "href": "lecture02.html#slide-hardware-reference-implementations",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.3 Slide: Hardware Reference Implementations",
     "text": "3.3 Slide: Hardware Reference Implementations\n\nNarrative:\n“In embedded systems, hardware implementations generally fall into two main categories:\n\nMicrocontroller-based implementations (MCU) typically integrate most system components— such as the CPU, small amounts of RAM and Flash memory, and basic I/O peripherals— within a single chip. These systems oﬀer simplicity, cost-eﬀectiveness, and lower power consumption, making them suitable for simpler embedded applications like automotive sensors, home appliances, and simple control systems.\n\n\n\nEmbedded System Hardware Reference\n\n\nSystem-on-Chip (SoC) implementations, on the other hand, integrate a broader range of advanced system components—including CPU cores, memory controllers, graphical processors (GPU), digital signal processors (DSP), advanced I/O peripherals, and even networking interfaces—onto a single silicon chip. This high degree of integration significantly reduces complexity, lowers power usage, and improves performance. SoCs are ideal for more complex embedded applications demanding robust processing, multimedia capabilities, extensive connectivity, or specialized tasks—examples include smartphones, tablets, smart TVs, automotive infotainment systems, and network routers. Understanding these distinctions helps engineers select appropriate hardware platforms based on application requirements, performance goals, cost constraints, and power budgets.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-bootloader---key-responsibilities",
     "href": "lecture02.html#slide-bootloader---key-responsibilities",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.4 Slide: Bootloader - Key Responsibilities",
     "text": "3.4 Slide: Bootloader - Key Responsibilities\n\n\n\nBootloader - Key responsibilities\n\n\n\nNarrative: “At startup, a system’s processor cannot immediately run applications or even the operating system directly. Instead, it relies on a special software called the bootloader to initialize the hardware, prepare memory, and set up basic processor configurations. Specifically, the bootloader locates the kernel software, ensures it’s properly loaded into memory, and creates an environment suitable for the operating system to take control. In essence, the bootloader bridges the gap between hardware startup and operating system execution.”\n\nSupporting Resources for Further Exploration:\n\nU-Boot documentation (practical bootloader reference): U-Boot Project\nBootlin Embedded Linux Training (Bootloader section): Bootloader Training PDF",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-understanding-the-program-counter-pc",
     "href": "lecture02.html#slide-understanding-the-program-counter-pc",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.5 Slide: Understanding the Program Counter (PC)",
     "text": "3.5 Slide: Understanding the Program Counter (PC)\n\n\n\nProgram Counter\n\n\nNarrative:\n\n“Before diving deeper into system startup, let’s clarify the role of a critical CPU register called the Program Counter, or PC. The PC is essentially the CPU’s internal pointer, always indicating the memory address of the next instruction to execute.\nWith each executed instruction, the CPU automatically updates the PC to point sequentially to the next instruction. At power-up or after a reset, the PC doesn’t point randomly; instead, it’s set to a specific, known address— called the Reset Vector.\nUnderstanding the role of the Program Counter is essential because it directly influences how software execution flows within a CPU.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-processor-startup-and-the-reset-vector",
     "href": "lecture02.html#slide-processor-startup-and-the-reset-vector",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.6 Slide: Processor Startup and the Reset Vector",
     "text": "3.6 Slide: Processor Startup and the Reset Vector\n\n\n\nReset Vector\n\n\nNarrative:\n\n“Now that we understand the Program Counter, we can clearly see why the Reset Vector is essential.\nAt startup, the CPU automatically sets the PC to this Reset Vector— directing it to execute a small piece of initial software, typically part of the bootloader.\nThis startup code provides critical configuration details, such as where the main software is located, how to access it, and how to configure essential memory structures like the stack.\nAlthough the specifics may diﬀer between systems, this foundational sequence is consistent across virtually all embedded processors.”\nAdditional Resources for Narrative Development:\n\nComputer Organization and Design (RISC-V Edition) by Patterson and Hennessy, provides clear foundational explanations about program counters and CPU instruction execution flow.\nEmbedded System Design by Frank Vahid and Tony Givargis, detailing startup sequences and reset vectors clearly.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-scenario-1-typical-of-microcontrollers",
     "href": "lecture02.html#slide-scenario-1-typical-of-microcontrollers",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.7 Slide: Scenario 1, typical of microcontrollers",
     "text": "3.7 Slide: Scenario 1, typical of microcontrollers\n\n\n\nMicrocontroller reset\n\n\nNarrative:\n\n“In embedded Linux systems, the exact startup scenario varies depending on hardware architecture.\nIn a microcontroller (MCU) system, all necessary software—including bootloader, operating system, and applications—typically resides in internal flash memory.\nThe software executes directly from this embedded storage, simplifying hardware design.\nEmbedded RAM serves only as temporary storage for active data, stack, and heap.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware",
     "href": "lecture02.html#slide-scenario-2-typical-of-a-more-complex-system-on-chip-hardware",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.8 Slide: Scenario 2, Typical of a more complex System-on-Chip hardware",
     "text": "3.8 Slide: Scenario 2, Typical of a more complex System-on-Chip hardware\n\n\n\nSoC reset\n\n\nNarrative:\n\nConversely, System-on-Chip (SoC) systems often separate boot flash memory, which holds only the initial bootloader and reset vector, from a larger, external mass storage containing the full operating system, applications, and filesystem.\nAt startup, the bootloader loads the operating system and applications into external RAM, where they execute.\nThis scenario allows greater flexibility and scalability for complex embedded applications, but involves more intricate hardware design.”\n\nUseful Resources for Further Reference:\n\nBootlin Embedded Linux Training (Architecture): Bootlin Architecture Slides\n“Embedded Linux Primer” by Christopher Hallinan: Excellent details on these boot scenarios and hardware diﬀerences.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-bootloader-operations-initial-conditions-before-power-up",
     "href": "lecture02.html#slide-bootloader-operations-initial-conditions-before-power-up",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.9 Slide: Bootloader Operations: Initial Conditions (Before Power-up)",
     "text": "3.9 Slide: Bootloader Operations: Initial Conditions (Before Power-up)\n\n\n\nSoC reset\n\n\nNarrative: - “Before the embedded device powers up, its bootloader and reset vector are stored in boot flash memory, and the operating system and applications reside in mass storage flash. - RAM memory, being volatile, is initially empty and uninitialized.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-bootloader-operations-cpu-reset-vector-at-power-up",
     "href": "lecture02.html#slide-bootloader-operations-cpu-reset-vector-at-power-up",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.10 Slide: Bootloader Operations: CPU Reset Vector at Power-up",
     "text": "3.10 Slide: Bootloader Operations: CPU Reset Vector at Power-up\n\n\n\nSoC reset\n\n\nNarrative:\n\n“At power-up, the CPU loads the reset vector into its Program Counter, directing it to execute the bootloader’s first instruction. This marks the start of the bootstrap process.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-bootloader-operations-during-bootstrap",
     "href": "lecture02.html#slide-bootloader-operations-during-bootstrap",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.11 Slide: Bootloader Operations: During Bootstrap",
     "text": "3.11 Slide: Bootloader Operations: During Bootstrap\n\n\n\nbootstrap\n\n\nNarrative: - “During bootstrap, the bootloader configures essential hardware resources, initializes RAM, and transfers operating system and other software components from persistent storage into RAM, preparing them for execution.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-bootloader-operations-transition-to-operating-system",
     "href": "lecture02.html#slide-bootloader-operations-transition-to-operating-system",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.12 Slide: Bootloader Operations: Transition to Operating System",
     "text": "3.12 Slide: Bootloader Operations: Transition to Operating System\n\n\n\nTransition to OS execution\n\n\nNarrative:\n“At the end of the bootstrap process, the bootloader transfers control to the operating system, eﬀectively stepping aside as the OS takes responsibility for managing the system’s resources and starting user applications.”\nSupporting Resources for Further Narrative Development:\n- Bootlin Training: Embedded Linux Boot Sequence (Bootlin Slides Bootlin Slides)\n- Embedded Linux Primer by Christopher Hallinan: Detailed yet clear explanations of each step in the bootloader sequence.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-role-of-the-linux-kernel-in-embedded-systems",
     "href": "lecture02.html#slide-role-of-the-linux-kernel-in-embedded-systems",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.13 Slide: Role of the Linux Kernel in Embedded Systems",
     "text": "3.13 Slide: Role of the Linux Kernel in Embedded Systems\n\n\n\nkernel\n\n\nNarrative:\n\n“The Linux kernel is the core software component within embedded Linux systems, responsible for managing hardware resources efficiently and reliably.\nIt ensures that multiple applications or processes can run smoothly by handling process creation, scheduling, and management. It also manages memory allocation and protection, ensuring programs don’t interfere with each other or the system itself.\nDevice drivers within the kernel handle input and output with external devices—such as sensors or actuators.\nMoreover, the kernel provides critical support for organizing data through file systems, facilitates communication across networks, and allows processes to share information through inter-process communication.\nIn essence, the kernel acts as the critical link between software applications and hardware.”\n\nSupporting Resources for Further Narrative Development:\n\n“Linux Kernel Development” by Robert Love: Clear explanations and diagrams about kernel responsibilities.\nKernel documentation (kernel.org): Kernel Documentation (Official resource with detailed explanations).",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-linux-kernel-layered-operating-system-structure",
     "href": "lecture02.html#slide-linux-kernel-layered-operating-system-structure",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.14 Slide: Linux Kernel: Layered Operating System Structure",
     "text": "3.14 Slide: Linux Kernel: Layered Operating System Structure\n\n\n\nkernel\n\n\nNarrative\n\n“In Linux, the operating system is designed using a two-layer approach: kernel space and user space. Think of kernel space as the area of the operating system that directly manages your hardware—controlling memory, running processes, and handling all hardware interactions. User space, on the other hand, is where your applications and programs run. To maintain system stability, these applications don’t directly access hardware; instead, they ask the kernel to perform tasks on their behalf.\nThe Linux kernel is described as a monolithic kernel, meaning it bundles all core functions into a single, large executable. This design makes the kernel very efficient but also means that a serious error in one kernel function can potentially impact the entire system.\nTo improve flexibility and reduce this risk, Linux supports loadable kernel modules, small pieces of software you can add or remove while the system is running. These modules commonly provide new features such as additional device drivers, network support, or file system enhancements.”\nResource: embedded-linux-design-kernel-analysis",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-monolithic-kernel-advantages-and-disadvantages",
     "href": "lecture02.html#slide-monolithic-kernel-advantages-and-disadvantages",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.15 Slide: Monolithic Kernel: Advantages and Disadvantages",
     "text": "3.15 Slide: Monolithic Kernel: Advantages and Disadvantages\n\n\n\nkernel\n\n\nNarrative\n\n“The monolithic design of the Linux kernel offers significant advantages, primarily through its strong separation between the user applications and kernel-level processes. Because of this separation, errors in user applications typically do not affect the stability or security of the kernel itself—ensuring system reliability.\nHowever, the same tightly integrated nature also introduces a notable disadvantage: a bug or error within any part of the kernel, such as a newly installed device driver or network component, can potentially destabilize or crash the entire operating system. This risk necessitates meticulous design, rigorous testing, and careful management of kernel-level software changes.”\n\nAdditional Resources for Further Reading:\n\n“Understanding the Linux Kernel” by Daniel P. Bovet and Marco Cesati for in-depth exploration of monolithic kernels.\n“Linux Kernel Development” by Robert Love (excellent for clear explanations of kernel architecture implications).",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-device-tree-flexible-hardware-descriptions-for-the-kernel",
     "href": "lecture02.html#slide-device-tree-flexible-hardware-descriptions-for-the-kernel",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.16 Slide: Device Tree: Flexible Hardware Descriptions for the Kernel",
     "text": "3.16 Slide: Device Tree: Flexible Hardware Descriptions for the Kernel\n\n\n\nkernel\n\n\nNarrative\n“The Linux kernel needs to understand the system’s hardware to load the correct drivers and manage resources. While one approach would be to hardcode this hardware information directly into the kernel source code, that method becomes cumbersome and time-consuming if the hardware changes, as it requires kernel recompilation.\nThe more flexible and modern approach is to use a device tree. This involves describing the hardware in a Device Tree Source (DTS) file, which is then compiled into a binary Device Tree Blob (DTB). The bootloader passes this DTB to the kernel at startup, allowing the kernel to dynamically understand the hardware setup. This method makes it easy to update or support new hardware without rebuilding the kernel — simply modify the DTS and recompile.” \nHelpful Resource:\n• Linux Kernel Device Tree documentation: https://www.kernel.org/doc/html/latest/devicetree/usage-model.html\nThe Linux Concept Journey — DeviceTree",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-system-programs-tools-built-on-kernel-services",
     "href": "lecture02.html#slide-system-programs-tools-built-on-kernel-services",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.17 Slide: System Programs: Tools Built on Kernel Services",
     "text": "3.17 Slide: System Programs: Tools Built on Kernel Services\n\n\n\nkernel\n\n\nNarrative\n“System programs are the essential tools that sit between user applications and the kernel, providing convenient interfaces for both development and system management. These programs rely on kernel services but make interacting with them much more user-friendly.\nFor instance, system programs include utilities that show status information about the system, such as top or uptime. They also offer file modification tools, like text editors and file manipulation commands. Developers benefit from programming support tools like compilers and language interpreters.\nFurthermore, system programs help with program loading and execution, using tools like shells (bash) or service managers (systemd). For networking and communication, utilities like ping and ssh allow interaction with remote systems. Finally, many lightweight applications, like curl or tools included in BusyBox, help perform everyday tasks in embedded systems.”\nResources\nResource for Reference:\n•BusyBox website (a great real-world example of system programs in embedded Linux):\n• “Linux Command Line and Shell Scripting Bible” by Richard Blum — can help build student familiarity with system programs.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-application-layer",
     "href": "lecture02.html#slide-application-layer",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.18 Slide: Application Layer",
     "text": "3.18 Slide: Application Layer\n\n\n\nkernel\n\n\nNarrative\n“At the top of the software stack sits the application layer, which is where the embedded system’s purpose comes to life. Whether the device is a home router, a smart thermostat, or a piece of lab equipment, the application software is what users interact with. It relies on system programs and kernel services to access hardware and perform tasks.\nFor example, in a Network Attached Storage (NAS) device, the application manages file sharing and disk operations. In an automotive system, the infotainment application handles touch input, navigation, and media playback. Applications can be custom-built for unique products or adapted from open-source solutions, and they define what the system actually does for the end user.”\nResources\n•   Case studies on open-source automotive Linux (Automotive Grade Linux):\nhttps://www.automotivelinux.org/\n•   Yocto Project and embedded applications examples:\nhttps://www.yoctoproject.org/",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-root-filesystem-the-foundation-of-user-space",
     "href": "lecture02.html#slide-root-filesystem-the-foundation-of-user-space",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.19 Slide: Root Filesystem: The Foundation of User Space",
     "text": "3.19 Slide: Root Filesystem: The Foundation of User Space\n\n\n\nkernel\n\n\nNarrative “Once the kernel has completed its initial setup, it needs a structured environment where system programs and applications can run. This is the role of the root filesystem — it contains configuration files, system utilities, libraries, and applications that define the system’s user-space environment.\nAt startup, the kernel looks for a file called init, which becomes the first user-space process, kicking off system initialization and launching essential services.\nDepending on the system, the root filesystem can reside entirely in RAM, especially in development setups where no persistent storage is needed. For production devices, it typically resides in persistent storage like flash memory. In some development workflows or specialized systems, the root filesystem may be loaded over the network, allowing rapid iteration and debugging without flashing the device repeatedly.”",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#slide-root-file-system-illustrated",
     "href": "lecture02.html#slide-root-file-system-illustrated",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.20 Slide: Root File System Illustrated",
     "text": "3.20 Slide: Root File System Illustrated\n\n\n\nRoot File System Illustrated\n\n\nNarrative\n*“Now that we’ve discussed what the root filesystem is and why it’s critical, let’s take a visual tour of its structure.\nAt the top level, we have the root directory, represented by a single slash /. Underneath it, the filesystem is organized into directories, each serving a specific role.\nFirst, /bin contains essential user command binaries — these are the core utilities, like cp, ls, and bash, that are needed even if no other software is available.\nNext, /etc holds configuration files for the system — think of network settings, hostnames, and startup scripts.\n/sbin is where we find essential system binaries that administrators use for critical tasks like partitioning disks or configuring the network.\nThe /usr directory holds application support data, libraries, and binaries for user applications, while /var stores variable data files such as logs, cache files, and print spools that change as the system runs.\nWe also have special directories: • /dev contains device files that represent hardware. • /home is where user files reside. • /lib holds shared libraries and kernel modules. • /proc is a virtual filesystem that represents kernel and process information in real time. • /root is the root user’s home directory.\nFinally, directories like /mnt and /opt are for mounting temporary filesystems and installing optional applications.\nThis structure is universal across Linux systems — including embedded Linux — and understanding it is essential for managing, troubleshooting, and customizing your devices. In future labs, we’ll navigate these directories to explore and modify real embedded Linux systems.”*",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#review-for-module-02",
     "href": "lecture02.html#review-for-module-02",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.21 Review for Module 02",
     "text": "3.21 Review for Module 02\nMultiple Choice\n\nWhat is the primary role of a bootloader in an embedded Linux system?\n\nA) To run user applications\nB) To initialize hardware and load the operating system\nC) To manage file systems\nD) To schedule kernel processes\n\n\nIn an embedded SoC system, where is the operating system typically stored before being loaded into RAM?\n\nA) CPU registers\nB) Boot flash memory\nC) Mass storage flash\nD) RAM\n\n\nWhich component describes hardware to the Linux kernel in a flexible and updatable way?\n\nA) Kernel module\nB) Device tree blob (DTB)\nC) System call interface\nD) Init process\n\n\nWhich one of the following is NOT typically found in the root filesystem?\n\nA) Kernel binary\nB) Configuration files in /etc\nC) System utilities in /bin\nD) The init process\n\n\nWhat advantage does a monolithic kernel provide?\n\nA) Complete separation of hardware and software\nB) The ability to dynamically load user applications\nC) Efficient execution by integrating all core functionalities\nD) Guaranteed system stability in case of kernel bugs\n\nFill in the Blank\n\nThe first user-space process launched by the Linux kernel during boot is called ________.\n\n\n\nA ________ file is compiled from a Device Tree Source (DTS) file and passed to the kernel at boot.\n\n\n\nThe ________ filesystem stores essential binaries, configuration files, and user-space applications the kernel relies on after boot.\n\n\nShort Answer\n\nBriefly explain the role of the Program Counter (PC) at system power-up and how it relates to the reset vector.\n\n\n\nList two key differences between a microcontroller-based embedded implementation and a system-on-chip (SoC)-based implementation.\n\n\n\nDescribe one advantage and one disadvantage of using a monolithic kernel in an embedded system.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "lecture02.html#answer-key-for-module-02-review-questions",
     "href": "lecture02.html#answer-key-for-module-02-review-questions",
-    "title": "3  Module 02",
+    "title": "3  Linux-based Embedded System",
     "section": "3.22 Answer Key for Module 02 Review Questions",
     "text": "3.22 Answer Key for Module 02 Review Questions\nMultiple Choice:\n1. B) To initialize hardware and load the operating system\n2. C) Mass storage flash\n3. B) Device tree blob (DTB)\n4. A) Kernel binary\n5. C) Efficient execution by integrating all core functionalities\nFill in the Blank:\n6. init\n7. Device tree blob (DTB)\n8. root\nShort Answer:\n9. The Program Counter (PC) is set to the reset vector address at power-up. It tells the CPU where\nto begin executing instructions, starting the bootloader process.\n10. - MCU has integrated CPU, RAM, and flash memory on a single chip; SoC integrates CPU and\nperipherals but often uses external RAM and storage.\n- MCUs are used for simpler systems; SoCs support more complex, higher-performance\napplications.\n11. Advantage: High efficiency due to integrated functionality. Disadvantage: A bug in a kernel\ncomponent can crash the whole system.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Module 02</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Linux-based Embedded System</span>"
     ]
   },
   {
     "objectID": "module03.html",
     "href": "module03.html",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "",
     "text": "5 Module 3: Understanding Processes and OS Management",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#module-3-overview",
     "href": "module03.html#module-3-overview",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.1 🧭 Module 3 Overview",
     "text": "5.1 🧭 Module 3 Overview\n**Narrative\nThis module introduces one of the foundational concepts in operating systems: the process. We explore how processes are created, managed, and isolated by the operating system. This is particularly important in embedded systems, where stability and predictability are critical.\n🎞 Slide\nModule 3 Overview - What is a process? - The OS role in process creation and management - Process memory space and protection - Process state and the Program Counter - Multiple instances of a process - Embedded relevance\n\n🔄 Segue\nLet’s begin by understanding what a process really is — and why it’s more than just a program.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#what-is-a-process",
     "href": "module03.html#what-is-a-process",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.2 What is a Process?",
     "text": "5.2 What is a Process?\n🧭 Narrative\nA process is an instance of a program in execution. While a program is a passive set of instructions (e.g., a compiled .exe or binary), a process is active. It includes: - A unique Process ID (PID) - Its own memory space - A Program Counter (PC) pointing to the next instruction - Associated resources like open files, scheduling information, and CPU registers\n🎞 Slide - What is a Process?\nWhat is a Process? - A running instance of a program - Unique PID, memory space, PC - Managed and isolated by the OS  🔄 Segue\nLet’s now take a closer look at what the operating system actually does when you launch a process.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#the-role-of-the-operating-system",
     "href": "module03.html#the-role-of-the-operating-system",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.3 The Role of the Operating System",
     "text": "5.3 The Role of the Operating System\n🧭 Narrative\nWhen you run a program, the OS: 1. Loads the executable into memory 2. Allocates a private memory space 3. Initializes the stack and heap 4. Sets the PC to the entry point 5. Schedules the process to run via the CPU\nThis allows the system to safely manage multiple processes running concurrently without interference.\n🎞 Slide - The Role of the Operating System\n\nThe Role of the Operating System - Load and set up the program - Assign memory - Track with PCB and PC - Schedule to run\n🔄 Segue\nTo make this real, let’s look at a simple C program that demonstrates how a new process is created.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#simple-c-program-fork",
     "href": "module03.html#simple-c-program-fork",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.4 Simple C program fork()",
     "text": "5.4 Simple C program fork()\n🧭 Narrative\nThis simple C program uses fork() to duplicate the current process:\n🎞 Slide - Simple C program fork() \n#include &lt;stdio.h&gt;\n#include &lt;unistd.h&gt;\nint main() {\n    printf(\"Parent PID: %d\\n\", getpid());\n    fork();\n    printf(\"Hello from PID: %d\\n\", getpid());\n    return 0;\n}\nThis program shows that each process, while sharing code, executes independently.\n🔄 Segue\nBut how does each process keep track of where it is and what memory it’s using? Let’s look at memory layout.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#process-memory-layout",
     "href": "module03.html#process-memory-layout",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.5 Process Memory Layout",
     "text": "5.5 Process Memory Layout\n🧭 Narrative\nEach process has a well-defined layout: - Text segment: Executable code - Data segment: Initialized global/static variables - BSS: Uninitialized globals/statics - Heap: Grows up with malloc() - Stack: Grows down with function calls\nIn embedded systems, managing this layout carefully is crucial to avoid overflow or unpredictable behavior.\n🎞 Slide - Process Memory Layout  Process Memory Layout - Text, Data, BSS, Heap, Stack - Visually organized top-to-bottom\n🔄 Segue\nWe’ve said each process is isolated. How is that enforced? Let’s look at memory protection.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#memory-protection",
     "href": "module03.html#memory-protection",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.6 Memory Protection",
     "text": "5.6 Memory Protection\n🧭 Narrative\nMemory protection ensures stability: - One process cannot access another’s memory - Uses MMU (Memory Management Unit) - Violations cause segmentation faults\nThis is critical in embedded systems where shared resources could lead to system crashes.\n🎞 Slide - Memory Protection  Memory Protection - Prevents interference - MMU-enforced - Segfaults signal boundary violations\n🔄 Segue\nNow that we’ve covered structure and safety, let’s explore how processes move through their lifecycle.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#process-state-model",
     "href": "module03.html#process-state-model",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.7 Process State Model",
     "text": "5.7 Process State Model\n🧭 Narrative\nA process transitions through several states: - New → Ready → Running → Blocked → Exit\nThe OS keeps track using a Process Control Block (PCB) that holds: - PID - PC - State - Memory pointers\n🎞 Slide - Process State Model  Process State Model - Visual state diagram - PCB components listed\n🔄 Segue\nAll of this is possible because the Program Counter tells the CPU what to do next. Let’s focus on that next.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#the-program-counter-pc",
     "href": "module03.html#the-program-counter-pc",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.8 The Program Counter (PC)",
     "text": "5.8 The Program Counter (PC)\n🧭 Narrative\nThe Program Counter (PC) tracks which instruction to execute: - Saved/restored during context switching - Enables multitasking\nThink of it like a bookmark in a book — each process has its own.\n🎞 Slide - The Program Counter (PC)  The Program Counter (PC) - Tracks execution - Saved during switches - Book analogy\n🔄 Segue\nNow, let’s examine how the system handles running multiple processes of the same program.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#multiple-instances-of-a-process",
     "href": "module03.html#multiple-instances-of-a-process",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.9 Multiple Instances of a Process",
     "text": "5.9 Multiple Instances of a Process\n🧭 Narrative\nIt’s common to run multiple instances of the same program:\n$ sleep 60 &\n$ sleep 60 &\n$ ps aux | grep sleep\nEach one is isolated and scheduled independently.\n🎞 Slide - Multiple Instances of a Process  Multiple Instances of a Process - Same binary, different state - Unique PID and memory\n🔄 Segue\nThis is essential in embedded contexts where multiple services run in parallel — each safely managed.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   },
   {
     "objectID": "module03.html#embedded-context",
     "href": "module03.html#embedded-context",
-    "title": "4  Module 3: Processes and OS Management",
+    "title": "4  Processes and OS Management",
     "section": "5.10 Embedded Context",
     "text": "5.10 Embedded Context\n🧭 Narrative\nIn embedded systems: - Resource constraints are stricter - Real-time response is critical - Static allocation is preferred\nBut the concept of isolated, predictable process execution remains vital.\n🎞 Slide - Embedded Context  Embedded Context - Fewer processes, stricter rules - Isolation protects critical operations\n🔄 Segue\nLet’s test our understanding with a short exercise.\n\n\n5.10.1 Checkpoint Exercise\n🧭 Narrative\nCheckpoint Exercise: Write a C program that: 1. Forks two child processes 2. Prints each PID and memory address of a local variable 3. Observe how address spaces differ\n🎞 Slide - Checkpoint Exercise \nCheckpoint Exercise - Fork + observe memory - Compare address outputs\n🔄 Segue\nLet’s wrap up with key takeaways from this module.\n\n\n\n5.10.2 Summary\n🧭 Narrative\n\nProcesses are the building blocks of multitasking\nOS handles memory and execution state\nEach process is isolated and independently managed\nThe PC, memory layout, and state tracking are key OS responsibilities\n\n🎞 Slide - Summary\nSummary - Key responsibilities of OS - Memory and execution isolation - Embedded considerations\n\n🔄 Segue\nNext time, we’ll explore how the OS juggles processes using scheduling.\n\n\n\n5.10.3 Coming Next\n🧭 Narrative\nWe’ll cover scheduling algorithms and how the OS decides which process runs next — including real-time scheduling in embedded systems.\n🎞 Slide - Coming Next  Coming Next - Context switching - Scheduling strategies  ————————————————————————\n\nThis content is designed to accompany the Module03_slidedeck.qmd and prepare students for lab exercises and embedded applications.",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Module 3: Processes and OS Management</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Processes and OS Management</span>"
     ]
   }
 ]
