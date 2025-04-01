@@ -8,7 +8,7 @@
 
 <meta name="author" content="Brad Smith">
 
-<title>Embedded RTOS Course eBook</title>
+<title>Module 3: Processes and OS Management – Embedded RTOS Course eBook</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -134,7 +168,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Embedded RTOS Course eBook</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Module 3: Processes and OS Management</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -156,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Embedded RTOS Course eBook</span></a>
   </div>
 </li>
@@ -230,13 +264,23 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome-to-the-embedded-rtos-ebook" id="toc-welcome-to-the-embedded-rtos-ebook" class="nav-link active" data-scroll-target="#welcome-to-the-embedded-rtos-ebook"><span class="header-section-number">1</span> Welcome to the Embedded RTOS eBook</a>
+  <li><a href="#module-3-understanding-processes-and-os-management" id="toc-module-3-understanding-processes-and-os-management" class="nav-link active" data-scroll-target="#module-3-understanding-processes-and-os-management"><span class="header-section-number">1</span> Module 3: Understanding Processes and OS Management</a>
   <ul class="collapse">
-  <li><a href="#about-this-ebook" id="toc-about-this-ebook" class="nav-link" data-scroll-target="#about-this-ebook"><span class="header-section-number">1.1</span> 📚 About This eBook</a></li>
-  <li><a href="#course-modules" id="toc-course-modules" class="nav-link" data-scroll-target="#course-modules"><span class="header-section-number">1.2</span> 📖 Course Modules</a></li>
-  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides"><span class="header-section-number">1.3</span> 🎥 Slides</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources"><span class="header-section-number">1.4</span> 🛠 Resources</a></li>
-  <li><a href="#feedback-contributions" id="toc-feedback-contributions" class="nav-link" data-scroll-target="#feedback-contributions"><span class="header-section-number">1.5</span> 🤝 Feedback &amp; Contributions</a></li>
+  <li><a href="#module-3-overview" id="toc-module-3-overview" class="nav-link" data-scroll-target="#module-3-overview"><span class="header-section-number">1.1</span> 🧭 Module 3 Overview</a></li>
+  <li><a href="#what-is-a-process" id="toc-what-is-a-process" class="nav-link" data-scroll-target="#what-is-a-process"><span class="header-section-number">1.2</span> What is a Process?</a></li>
+  <li><a href="#the-role-of-the-operating-system" id="toc-the-role-of-the-operating-system" class="nav-link" data-scroll-target="#the-role-of-the-operating-system"><span class="header-section-number">1.3</span> The Role of the Operating System</a></li>
+  <li><a href="#simple-c-program-fork" id="toc-simple-c-program-fork" class="nav-link" data-scroll-target="#simple-c-program-fork"><span class="header-section-number">1.4</span> Simple C program fork()</a></li>
+  <li><a href="#process-memory-layout" id="toc-process-memory-layout" class="nav-link" data-scroll-target="#process-memory-layout"><span class="header-section-number">1.5</span> Process Memory Layout</a></li>
+  <li><a href="#memory-protection" id="toc-memory-protection" class="nav-link" data-scroll-target="#memory-protection"><span class="header-section-number">1.6</span> Memory Protection</a></li>
+  <li><a href="#process-state-model" id="toc-process-state-model" class="nav-link" data-scroll-target="#process-state-model"><span class="header-section-number">1.7</span> Process State Model</a></li>
+  <li><a href="#the-program-counter-pc" id="toc-the-program-counter-pc" class="nav-link" data-scroll-target="#the-program-counter-pc"><span class="header-section-number">1.8</span> The Program Counter (PC)</a></li>
+  <li><a href="#multiple-instances-of-a-process" id="toc-multiple-instances-of-a-process" class="nav-link" data-scroll-target="#multiple-instances-of-a-process"><span class="header-section-number">1.9</span> Multiple Instances of a Process</a></li>
+  <li><a href="#embedded-context" id="toc-embedded-context" class="nav-link" data-scroll-target="#embedded-context"><span class="header-section-number">1.10</span> Embedded Context</a>
+  <ul class="collapse">
+  <li><a href="#checkpoint-exercise" id="toc-checkpoint-exercise" class="nav-link" data-scroll-target="#checkpoint-exercise"><span class="header-section-number">1.10.1</span> Checkpoint Exercise</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">1.10.2</span> Summary</a></li>
+  <li><a href="#coming-next" id="toc-coming-next" class="nav-link" data-scroll-target="#coming-next"><span class="header-section-number">1.10.3</span> Coming Next</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -246,7 +290,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Embedded RTOS Course eBook</h1>
+<h1 class="title">Module 3: Processes and OS Management</h1>
 </div>
 
 
@@ -269,48 +313,158 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome-to-the-embedded-rtos-ebook" class="level1" data-number="1">
-<h1 data-number="1"><span class="header-section-number">1</span> Welcome to the Embedded RTOS eBook</h1>
-<p>This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.</p>
-<section id="about-this-ebook" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="about-this-ebook"><span class="header-section-number">1.1</span> 📚 About This eBook</h2>
-<p>You will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.</p>
-</section>
-<section id="course-modules" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="course-modules"><span class="header-section-number">1.2</span> 📖 Course Modules</h2>
-<ul>
-<li><a href="./lecture01.html"><strong>Module 1: Introduction to Embedded Systems and Processes</strong></a></li>
-<li><a href="./lecture02.html"><strong>Module 2: Anatomy of Linux-Based Embedded Systems</strong></a></li>
-<li><a href="./module03.html"><strong>Module 3: Processes and OS Management</strong></a></li>
-<li><em>(More modules coming soon)</em></li>
-</ul>
-</section>
-<section id="slides" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="slides"><span class="header-section-number">1.3</span> 🎥 Slides</h2>
-<ul>
-<li><a href="module01/slides.qmd"><strong>Module 1 Slides</strong></a></li>
-<li><a href="module02/slides.qmd"><strong>Module 2 Slides</strong></a></li>
-<li><a href="./Module03_slidedeck.html"><strong>Module 3 Slides</strong></a></li>
-</ul>
-</section>
-<section id="resources" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="resources"><span class="header-section-number">1.4</span> 🛠 Resources</h2>
-<ul>
-<li><a href="https://github.com/CocoaDevLondon/embedded-RTOS-ebook">GitHub Repository</a></li>
-<li>Example device trees, scheduler demonstrations, and downloadable code samples.</li>
-</ul>
-</section>
-<section id="feedback-contributions" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="feedback-contributions"><span class="header-section-number">1.5</span> 🤝 Feedback &amp; Contributions</h2>
-<p>This project is a living resource!<br>
-- Found a typo? Have a suggestion? Please feel free to <a href="https://github.com/CocoaDevLondon/embedded-RTOS-ebook/issues">open an issue</a> or contribute via pull request.</p>
+<section id="module-3-understanding-processes-and-os-management" class="level1" data-number="1">
+<h1 data-number="1"><span class="header-section-number">1</span> Module 3: Understanding Processes and OS Management</h1>
 <hr>
+<section id="module-3-overview" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="module-3-overview"><span class="header-section-number">1.1</span> 🧭 Module 3 Overview</h2>
+<p>**Narrative</p>
+<p>This module introduces one of the foundational concepts in operating systems: the process. We explore how processes are created, managed, and isolated by the operating system. This is particularly important in embedded systems, where stability and predictability are critical.</p>
+<p><strong>🎞 Slide</strong></p>
+<p><strong>Module 3 Overview</strong> - What is a process? - The OS role in process creation and management - Process memory space and protection - Process state and the Program Counter - Multiple instances of a process - Embedded relevance</p>
+<p><img src="images/module03/Module03_slidedeck/Module03_slidedeck.002.png" class="img-fluid"></p>
+<p><strong>🔄 Segue</strong></p>
+<p>Let’s begin by understanding what a process really is — and why it’s more than just a program.</p>
+<hr>
+</section>
+<section id="what-is-a-process" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="what-is-a-process"><span class="header-section-number">1.2</span> What is a Process?</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>A <strong>process</strong> is an instance of a program in execution. While a program is a passive set of instructions (e.g., a compiled <code>.exe</code> or binary), a process is active. It includes: - A unique <strong>Process ID (PID)</strong> - Its own <strong>memory space</strong> - A <strong>Program Counter (PC)</strong> pointing to the next instruction - Associated resources like open files, scheduling information, and CPU registers</p>
+<p><strong>🎞 Slide - What is a Process?</strong></p>
+<p><strong>What is a Process?</strong> - A running instance of a program - Unique PID, memory space, PC - Managed and isolated by the OS <img src="images/module03/Module03_slidedeck/Module03_slidedeck.003.png" class="img-fluid"> <strong>🔄 Segue</strong></p>
+<p>Let’s now take a closer look at what the operating system actually does when you launch a process.</p>
+<hr>
+</section>
+<section id="the-role-of-the-operating-system" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="the-role-of-the-operating-system"><span class="header-section-number">1.3</span> The Role of the Operating System</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>When you run a program, the OS: 1. <strong>Loads the executable</strong> into memory 2. <strong>Allocates a private memory space</strong> 3. <strong>Initializes the stack and heap</strong> 4. <strong>Sets the PC</strong> to the entry point 5. <strong>Schedules the process</strong> to run via the CPU</p>
+<p>This allows the system to safely manage multiple processes running concurrently without interference.</p>
+<p><strong>🎞 Slide - The Role of the Operating System</strong></p>
+<p><img src="images/module03/Module03_slidedeck/Module03_slidedeck.004.png" class="img-fluid"></p>
+<p><strong>The Role of the Operating System</strong> - Load and set up the program - Assign memory - Track with PCB and PC - Schedule to run</p>
+<p><strong>🔄 Segue</strong></p>
+<p>To make this real, let’s look at a simple C program that demonstrates how a new process is created.</p>
+<hr>
+</section>
+<section id="simple-c-program-fork" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="simple-c-program-fork"><span class="header-section-number">1.4</span> Simple C program fork()</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>This simple C program uses <code>fork()</code> to duplicate the current process:</p>
+<p><strong>🎞 Slide - Simple C program fork()</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.005.png" class="img-fluid"></p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode c code-with-copy"><code class="sourceCode c"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;unistd.h&gt;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"Parent PID: </span><span class="sc">%d\n</span><span class="st">"</span><span class="op">,</span> getpid<span class="op">());</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    fork<span class="op">();</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    printf<span class="op">(</span><span class="st">"Hello from PID: </span><span class="sc">%d\n</span><span class="st">"</span><span class="op">,</span> getpid<span class="op">());</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This program shows that each process, while sharing code, executes independently.</p>
+<p><strong>🔄 Segue</strong></p>
+<p>But how does each process keep track of where it is and what memory it’s using? Let’s look at memory layout.</p>
+<hr>
+</section>
+<section id="process-memory-layout" class="level2" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="process-memory-layout"><span class="header-section-number">1.5</span> Process Memory Layout</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>Each process has a well-defined layout: - <strong>Text segment:</strong> Executable code - <strong>Data segment:</strong> Initialized global/static variables - <strong>BSS:</strong> Uninitialized globals/statics - <strong>Heap:</strong> Grows up with <code>malloc()</code> - <strong>Stack:</strong> Grows down with function calls</p>
+<p>In embedded systems, managing this layout carefully is crucial to avoid overflow or unpredictable behavior.</p>
+<p><strong>🎞 Slide - Process Memory Layout</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.006.png" class="img-fluid"> <strong>Process Memory Layout</strong> - Text, Data, BSS, Heap, Stack - Visually organized top-to-bottom</p>
+<p><strong>🔄 Segue</strong></p>
+<p>We’ve said each process is isolated. How is that enforced? Let’s look at memory protection.</p>
+<hr>
+</section>
+<section id="memory-protection" class="level2" data-number="1.6">
+<h2 data-number="1.6" class="anchored" data-anchor-id="memory-protection"><span class="header-section-number">1.6</span> Memory Protection</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p><strong>Memory protection</strong> ensures stability: - One process cannot access another’s memory - Uses MMU (Memory Management Unit) - Violations cause segmentation faults</p>
+<p>This is critical in embedded systems where shared resources could lead to system crashes.</p>
+<p><strong>🎞 Slide - Memory Protection</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.007.png" class="img-fluid"> <strong>Memory Protection</strong> - Prevents interference - MMU-enforced - Segfaults signal boundary violations</p>
+<p><strong>🔄 Segue</strong></p>
+<p>Now that we’ve covered structure and safety, let’s explore how processes move through their lifecycle.</p>
+<hr>
+</section>
+<section id="process-state-model" class="level2" data-number="1.7">
+<h2 data-number="1.7" class="anchored" data-anchor-id="process-state-model"><span class="header-section-number">1.7</span> Process State Model</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>A process transitions through several states: - New → Ready → Running → Blocked → Exit</p>
+<p>The OS keeps track using a <strong>Process Control Block (PCB)</strong> that holds: - PID - PC - State - Memory pointers</p>
+<p><strong>🎞 Slide - Process State Model</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.008.png" class="img-fluid"> <strong>Process State Model</strong> - Visual state diagram - PCB components listed</p>
+<p><strong>🔄 Segue</strong></p>
+<p>All of this is possible because the Program Counter tells the CPU what to do next. Let’s focus on that next.</p>
+<hr>
+</section>
+<section id="the-program-counter-pc" class="level2" data-number="1.8">
+<h2 data-number="1.8" class="anchored" data-anchor-id="the-program-counter-pc"><span class="header-section-number">1.8</span> The Program Counter (PC)</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>The <strong>Program Counter (PC)</strong> tracks which instruction to execute: - Saved/restored during context switching - Enables multitasking</p>
+<p>Think of it like a bookmark in a book — each process has its own.</p>
+<p><strong>🎞 Slide - The Program Counter (PC)</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.009.png" class="img-fluid"> <strong>The Program Counter (PC)</strong> - Tracks execution - Saved during switches - Book analogy</p>
+<p><strong>🔄 Segue</strong></p>
+<p>Now, let’s examine how the system handles running multiple processes of the same program.</p>
+<hr>
+</section>
+<section id="multiple-instances-of-a-process" class="level2" data-number="1.9">
+<h2 data-number="1.9" class="anchored" data-anchor-id="multiple-instances-of-a-process"><span class="header-section-number">1.9</span> Multiple Instances of a Process</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>It’s common to run multiple instances of the same program:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sleep 60 <span class="kw">&amp;</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> sleep 60 <span class="kw">&amp;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="ex">$</span> ps aux <span class="kw">|</span> <span class="fu">grep</span> sleep</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Each one is isolated and scheduled independently.</p>
+<p><strong>🎞 Slide - Multiple Instances of a Process</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.010.png" class="img-fluid"> <strong>Multiple Instances of a Process</strong> - Same binary, different state - Unique PID and memory</p>
+<p><strong>🔄 Segue</strong></p>
+<p>This is essential in embedded contexts where multiple services run in parallel — each safely managed.</p>
+<hr>
+</section>
+<section id="embedded-context" class="level2" data-number="1.10">
+<h2 data-number="1.10" class="anchored" data-anchor-id="embedded-context"><span class="header-section-number">1.10</span> Embedded Context</h2>
+<p><strong>🧭 Narrative</strong></p>
+<p>In embedded systems: - Resource constraints are stricter - Real-time response is critical - Static allocation is preferred</p>
+<p>But the concept of isolated, predictable process execution remains vital.</p>
+<p><strong>🎞 Slide - Embedded Context</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.011.png" class="img-fluid"> <strong>Embedded Context</strong> - Fewer processes, stricter rules - Isolation protects critical operations</p>
+<p><strong>🔄 Segue</strong></p>
+<p>Let’s test our understanding with a short exercise.</p>
+<hr>
+<section id="checkpoint-exercise" class="level3" data-number="1.10.1">
+<h3 data-number="1.10.1" class="anchored" data-anchor-id="checkpoint-exercise"><span class="header-section-number">1.10.1</span> Checkpoint Exercise</h3>
+<p><strong>🧭 Narrative</strong></p>
+<p><strong>Checkpoint Exercise:</strong> Write a C program that: 1. Forks two child processes 2. Prints each PID and memory address of a local variable 3. Observe how address spaces differ</p>
+<p><strong>🎞 Slide - Checkpoint Exercise</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.013.png" class="img-fluid"></p>
+<p><strong>Checkpoint Exercise</strong> - Fork + observe memory - Compare address outputs</p>
+<p><strong>🔄 Segue</strong></p>
+<p>Let’s wrap up with key takeaways from this module.</p>
+<hr>
+</section>
+<section id="summary" class="level3" data-number="1.10.2">
+<h3 data-number="1.10.2" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.10.2</span> Summary</h3>
+<p><strong>🧭 Narrative</strong></p>
+<ul>
+<li>Processes are the building blocks of multitasking</li>
+<li>OS handles memory and execution state</li>
+<li>Each process is isolated and independently managed</li>
+<li>The PC, memory layout, and state tracking are key OS responsibilities</li>
+</ul>
+<p><strong>🎞 Slide - Summary</strong></p>
+<p><strong>Summary</strong> - Key responsibilities of OS - Memory and execution isolation - Embedded considerations</p>
+<p><img src="images/module03/Module03_slidedeck/Module03_slidedeck.012.png" class="img-fluid"></p>
+<p><strong>🔄 Segue</strong></p>
+<p>Next time, we’ll explore how the OS juggles processes using scheduling.</p>
+<hr>
+</section>
+<section id="coming-next" class="level3" data-number="1.10.3">
+<h3 data-number="1.10.3" class="anchored" data-anchor-id="coming-next"><span class="header-section-number">1.10.3</span> Coming Next</h3>
+<p><strong>🧭 Narrative</strong></p>
+<p>We’ll cover scheduling algorithms and how the OS decides which process runs next — including real-time scheduling in embedded systems.</p>
+<p><strong>🎞 Slide - Coming Next</strong> <img src="images/module03/Module03_slidedeck/Module03_slidedeck.014.png" class="img-fluid"> <strong>Coming Next</strong> - Context switching - Scheduling strategies <img src="images/module03/Module03_slidedeck/Module03_slidedeck.015.png" class="img-fluid"> ————————————————————————</p>
 <blockquote class="blockquote">
-<p><strong>Maintained by Brad Smith</strong><br>
-Fanshawe College — Electrical and Embedded Systems</p>
+<p>This content is designed to accompany the Module03_slidedeck.qmd and prepare students for lab exercises and embedded applications.</p>
 </blockquote>
 
 
+</section>
 </section>
 </section>
 

@@ -9,6 +9,7 @@ editor: visual
 
 This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.
 
+
 ## 📚 About This eBook
 
 You will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.
@@ -17,7 +18,7 @@ You will find: - Structured lecture notes for each module. - Interactive example
 
 -   [**Module 1: Introduction to Embedded Systems and Processes**](lecture01.qmd)
 -   [**Module 2: Anatomy of Linux-Based Embedded Systems**](lecture02.qmd)
--   [**Module 3: Processes and OS Management**](lecture03.qmd)
+-   [**Module 3: Processes and OS Management**](module03.qmd)
 -   *(More modules coming soon)*
 
 ## 🎥 Slides

@@ -18,7 +18,7 @@ website:
           - text: "Module 2 Slides"
             href: module02/slides.qmd
           - text: "Module 3: Processes and OS Management"
-            href: lecture03.qmd
+            href: module03.qmd
           - text: "Module 3 Slides"
             href: Module03_slidedeck.qmd
   sidebar:

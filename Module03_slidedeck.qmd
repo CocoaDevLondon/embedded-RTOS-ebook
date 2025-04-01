@@ -1,7 +1,9 @@
 ---
 title: "Module 3: Understanding Processes and OS Management"
 author: "Brad Smith"
-format: revealjs
+format: 
+  revealjs: default   # Keep your Reveal.js output
+  pptx: default       # Add this line for PowerPoint
 editor: visual
 transition: fade
 slide-number: true

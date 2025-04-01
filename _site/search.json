@@ -1,71 +1,5 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.\n\n\nYou will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.\n\n\n\n\nModule 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)\n\n\n\n\n\nModule 1 Slides\nModule 2 Slides\nModule 3 Slides\n\n\n\n\n\nGitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.\n\n\n\n\nThis project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
-    "objectID": "index.html#about-this-ebook",
-    "href": "index.html#about-this-ebook",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "You will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
-    "objectID": "index.html#course-modules",
-    "href": "index.html#course-modules",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "Module 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
-    "objectID": "index.html#slides",
-    "href": "index.html#slides",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "Module 1 Slides\nModule 2 Slides\nModule 3 Slides",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
-    "objectID": "index.html#resources",
-    "href": "index.html#resources",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "GitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
-    "objectID": "index.html#feedback-contributions",
-    "href": "index.html#feedback-contributions",
-    "title": "Embedded RTOS Course eBook",
-    "section": "",
-    "text": "This project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
-    "crumbs": [
-      "Home",
-      "Embedded RTOS Course eBook"
-    ]
-  },
-  {
     "objectID": "lecture01.html",
     "href": "lecture01.html",
     "title": "Module 1:",
@@ -774,15 +708,146 @@
     ]
   },
   {
-    "objectID": "Module03_slidedeck.html",
-    "href": "Module03_slidedeck.html",
-    "title": "Module 3: Understanding Processes and OS Management",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Embedded RTOS Course eBook",
     "section": "",
-    "text": "What is a process?\nThe OS role in process creation and management\nProcess memory space and protection\nProcess state and the Program Counter\nMultiple instances of a process\nEmbedded relevance",
+    "text": "This resource has been created for students and educators learning the fundamentals of Embedded Linux and Real-Time Operating Systems (RTOS). It is designed to complement lecture materials, lab exercises, and hands-on projects.\n\n\nYou will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.\n\n\n\n\nModule 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)\n\n\n\n\n\nModule 1 Slides\nModule 2 Slides\nModule 3 Slides\n\n\n\n\n\nGitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.\n\n\n\n\nThis project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
     "crumbs": [
       "Home",
-      "Module 3: Processes and OS Management",
-      "Module 3: Understanding Processes and OS Management"
+      "Embedded RTOS Course eBook"
     ]
+  },
+  {
+    "objectID": "index.html#about-this-ebook",
+    "href": "index.html#about-this-ebook",
+    "title": "Embedded RTOS Course eBook",
+    "section": "",
+    "text": "You will find: - Structured lecture notes for each module. - Interactive examples in C and Python. - Visual diagrams to explain core OS concepts. - Slide decks for classroom presentation. - Self-check exercises and code snippets for practice.",
+    "crumbs": [
+      "Home",
+      "Embedded RTOS Course eBook"
+    ]
+  },
+  {
+    "objectID": "index.html#course-modules",
+    "href": "index.html#course-modules",
+    "title": "Embedded RTOS Course eBook",
+    "section": "",
+    "text": "Module 1: Introduction to Embedded Systems and Processes\nModule 2: Anatomy of Linux-Based Embedded Systems\nModule 3: Processes and OS Management\n(More modules coming soon)",
+    "crumbs": [
+      "Home",
+      "Embedded RTOS Course eBook"
+    ]
+  },
+  {
+    "objectID": "index.html#slides",
+    "href": "index.html#slides",
+    "title": "Embedded RTOS Course eBook",
+    "section": "",
+    "text": "Module 1 Slides\nModule 2 Slides\nModule 3 Slides",
+    "crumbs": [
+      "Home",
+      "Embedded RTOS Course eBook"
+    ]
+  },
+  {
+    "objectID": "index.html#resources",
+    "href": "index.html#resources",
+    "title": "Embedded RTOS Course eBook",
+    "section": "",
+    "text": "GitHub Repository\nExample device trees, scheduler demonstrations, and downloadable code samples.",
+    "crumbs": [
+      "Home",
+      "Embedded RTOS Course eBook"
+    ]
+  },
+  {
+    "objectID": "index.html#feedback-contributions",
+    "href": "index.html#feedback-contributions",
+    "title": "Embedded RTOS Course eBook",
+    "section": "",
+    "text": "This project is a living resource!\n- Found a typo? Have a suggestion? Please feel free to open an issue or contribute via pull request.\n\n\nMaintained by Brad Smith\nFanshawe College — Electrical and Embedded Systems",
+    "crumbs": [
+      "Home",
+      "Embedded RTOS Course eBook"
+    ]
+  },
+  {
+    "objectID": "module03.html",
+    "href": "module03.html",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "**Narrative\nThis module introduces one of the foundational concepts in operating systems: the process. We explore how processes are created, managed, and isolated by the operating system. This is particularly important in embedded systems, where stability and predictability are critical.\n🎞 Slide\nModule 3 Overview - What is a process? - The OS role in process creation and management - Process memory space and protection - Process state and the Program Counter - Multiple instances of a process - Embedded relevance\n\n🔄 Segue\nLet’s begin by understanding what a process really is — and why it’s more than just a program.\n\n\n\n\n🧭 Narrative\nA process is an instance of a program in execution. While a program is a passive set of instructions (e.g., a compiled .exe or binary), a process is active. It includes: - A unique Process ID (PID) - Its own memory space - A Program Counter (PC) pointing to the next instruction - Associated resources like open files, scheduling information, and CPU registers\n🎞 Slide - What is a Process?\nWhat is a Process? - A running instance of a program - Unique PID, memory space, PC - Managed and isolated by the OS  🔄 Segue\nLet’s now take a closer look at what the operating system actually does when you launch a process.\n\n\n\n\n🧭 Narrative\nWhen you run a program, the OS: 1. Loads the executable into memory 2. Allocates a private memory space 3. Initializes the stack and heap 4. Sets the PC to the entry point 5. Schedules the process to run via the CPU\nThis allows the system to safely manage multiple processes running concurrently without interference.\n🎞 Slide - The Role of the Operating System\n\nThe Role of the Operating System - Load and set up the program - Assign memory - Track with PCB and PC - Schedule to run\n🔄 Segue\nTo make this real, let’s look at a simple C program that demonstrates how a new process is created.\n\n\n\n\n🧭 Narrative\nThis simple C program uses fork() to duplicate the current process:\n🎞 Slide - Simple C program fork() \n#include &lt;stdio.h&gt;\n#include &lt;unistd.h&gt;\nint main() {\n    printf(\"Parent PID: %d\\n\", getpid());\n    fork();\n    printf(\"Hello from PID: %d\\n\", getpid());\n    return 0;\n}\nThis program shows that each process, while sharing code, executes independently.\n🔄 Segue\nBut how does each process keep track of where it is and what memory it’s using? Let’s look at memory layout.\n\n\n\n\n🧭 Narrative\nEach process has a well-defined layout: - Text segment: Executable code - Data segment: Initialized global/static variables - BSS: Uninitialized globals/statics - Heap: Grows up with malloc() - Stack: Grows down with function calls\nIn embedded systems, managing this layout carefully is crucial to avoid overflow or unpredictable behavior.\n🎞 Slide - Process Memory Layout  Process Memory Layout - Text, Data, BSS, Heap, Stack - Visually organized top-to-bottom\n🔄 Segue\nWe’ve said each process is isolated. How is that enforced? Let’s look at memory protection.\n\n\n\n\n🧭 Narrative\nMemory protection ensures stability: - One process cannot access another’s memory - Uses MMU (Memory Management Unit) - Violations cause segmentation faults\nThis is critical in embedded systems where shared resources could lead to system crashes.\n🎞 Slide - Memory Protection  Memory Protection - Prevents interference - MMU-enforced - Segfaults signal boundary violations\n🔄 Segue\nNow that we’ve covered structure and safety, let’s explore how processes move through their lifecycle.\n\n\n\n\n🧭 Narrative\nA process transitions through several states: - New → Ready → Running → Blocked → Exit\nThe OS keeps track using a Process Control Block (PCB) that holds: - PID - PC - State - Memory pointers\n🎞 Slide - Process State Model  Process State Model - Visual state diagram - PCB components listed\n🔄 Segue\nAll of this is possible because the Program Counter tells the CPU what to do next. Let’s focus on that next.\n\n\n\n\n🧭 Narrative\nThe Program Counter (PC) tracks which instruction to execute: - Saved/restored during context switching - Enables multitasking\nThink of it like a bookmark in a book — each process has its own.\n🎞 Slide - The Program Counter (PC)  The Program Counter (PC) - Tracks execution - Saved during switches - Book analogy\n🔄 Segue\nNow, let’s examine how the system handles running multiple processes of the same program.\n\n\n\n\n🧭 Narrative\nIt’s common to run multiple instances of the same program:\n$ sleep 60 &\n$ sleep 60 &\n$ ps aux | grep sleep\nEach one is isolated and scheduled independently.\n🎞 Slide - Multiple Instances of a Process  Multiple Instances of a Process - Same binary, different state - Unique PID and memory\n🔄 Segue\nThis is essential in embedded contexts where multiple services run in parallel — each safely managed.\n\n\n\n\n🧭 Narrative\nIn embedded systems: - Resource constraints are stricter - Real-time response is critical - Static allocation is preferred\nBut the concept of isolated, predictable process execution remains vital.\n🎞 Slide - Embedded Context  Embedded Context - Fewer processes, stricter rules - Isolation protects critical operations\n🔄 Segue\nLet’s test our understanding with a short exercise.\n\n\n\n🧭 Narrative\nCheckpoint Exercise: Write a C program that: 1. Forks two child processes 2. Prints each PID and memory address of a local variable 3. Observe how address spaces differ\n🎞 Slide - Checkpoint Exercise \nCheckpoint Exercise - Fork + observe memory - Compare address outputs\n🔄 Segue\nLet’s wrap up with key takeaways from this module.\n\n\n\n\n🧭 Narrative\n\nProcesses are the building blocks of multitasking\nOS handles memory and execution state\nEach process is isolated and independently managed\nThe PC, memory layout, and state tracking are key OS responsibilities\n\n🎞 Slide - Summary\nSummary - Key responsibilities of OS - Memory and execution isolation - Embedded considerations\n\n🔄 Segue\nNext time, we’ll explore how the OS juggles processes using scheduling.\n\n\n\n\n🧭 Narrative\nWe’ll cover scheduling algorithms and how the OS decides which process runs next — including real-time scheduling in embedded systems.\n🎞 Slide - Coming Next  Coming Next - Context switching - Scheduling strategies  ————————————————————————\n\nThis content is designed to accompany the Module03_slidedeck.qmd and prepare students for lab exercises and embedded applications."
+  },
+  {
+    "objectID": "module03.html#module-3-overview",
+    "href": "module03.html#module-3-overview",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "**Narrative\nThis module introduces one of the foundational concepts in operating systems: the process. We explore how processes are created, managed, and isolated by the operating system. This is particularly important in embedded systems, where stability and predictability are critical.\n🎞 Slide\nModule 3 Overview - What is a process? - The OS role in process creation and management - Process memory space and protection - Process state and the Program Counter - Multiple instances of a process - Embedded relevance\n\n🔄 Segue\nLet’s begin by understanding what a process really is — and why it’s more than just a program."
+  },
+  {
+    "objectID": "module03.html#what-is-a-process",
+    "href": "module03.html#what-is-a-process",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nA process is an instance of a program in execution. While a program is a passive set of instructions (e.g., a compiled .exe or binary), a process is active. It includes: - A unique Process ID (PID) - Its own memory space - A Program Counter (PC) pointing to the next instruction - Associated resources like open files, scheduling information, and CPU registers\n🎞 Slide - What is a Process?\nWhat is a Process? - A running instance of a program - Unique PID, memory space, PC - Managed and isolated by the OS  🔄 Segue\nLet’s now take a closer look at what the operating system actually does when you launch a process."
+  },
+  {
+    "objectID": "module03.html#the-role-of-the-operating-system",
+    "href": "module03.html#the-role-of-the-operating-system",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nWhen you run a program, the OS: 1. Loads the executable into memory 2. Allocates a private memory space 3. Initializes the stack and heap 4. Sets the PC to the entry point 5. Schedules the process to run via the CPU\nThis allows the system to safely manage multiple processes running concurrently without interference.\n🎞 Slide - The Role of the Operating System\n\nThe Role of the Operating System - Load and set up the program - Assign memory - Track with PCB and PC - Schedule to run\n🔄 Segue\nTo make this real, let’s look at a simple C program that demonstrates how a new process is created."
+  },
+  {
+    "objectID": "module03.html#simple-c-program-fork",
+    "href": "module03.html#simple-c-program-fork",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nThis simple C program uses fork() to duplicate the current process:\n🎞 Slide - Simple C program fork() \n#include &lt;stdio.h&gt;\n#include &lt;unistd.h&gt;\nint main() {\n    printf(\"Parent PID: %d\\n\", getpid());\n    fork();\n    printf(\"Hello from PID: %d\\n\", getpid());\n    return 0;\n}\nThis program shows that each process, while sharing code, executes independently.\n🔄 Segue\nBut how does each process keep track of where it is and what memory it’s using? Let’s look at memory layout."
+  },
+  {
+    "objectID": "module03.html#process-memory-layout",
+    "href": "module03.html#process-memory-layout",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nEach process has a well-defined layout: - Text segment: Executable code - Data segment: Initialized global/static variables - BSS: Uninitialized globals/statics - Heap: Grows up with malloc() - Stack: Grows down with function calls\nIn embedded systems, managing this layout carefully is crucial to avoid overflow or unpredictable behavior.\n🎞 Slide - Process Memory Layout  Process Memory Layout - Text, Data, BSS, Heap, Stack - Visually organized top-to-bottom\n🔄 Segue\nWe’ve said each process is isolated. How is that enforced? Let’s look at memory protection."
+  },
+  {
+    "objectID": "module03.html#memory-protection",
+    "href": "module03.html#memory-protection",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nMemory protection ensures stability: - One process cannot access another’s memory - Uses MMU (Memory Management Unit) - Violations cause segmentation faults\nThis is critical in embedded systems where shared resources could lead to system crashes.\n🎞 Slide - Memory Protection  Memory Protection - Prevents interference - MMU-enforced - Segfaults signal boundary violations\n🔄 Segue\nNow that we’ve covered structure and safety, let’s explore how processes move through their lifecycle."
+  },
+  {
+    "objectID": "module03.html#process-state-model",
+    "href": "module03.html#process-state-model",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nA process transitions through several states: - New → Ready → Running → Blocked → Exit\nThe OS keeps track using a Process Control Block (PCB) that holds: - PID - PC - State - Memory pointers\n🎞 Slide - Process State Model  Process State Model - Visual state diagram - PCB components listed\n🔄 Segue\nAll of this is possible because the Program Counter tells the CPU what to do next. Let’s focus on that next."
+  },
+  {
+    "objectID": "module03.html#the-program-counter-pc",
+    "href": "module03.html#the-program-counter-pc",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nThe Program Counter (PC) tracks which instruction to execute: - Saved/restored during context switching - Enables multitasking\nThink of it like a bookmark in a book — each process has its own.\n🎞 Slide - The Program Counter (PC)  The Program Counter (PC) - Tracks execution - Saved during switches - Book analogy\n🔄 Segue\nNow, let’s examine how the system handles running multiple processes of the same program."
+  },
+  {
+    "objectID": "module03.html#multiple-instances-of-a-process",
+    "href": "module03.html#multiple-instances-of-a-process",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nIt’s common to run multiple instances of the same program:\n$ sleep 60 &\n$ sleep 60 &\n$ ps aux | grep sleep\nEach one is isolated and scheduled independently.\n🎞 Slide - Multiple Instances of a Process  Multiple Instances of a Process - Same binary, different state - Unique PID and memory\n🔄 Segue\nThis is essential in embedded contexts where multiple services run in parallel — each safely managed."
+  },
+  {
+    "objectID": "module03.html#embedded-context",
+    "href": "module03.html#embedded-context",
+    "title": "Module 3: Processes and OS Management",
+    "section": "",
+    "text": "🧭 Narrative\nIn embedded systems: - Resource constraints are stricter - Real-time response is critical - Static allocation is preferred\nBut the concept of isolated, predictable process execution remains vital.\n🎞 Slide - Embedded Context  Embedded Context - Fewer processes, stricter rules - Isolation protects critical operations\n🔄 Segue\nLet’s test our understanding with a short exercise.\n\n\n\n🧭 Narrative\nCheckpoint Exercise: Write a C program that: 1. Forks two child processes 2. Prints each PID and memory address of a local variable 3. Observe how address spaces differ\n🎞 Slide - Checkpoint Exercise \nCheckpoint Exercise - Fork + observe memory - Compare address outputs\n🔄 Segue\nLet’s wrap up with key takeaways from this module.\n\n\n\n\n🧭 Narrative\n\nProcesses are the building blocks of multitasking\nOS handles memory and execution state\nEach process is isolated and independently managed\nThe PC, memory layout, and state tracking are key OS responsibilities\n\n🎞 Slide - Summary\nSummary - Key responsibilities of OS - Memory and execution isolation - Embedded considerations\n\n🔄 Segue\nNext time, we’ll explore how the OS juggles processes using scheduling.\n\n\n\n\n🧭 Narrative\nWe’ll cover scheduling algorithms and how the OS decides which process runs next — including real-time scheduling in embedded systems.\n🎞 Slide - Coming Next  Coming Next - Context switching - Scheduling strategies  ————————————————————————\n\nThis content is designed to accompany the Module03_slidedeck.qmd and prepare students for lab exercises and embedded applications."
   }
 ]
